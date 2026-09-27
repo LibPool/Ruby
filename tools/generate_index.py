@@ -27,6 +27,14 @@ DEFAULT_CACHE = Path("cache/rubygems_cache.sqlite3")
 DEFAULT_WORKERS = 32
 RETRIES = 6
 MAJORS = (1, 2, 3, 4)
+WINDOWS_RESERVED_NAMES = {
+    "CON",
+    "PRN",
+    "AUX",
+    "NUL",
+    *(f"COM{index}" for index in range(1, 10)),
+    *(f"LPT{index}" for index in range(1, 10)),
+}
 
 
 class FetchError(RuntimeError):
@@ -522,7 +530,13 @@ def supported_majors(
 def safe_component(value: str) -> str:
     value = value.strip().replace("/", "_").replace("\\", "_")
     value = re.sub(r"[\x00-\x1f<>:\"|?*]", "_", value)
-    return value.rstrip(". ") or "_"
+    value = value.rstrip(". ") or "_"
+    if value.split(".", 1)[0].upper() in WINDOWS_RESERVED_NAMES:
+        value = f"_{value}"
+    if len(value) > 100:
+        digest = hashlib.sha1(value.encode("utf-8")).hexdigest()[:10]
+        value = f"{value[:80].rstrip('. ')}~{digest}"
+    return value
 
 
 def build_component_map(names: Iterable[str]) -> dict[str, str]:
