@@ -435,13 +435,19 @@ def _parse_version(value: str) -> tuple[int, int, int, int]:
     return tuple(numbers[:4])  # type: ignore[return-value]
 
 
-def _next_safe_version(value: tuple[int, int, int, int]) -> tuple[int, int, int, int]:
-    major, minor, patch, _ = value
-    if patch:
-        return major, minor, patch + 1, 0
-    if minor:
+def _next_safe_version(
+    value: tuple[int, int, int, int], component_count: int
+) -> tuple[int, int, int, int]:
+    # RubyGems treats ~> 2.7 as <3.0, but ~> 2.7.0 as <2.8.0.
+    # The number of written components therefore carries meaning.
+    major, minor, patch, build = value
+    if component_count <= 1:
+        return major + 1, 0, 0, 0
+    if component_count == 2:
         return major, minor + 1, 0, 0
-    return major + 1, 0, 0, 0
+    if component_count == 3:
+        return major, minor, patch + 1, 0
+    return major, minor, patch, build + 1
 
 
 _CONSTRAINT_RE = re.compile(
@@ -461,6 +467,7 @@ def _branch_bounds(
         operator = match.group("op") or "="
         version_text = match.group("version")
         version = _parse_version(version_text)
+        component_count = len(version_text.split("."))
         if operator == ">=":
             if version > lower:
                 lower, lower_inclusive = version, True
@@ -476,9 +483,11 @@ def _branch_bounds(
         elif operator == "~>":
             if version > lower:
                 lower, lower_inclusive = version, True
-            safe_upper = _next_safe_version(version)
+            safe_upper = _next_safe_version(version, component_count)
             if safe_upper < upper:
                 upper, upper_inclusive = safe_upper, False
+        elif operator == "!=":
+            continue
         elif operator == "=":
             if version > lower:
                 lower, lower_inclusive = version, True
