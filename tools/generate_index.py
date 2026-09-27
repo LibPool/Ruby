@@ -452,8 +452,13 @@ def _next_safe_version(
 
 _CONSTRAINT_RE = re.compile(
     r"(?P<op>~>|>=|<=|!=|>|<|=)?\s*"
-    r"(?P<version>\d+(?:\.\d+){0,3})"
+    r"(?P<version>\d+(?:\.\d+)*(?:[-+._][0-9A-Za-z]+)*)"
 )
+
+
+def _version_component_count(value: str) -> int:
+    numeric = re.match(r"\d+(?:\.\d+)*", value)
+    return len(numeric.group(0).split(".")) if numeric else 1
 
 
 def _branch_bounds(
@@ -467,7 +472,7 @@ def _branch_bounds(
         operator = match.group("op") or "="
         version_text = match.group("version")
         version = _parse_version(version_text)
-        component_count = len(version_text.split("."))
+        component_count = _version_component_count(version_text)
         if operator == ">=":
             if version > lower:
                 lower, lower_inclusive = version, True
