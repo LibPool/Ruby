@@ -1,0 +1,27 @@
+# vow
+
+**Tag**: library
+
+## 简介
+
+system() call wrapper that makes it convenient to execute external commands in safe manner
+
+## 官网
+
+- 主页: https://gitlab.com/nugmanov/vow
+- 文档: https://www.rubydoc.info/gems/vow/0.1.0
+- RubyGems: https://rubygems.org/gems/vow
+
+## 历史版本号
+
+- 0.1.0 (2021-09-18)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/vow
+- gem 安装: `gem install vow`
+- Bundler: `gem "vow"`
+- 最新版本: 0.1.0
+- 最新版归档: https://rubygems.org/downloads/vow-0.1.0.gem
+- 版本锁定: `gem "vow", "~> 0.1.0"`
+- 中央仓库: https://rubygems.org/

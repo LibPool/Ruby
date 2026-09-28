@@ -1,0 +1,28 @@
+# rspec-resources
+
+**Tag**: web, testing
+
+## 简介
+
+A concise DSL for testing rails resources with rspec
+
+## 官网
+
+- 主页: https://github.com/dpoetzsch/rspec-resources
+- 文档: https://www.rubydoc.info/gems/rspec-resources/0.2.0
+- RubyGems: https://rubygems.org/gems/rspec-resources
+
+## 历史版本号
+
+- 0.2.0 (2018-04-18)
+- 0.1.0 (2018-04-13)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/rspec-resources
+- gem 安装: `gem install rspec-resources`
+- Bundler: `gem "rspec-resources"`
+- 最新版本: 0.2.0
+- 最新版归档: https://rubygems.org/downloads/rspec-resources-0.2.0.gem
+- 版本锁定: `gem "rspec-resources", "~> 0.2.0"`
+- 中央仓库: https://rubygems.org/

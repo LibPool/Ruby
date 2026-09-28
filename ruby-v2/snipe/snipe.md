@@ -1,0 +1,27 @@
+# snipe
+
+**Tag**: library
+
+## 简介
+
+Easily send one-off emails from scripts using MailGun
+
+## 官网
+
+- 主页: https://github.com/fortinmike/snipe
+- 文档: https://www.rubydoc.info/gems/snipe/1.0.0
+- RubyGems: https://rubygems.org/gems/snipe
+
+## 历史版本号
+
+- 1.0.0 (2016-04-20)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/snipe
+- gem 安装: `gem install snipe`
+- Bundler: `gem "snipe"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/snipe-1.0.0.gem
+- 版本锁定: `gem "snipe", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

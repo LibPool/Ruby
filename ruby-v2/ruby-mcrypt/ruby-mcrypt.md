@@ -1,0 +1,114 @@
+# ruby-mcrypt
+
+**Tag**: web, testing, security, networking, tooling, filesystem
+
+## 简介
+
+= Mcrypt - libmcrypt bindings for Ruby
+
+Mcrypt provides Ruby-language bindings for libmcrypt(3), a
+symmetric cryptography library. {Libmcrypt}[http://mcrypt.sourceforge.net/]
+supports lots of different ciphers and encryption modes.
+
+== You will need
+
+* A working Ruby installation (>= 1.8.6 or 1.9)
+* A working libmcrypt installation (2.5.x or 2.6.x, tested with 2.5.8)
+* A sane build environment
+
+== Installation
+
+Install the gem:
+  gem install ruby-mcrypt --test -- --with-mcrypt-dir=/path/to/mcrypt/prefix
+
+If you're installing on Ubuntu: 
+  sudo apt-get install mcrypt libmcrypt-dev
+  gem install ruby-mcrypt
+
+If you want to run the longer test suite, do this instead:
+  MCRYPT_TEST_BRUTE=1 \
+  gem install ruby-mcrypt --test -- --with-mcrypt-dir=/path/to/mcrypt/prefix
+
+Put this in your code:
+  require 'rubygems'
+  require 'mcrypt'
+
+Or in Rails' environment.rb:
+  gem "ruby-mcrypt", :lib => "mcrypt"
+
+== Usage
+
+  crypto = Mcrypt.new(:twofish, :cbc, MY_KEY, MY_IV, :pkcs)
+
+  # encryption and decryption in one step
+  ciphertext = crypto.encrypt(plaintext)
+  plaintext  = crypto.decrypt(ciphertext)
+
+  # encrypt in smaller steps
+  while chunk = $stdin.read(4096)
+    $stdout << crypto.encrypt_more(chunk)
+  end
+  $stdout << crypto.encrypt_finish
+
+  # or decrypt:
+  while chunk = $stdin.read(4096)
+    $stdout << crypto.decrypt_more(chunk)
+  end
+  $stdout << crypto.decrypt_finish
+
+== Known Issues
+
+* Test coverage is lacking.
+
+If you find any bugs, please let the author know.
+
+== Wish List
+
+* IO-like behavior, e.g. crypto.open($stdin) { |stream| ... }
+
+== Author
+
+* Philip Garrett <philgarr at gmail.com>
+
+== Copyright and License
+
+Copyright (c) 2009-2013 Philip Garrett.
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## 官网
+
+- 主页: http://github.com/kingpong/ruby-mcrypt
+- RubyGems: https://rubygems.org/gems/ruby-mcrypt
+
+## 历史版本号
+
+- 0.2.0 (2013-02-24)
+- 0.1.1 (2010-08-23)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/ruby-mcrypt
+- gem 安装: `gem install ruby-mcrypt`
+- Bundler: `gem "ruby-mcrypt"`
+- 最新版本: 0.2.0
+- 最新版归档: https://rubygems.org/downloads/ruby-mcrypt-0.2.0.gem
+- 版本锁定: `gem "ruby-mcrypt", "~> 0.2.0"`
+- 中央仓库: https://rubygems.org/

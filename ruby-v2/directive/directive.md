@@ -1,0 +1,64 @@
+# directive
+
+**Tag**: library
+
+## 简介
+
+Easily create rich, self-documenting gem configuration
+
+## 官网
+
+- 主页: https://github.com/RubyAfterAll/spicerack/tree/main/directive
+- 源码仓库: https://github.com/RubyAfterAll/spicerack/blob/main/directive
+- 更新日志: https://github.com/RubyAfterAll/spicerack/blob/main/directive/CHANGELOG.md
+- RubyGems: https://rubygems.org/gems/directive
+
+## 历史版本号
+
+- 0.29.3 (2023-12-29)
+- 0.29.2 (2023-02-07)
+- 0.29.1 (2022-08-23)
+- 0.29.0 (2022-04-08)
+- 0.28.0 (2022-04-06)
+- 0.27.2 (2022-02-08)
+- 0.27.1 (2021-09-04)
+- 0.27.0 (2021-08-24)
+- 0.26.0.4 (2021-05-17)
+- 0.26.0.3 (2021-05-04)
+- 0.26.0.2 (2021-04-28)
+- 0.25.8.1 (2021-04-13)
+- 0.25.8 (2021-04-12)
+- 0.25.7 (2021-04-09)
+- 0.25.6 (2021-02-24)
+- 0.25.4 (2021-02-17)
+- 0.25.3 (2020-12-23)
+- 0.25.2 (2020-10-16)
+- 0.25.1 (2020-10-13)
+- 0.25.0 (2020-10-13)
+- 0.24.0 (2020-07-28)
+- 0.23.8 (2020-06-09)
+- 0.23.7 (2020-04-14)
+- 0.23.6 (2020-04-14)
+- 0.23.5 (2020-04-05)
+- 0.23.4 (2020-03-27)
+- 0.23.3 (2020-03-27)
+- 0.23.2 (2020-03-20)
+- 0.23.1.2 (2020-03-10)
+- 0.23.1.1 (2020-03-06)
+- 0.22.8 (2020-03-05)
+- 0.22.7 (2020-03-03)
+- 0.22.6 (2020-03-01)
+- 0.22.4 (2020-02-26)
+- 0.22.3.1 (2020-02-05)
+- 0.22.2 (2020-01-29)
+- 0.22.0 (2020-01-29)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/directive
+- gem 安装: `gem install directive`
+- Bundler: `gem "directive"`
+- 最新版本: 0.29.3
+- 最新版归档: https://rubygems.org/downloads/directive-0.29.3.gem
+- 版本锁定: `gem "directive", "~> 0.29.3"`
+- 中央仓库: https://rubygems.org/

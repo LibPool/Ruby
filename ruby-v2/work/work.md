@@ -1,0 +1,28 @@
+# work
+
+**Tag**: filesystem
+
+## 简介
+
+Anti-procrastination via hosts file manipulation.
+
+## 官网
+
+- 主页: https://github.com/timblair/work
+- 问题追踪: https://github.com/timblair/work/issues
+- RubyGems: https://rubygems.org/gems/work
+
+## 历史版本号
+
+- 0.2.0 (2011-05-17)
+- 0.1.0 (2011-05-17)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/work
+- gem 安装: `gem install work`
+- Bundler: `gem "work"`
+- 最新版本: 0.2.0
+- 最新版归档: https://rubygems.org/downloads/work-0.2.0.gem
+- 版本锁定: `gem "work", "~> 0.2.0"`
+- 中央仓库: https://rubygems.org/

@@ -1,0 +1,47 @@
+# belphanior-calendar-watcher-servant
+
+**Tag**: web, testing, networking, filesystem
+
+## 简介
+
+Watches a specified iCal-format calendar for events. When the time
+for an event comes, sends the name of the event to a servant that
+supports the "commandable" role
+(http://belphanior.net/roles/commandable/v1).
+
+For example, say you have an iCal at www.foo.com/calendar that has an entry
+named "wake me up" at 10AM today. If you have a servant at 127.0.0.1:3000
+that supports "commandable" and understands the "wake me up" command,
+you could run the calendar_watcher_servant with a servant_config file
+that looks as follows:
+{
+  "ip":"127.0.0.1",
+  "port":"4000",
+  "calendar url":"http://www.foo.com/calendar"
+  "servant url":"http://127.0.0.1:3000"
+  "update seconds":"60"
+}
+
+With this configuration, the calendar watcher servant will check the
+calendar every 60 seconds for new events. When it checks after 10AM,
+it will discover the "wake me up" event and send it to the servant at
+127.0.0.1:3000.
+
+## 官网
+
+- 主页: http://belphanior.net
+- RubyGems: https://rubygems.org/gems/belphanior-calendar-watcher-servant
+
+## 历史版本号
+
+- 0.0.1 (2012-11-04)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/belphanior-calendar-watcher-servant
+- gem 安装: `gem install belphanior-calendar-watcher-servant`
+- Bundler: `gem "belphanior-calendar-watcher-servant"`
+- 最新版本: 0.0.1
+- 最新版归档: https://rubygems.org/downloads/belphanior-calendar-watcher-servant-0.0.1.gem
+- 版本锁定: `gem "belphanior-calendar-watcher-servant", "~> 0.0.1"`
+- 中央仓库: https://rubygems.org/

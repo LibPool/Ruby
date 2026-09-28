@@ -1,0 +1,27 @@
+# apotomo-datatable
+
+**Tag**: template, data
+
+## 简介
+
+A jQuery Datatable widget built on Apotomo. Render a jQuery datatable for a model/controller using as little as a couple lines of code.
+
+## 官网
+
+- 主页: https://github.com/jasonpvp/apotomo-datatable
+- RubyGems: https://rubygems.org/gems/apotomo-datatable
+
+## 历史版本号
+
+- 0.0.2 (2013-04-12)
+- 0.0.1 (2013-02-06)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/apotomo-datatable
+- gem 安装: `gem install apotomo-datatable`
+- Bundler: `gem "apotomo-datatable"`
+- 最新版本: 0.0.2
+- 最新版归档: https://rubygems.org/downloads/apotomo-datatable-0.0.2.gem
+- 版本锁定: `gem "apotomo-datatable", "~> 0.0.2"`
+- 中央仓库: https://rubygems.org/

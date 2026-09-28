@@ -1,0 +1,27 @@
+# cubit
+
+**Tag**: library
+
+## 简介
+
+Unit localizer
+
+## 官网
+
+- 主页: https://github.com/joshgreenberg/cubit
+- 文档: https://www.rubydoc.info/gems/cubit/0.0.1
+- RubyGems: https://rubygems.org/gems/cubit
+
+## 历史版本号
+
+- 0.0.1 (2017-10-04)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/cubit
+- gem 安装: `gem install cubit`
+- Bundler: `gem "cubit"`
+- 最新版本: 0.0.1
+- 最新版归档: https://rubygems.org/downloads/cubit-0.0.1.gem
+- 版本锁定: `gem "cubit", "~> 0.0.1"`
+- 中央仓库: https://rubygems.org/

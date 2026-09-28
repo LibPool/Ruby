@@ -1,0 +1,33 @@
+# ulid-ruby
+
+**Tag**: library
+
+## 简介
+
+Ruby library providing support for Universally unique Lexicographically
+    Sortable Identifiers. ULIDs are helpful in systems where you need to
+    generate ID values that are absolutely lexicographically sortable by time,
+    regardless of where they were generated.
+
+## 官网
+
+- 主页: https://github.com/abachman/ulid-ruby
+- 文档: https://www.rubydoc.info/gems/ulid-ruby/1.0.2
+- RubyGems: https://rubygems.org/gems/ulid-ruby
+
+## 历史版本号
+
+- 1.0.2 (2022-01-19)
+- 1.0.0 (2017-05-24)
+- 0.1.1 (2017-05-05)
+- 0.1.0 (2017-05-05)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/ulid-ruby
+- gem 安装: `gem install ulid-ruby`
+- Bundler: `gem "ulid-ruby"`
+- 最新版本: 1.0.2
+- 最新版归档: https://rubygems.org/downloads/ulid-ruby-1.0.2.gem
+- 版本锁定: `gem "ulid-ruby", "~> 1.0.2"`
+- 中央仓库: https://rubygems.org/

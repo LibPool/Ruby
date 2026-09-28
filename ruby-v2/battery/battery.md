@@ -1,0 +1,26 @@
+# battery
+
+**Tag**: web
+
+## 简介
+
+API to your laptop's battery.
+
+## 官网
+
+- 主页: https://github.com/qertoip/battery
+- RubyGems: https://rubygems.org/gems/battery
+
+## 历史版本号
+
+- 1.0.0 (2012-03-25)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/battery
+- gem 安装: `gem install battery`
+- Bundler: `gem "battery"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/battery-1.0.0.gem
+- 版本锁定: `gem "battery", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

@@ -1,0 +1,27 @@
+# numerical_notation
+
+**Tag**: library
+
+## 简介
+
+Simplified numerical notations for easier comprehension of large numbers.
+
+## 官网
+
+- 文档: https://www.rubydoc.info/gems/numerical_notation/1.0.0
+- RubyGems: https://rubygems.org/gems/numerical_notation
+
+## 历史版本号
+
+- 1.0.0 (2024-03-21)
+- 0.0.2 (2024-03-20)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/numerical_notation
+- gem 安装: `gem install numerical_notation`
+- Bundler: `gem "numerical_notation"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/numerical_notation-1.0.0.gem
+- 版本锁定: `gem "numerical_notation", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

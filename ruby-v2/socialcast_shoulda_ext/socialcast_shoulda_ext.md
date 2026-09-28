@@ -1,0 +1,153 @@
+# socialcast_shoulda_ext
+
+**Tag**: web, testing, serialization, networking, template, tooling, filesystem
+
+## 简介
+
+{<img src="https://secure.travis-ci.org/socialcast/socialcast-shoulda-ext.png?branch=master" alt="Build Status" />}[http://travis-ci.org/socialcast/socialcast-shoulda-ext]
+
+= Socialcast Shoulda Extensions
+Adds new matchers and functionality to the shoulda test library
+
+= Installation
+
+In your Gemfile:
+
+  group :test do
+    gem 'socialcast_shoulda_ext', :git => 'git@github.com:socialcast/socialcast-shoulda-ext.git', :require => 'shoulda_ext'
+  end
+  
+If you want to include the trigger_callbacks matcher, also add the following to your test helper:
+
+  ShouldaExt::Matchers::TriggerCallbackMatcher.attach_active_record_callback_hooks!
+
+= Matchers
+
+== RecordCountChangeMatcher
+Test if the count for a model has changed, and by how much.  Requires the context_with_matcher_before_hooks patch, which is included by default.
+
+Provides the following matcher methods:
+
+- create_record(klass_or_symbol)
+  Alias for change_record_count.for(klass_or_symbol).by(1)
+
+- create_records(klass_or_symbol, amount)
+  Alias for change_record_count.for(klass_or_symbol).by(amount)
+
+- destroy_record(klass_or_symbol)
+  Alias for change_record_count.for(klass_or_symbol).by(-1)
+
+- destroy_records(klass_or_symbol, amount) 
+  Alias for change_record_count.for(klass_or_symbol).by(-amount)
+
+- change_record_count
+  Tests the difference in record count before and after the current setup/subject block
+  Can be used with the follow methods:
+  - for(klass_or_symbol)
+    Provides the class which the test is being performed on.  Can be a constant or a symbol
+
+  - by(amount)
+    Provides an expected difference for the number of records for the specified class.
+    Excluding this number will allow the matcher to check for any difference
+
+Examples:
+
+  context "creating a blog article" do
+
+    context "with good parameters" do
+      setup do
+        post :create, :blog => {:title => 'my blog post', :body => 'Ipsum lorem...'}
+      end
+      should create_record :blog
+    end
+
+    context "without a body" do
+      setup do
+        post :create, :blog => {:title => 'my blog post' }
+      end
+      should_not create_record Blog
+    end
+
+  end
+  
+== RespondWithJson
+Check if the controller's response is json
+   
+Examples:
+
+  context ":index.json" do
+    setup do
+      get :index, :format => 'json'
+    end
+    # Just check to see that the response was json
+    should respond_with_json  
+
+    # Evaluate the hash produced by the json yourself
+    should respond_with_json { |json| json.first['blog']['title'] == 'blog post 1'}
+  
+    # Provide an exact match
+    should respond_with_json.exactly(['blog' => {'id' => 1, 'title' => 'blog post 1'}])
+
+    # Provide an exact match with a block
+    should response_with_json.exactly{ |json| JSON.parse(Blog.all.to_json)}
+  end
+ 
+  context ":index.html" do
+    setup do
+      get :index
+    end
+ 
+    # or the negation
+    should_not respond_with_json
+  end
+
+== TriggerCallbackMatcher
+
+Test if create, update, destroy, or save callbacks were triggered.
+
+Requires running
+ShouldaExt::Matchers::TriggerCallbackMatcher.attach_active_record_callback_hooks!
+in your test suite in order to work properly.
+
+Examples:
+
+  context "doing nothing to a record" do
+    subject { Blog.new :title => 'blog title' }
+    should_not trigger_callbacks
+  end
+
+  context "creating a record" do
+    subject { Blog.create! :title => 'blog title' }
+    should trigger_callbacks.for :create
+    should_not trigger_callbacks.for :update, :destroy
+  end
+
+= Integrations
+
+Currently only integrates with test/unit.  RSpec support to come.
+
+= Shoulda Extensions
+
+== ContextWithMatcherBeforeHooks
+
+Adds the ability to define a 'before' method on any method which will be run before each context's setup/subject block.  Used by RecordCountChangeMatcher to record the number of records before the tested operation takes place.
+
+## 官网
+
+- 主页: http://github.com/socialcast/socialcast-shoulda-ext
+- RubyGems: https://rubygems.org/gems/socialcast_shoulda_ext
+
+## 历史版本号
+
+- 0.1.4 (2012-04-24)
+- 0.1.2 (2012-01-06)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/socialcast_shoulda_ext
+- gem 安装: `gem install socialcast_shoulda_ext`
+- Bundler: `gem "socialcast_shoulda_ext"`
+- 最新版本: 0.1.4
+- 最新版归档: https://rubygems.org/downloads/socialcast_shoulda_ext-0.1.4.gem
+- 版本锁定: `gem "socialcast_shoulda_ext", "~> 0.1.4"`
+- 中央仓库: https://rubygems.org/

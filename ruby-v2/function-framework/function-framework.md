@@ -1,0 +1,26 @@
+# function-framework
+
+**Tag**: library
+
+## 简介
+
+This gem is empty. It protects against brandjacking. You are welcome. If you think it is yours to own, just contact me.
+
+## 官网
+
+- 文档: https://www.rubydoc.info/gems/function-framework/9001.0
+- RubyGems: https://rubygems.org/gems/function-framework
+
+## 历史版本号
+
+- 9001.0 (2021-05-22)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/function-framework
+- gem 安装: `gem install function-framework`
+- Bundler: `gem "function-framework"`
+- 最新版本: 9001.0
+- 最新版归档: https://rubygems.org/downloads/function-framework-9001.0.gem
+- 版本锁定: `gem "function-framework", "~> 9001.0"`
+- 中央仓库: https://rubygems.org/

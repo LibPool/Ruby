@@ -1,0 +1,31 @@
+# sidekiq-killswitch
+
+**Tag**: library
+
+## 简介
+
+Cross-host Sidekiq worker killswitches
+
+## 官网
+
+- 主页: https://github.com/square/sidekiq-killswitch
+- RubyGems: https://rubygems.org/gems/sidekiq-killswitch
+
+## 历史版本号
+
+- 1.1.2 (2025-02-03)
+- 1.1.1 (2024-11-06)
+- 1.1.0 (2024-07-01)
+- 1.0.0 (2018-02-20)
+- 1.0.0.pre2 (2017-08-23)
+- 1.0.0.pre1 (2017-08-21)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/sidekiq-killswitch
+- gem 安装: `gem install sidekiq-killswitch`
+- Bundler: `gem "sidekiq-killswitch"`
+- 最新版本: 1.1.2
+- 最新版归档: https://rubygems.org/downloads/sidekiq-killswitch-1.1.2.gem
+- 版本锁定: `gem "sidekiq-killswitch", "~> 1.1.2"`
+- 中央仓库: https://rubygems.org/

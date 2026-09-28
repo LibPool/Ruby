@@ -1,0 +1,28 @@
+# jzimmek-easy_dsl
+
+**Tag**: tooling
+
+## 简介
+
+EasyDSL provides common functionality to build a ruby based internal DSL
+
+## 官网
+
+- 主页: http://github.com/jzimmek/easy_dsl
+- 文档: https://www.rubydoc.info/gems/jzimmek-easy_dsl/0.1.2
+- RubyGems: https://rubygems.org/gems/jzimmek-easy_dsl
+
+## 历史版本号
+
+- 0.1.1 (2014-08-11)
+- 0.1.2 (2014-08-11)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/jzimmek-easy_dsl
+- gem 安装: `gem install jzimmek-easy_dsl`
+- Bundler: `gem "jzimmek-easy_dsl"`
+- 最新版本: 0.1.2
+- 最新版归档: https://rubygems.org/downloads/jzimmek-easy_dsl-0.1.2.gem
+- 版本锁定: `gem "jzimmek-easy_dsl", "~> 0.1.2"`
+- 中央仓库: https://rubygems.org/

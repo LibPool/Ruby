@@ -1,0 +1,27 @@
+# omniauth-dbc
+
+**Tag**: security
+
+## 简介
+
+Official OmniAuth strategy for DevBootcamp Auth.
+
+## 官网
+
+- 主页: https://github.com/socrates-api/omniauth-dbc
+- 文档: https://www.rubydoc.info/gems/omniauth-dbc/1.0.0
+- RubyGems: https://rubygems.org/gems/omniauth-dbc
+
+## 历史版本号
+
+- 1.0.0 (2013-08-22)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/omniauth-dbc
+- gem 安装: `gem install omniauth-dbc`
+- Bundler: `gem "omniauth-dbc"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/omniauth-dbc-1.0.0.gem
+- 版本锁定: `gem "omniauth-dbc", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

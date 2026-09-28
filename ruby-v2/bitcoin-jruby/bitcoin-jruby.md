@@ -1,0 +1,28 @@
+# bitcoin-jruby
+
+**Tag**: library
+
+## 简介
+
+Bitcoin-J + JRuby. A full Bitcoin solution using Bitcoin-J under the hood
+
+## 官网
+
+- 主页: https://github.com/czaks/bitcoin-jruby
+- 文档: https://www.rubydoc.info/gems/bitcoin-jruby/0.0.2
+- RubyGems: https://rubygems.org/gems/bitcoin-jruby
+
+## 历史版本号
+
+- 0.0.2-java (2014-03-14)
+- 0.0.1-java (2014-03-12)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/bitcoin-jruby
+- gem 安装: `gem install bitcoin-jruby`
+- Bundler: `gem "bitcoin-jruby"`
+- 最新版本: 0.0.2
+- 最新版归档: https://rubygems.org/downloads/bitcoin-jruby-0.0.2.gem
+- 版本锁定: `gem "bitcoin-jruby", "~> 0.0.2"`
+- 中央仓库: https://rubygems.org/

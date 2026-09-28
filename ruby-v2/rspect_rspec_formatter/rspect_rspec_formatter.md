@@ -1,0 +1,30 @@
+# rspect_rspec_formatter
+
+**Tag**: testing, filesystem
+
+## 简介
+
+edit spec helper file to improve readability of test results
+
+## 官网
+
+- 主页: https://github.com/harrywynnwill/rspect_rspec_formatter.git
+- 文档: https://www.rubydoc.info/gems/rspect_rspec_formatter/0.0.6
+- RubyGems: https://rubygems.org/gems/rspect_rspec_formatter
+
+## 历史版本号
+
+- 0.0.6 (2016-06-10)
+- 0.0.5 (2016-06-10)
+- 0.0.3 (2016-06-10)
+- 0.0.2 (2016-06-10)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/rspect_rspec_formatter
+- gem 安装: `gem install rspect_rspec_formatter`
+- Bundler: `gem "rspect_rspec_formatter"`
+- 最新版本: 0.0.6
+- 最新版归档: https://rubygems.org/downloads/rspect_rspec_formatter-0.0.6.gem
+- 版本锁定: `gem "rspect_rspec_formatter", "~> 0.0.6"`
+- 中央仓库: https://rubygems.org/

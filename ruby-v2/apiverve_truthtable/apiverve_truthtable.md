@@ -1,0 +1,29 @@
+# apiverve_truthtable
+
+**Tag**: web, tooling
+
+## 简介
+
+Truth Table Generator creates complete truth tables for boolean expressions with support for AND, OR, NOT, XOR, NAND, and NOR operators.
+
+## 官网
+
+- 主页: https://apiverve.com/marketplace/truthtable?utm_source=ruby&utm_medium=homepage
+- 源码仓库: https://github.com/apiverve/truthtable-API/tree/main/ruby
+- 文档: https://docs.apiverve.com/ref/truthtable
+- 更新日志: https://apiverve.com/changelog
+- RubyGems: https://rubygems.org/gems/apiverve_truthtable
+
+## 历史版本号
+
+- 1.2.0 (2026-07-16)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/apiverve_truthtable
+- gem 安装: `gem install apiverve_truthtable`
+- Bundler: `gem "apiverve_truthtable"`
+- 最新版本: 1.2.0
+- 最新版归档: https://rubygems.org/downloads/apiverve_truthtable-1.2.0.gem
+- 版本锁定: `gem "apiverve_truthtable", "~> 1.2.0"`
+- 中央仓库: https://rubygems.org/

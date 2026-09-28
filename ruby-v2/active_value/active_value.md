@@ -1,0 +1,31 @@
+# active_value
+
+**Tag**: library
+
+## 简介
+
+In a class inherited this class, constant variables get the behavior like records of ActiveRecord.
+
+## 官网
+
+- 主页: https://github.com/hiratai/active_value
+- 文档: https://www.rubydoc.info/gems/active_value/1.0.2
+- RubyGems: https://rubygems.org/gems/active_value
+
+## 历史版本号
+
+- 1.0.2 (2021-01-05)
+- 1.0.1 (2021-01-05)
+- 1.0.0 (2021-01-05)
+- 0.1.1 (2020-04-16)
+- 0.1.0 (2019-10-21)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/active_value
+- gem 安装: `gem install active_value`
+- Bundler: `gem "active_value"`
+- 最新版本: 1.0.2
+- 最新版归档: https://rubygems.org/downloads/active_value-1.0.2.gem
+- 版本锁定: `gem "active_value", "~> 1.0.2"`
+- 中央仓库: https://rubygems.org/

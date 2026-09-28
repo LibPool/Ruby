@@ -1,0 +1,28 @@
+# padrino-grape
+
+**Tag**: library
+
+## 简介
+
+compatibility module for padrino, to make grape mountable
+
+## 官网
+
+- 主页: https://github.com/adamluzsi/padrino-grape
+- 文档: https://www.rubydoc.info/gems/padrino-grape/1.0.0
+- RubyGems: https://rubygems.org/gems/padrino-grape
+
+## 历史版本号
+
+- 1.0.0 (2014-04-09)
+- 1.0.0.rc (2014-04-08)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/padrino-grape
+- gem 安装: `gem install padrino-grape`
+- Bundler: `gem "padrino-grape"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/padrino-grape-1.0.0.gem
+- 版本锁定: `gem "padrino-grape", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

@@ -1,0 +1,33 @@
+# active_record_encrypted_string
+
+**Tag**: security
+
+## 简介
+
+Generates encrypted_string type that transparently encrypt and decrypt string value to ActiveRecord.
+
+## 官网
+
+- 主页: https://github.com/kamillle/active_record_encrypted_string
+- 更新日志: https://github.com/kamillle/active_record_encrypted_string/CHANGELOG.md
+- RubyGems: https://rubygems.org/gems/active_record_encrypted_string
+
+## 历史版本号
+
+- 1.4.0 (2021-12-17)
+- 1.3.1 (2021-11-20)
+- 1.3.0 (2020-12-21)
+- 1.2.1 (2020-12-14)
+- 1.2.0 (2020-11-23)
+- 1.1.0 (2020-06-28)
+- 1.0.0 (2020-06-13)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/active_record_encrypted_string
+- gem 安装: `gem install active_record_encrypted_string`
+- Bundler: `gem "active_record_encrypted_string"`
+- 最新版本: 1.4.0
+- 最新版归档: https://rubygems.org/downloads/active_record_encrypted_string-1.4.0.gem
+- 版本锁定: `gem "active_record_encrypted_string", "~> 1.4.0"`
+- 中央仓库: https://rubygems.org/

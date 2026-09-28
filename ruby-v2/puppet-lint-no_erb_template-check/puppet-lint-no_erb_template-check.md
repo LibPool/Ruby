@@ -1,0 +1,30 @@
+# puppet-lint-no_erb_template-check
+
+**Tag**: template, tooling
+
+## 简介
+
+Extends puppet-lint to ensure there are no calls to the template
+    or inline_template function as an aid to migrating to epp templates.
+
+## 官网
+
+- 主页: https://github.com/deanwilson/puppet-lint-no_erb_template-check
+- 文档: https://www.rubydoc.info/gems/puppet-lint-no_erb_template-check/1.0.0
+- RubyGems: https://rubygems.org/gems/puppet-lint-no_erb_template-check
+
+## 历史版本号
+
+- 1.0.0 (2020-12-08)
+- 0.1.1 (2016-08-21)
+- 0.1.0 (2016-07-04)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/puppet-lint-no_erb_template-check
+- gem 安装: `gem install puppet-lint-no_erb_template-check`
+- Bundler: `gem "puppet-lint-no_erb_template-check"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/puppet-lint-no_erb_template-check-1.0.0.gem
+- 版本锁定: `gem "puppet-lint-no_erb_template-check", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

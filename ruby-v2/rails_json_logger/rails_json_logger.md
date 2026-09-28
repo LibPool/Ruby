@@ -1,0 +1,27 @@
+# rails_json_logger
+
+**Tag**: web, serialization
+
+## 简介
+
+Rails JSON Logger that depends on the semantic logger gem
+
+## 官网
+
+- 主页: https://github.com/vizcay/rails_json_logger
+- 文档: https://www.rubydoc.info/gems/rails_json_logger/1.0.0
+- RubyGems: https://rubygems.org/gems/rails_json_logger
+
+## 历史版本号
+
+- 1.0.0 (2018-05-03)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/rails_json_logger
+- gem 安装: `gem install rails_json_logger`
+- Bundler: `gem "rails_json_logger"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/rails_json_logger-1.0.0.gem
+- 版本锁定: `gem "rails_json_logger", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

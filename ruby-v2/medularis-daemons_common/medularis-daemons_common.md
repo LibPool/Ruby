@@ -1,0 +1,27 @@
+# medularis-daemons_common
+
+**Tag**: web, cli, networking
+
+## 简介
+
+Library contaning common features shared by the Medularis Click-To-Call Daemons, supporting the ClickFono service (http://www.clickfono.com).
+
+## 官网
+
+- 主页: http://www.medularis.com
+- 文档: https://www.rubydoc.info/gems/medularis-daemons_common/0.0.4
+- RubyGems: https://rubygems.org/gems/medularis-daemons_common
+
+## 历史版本号
+
+- 0.0.4 (2013-05-29)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/medularis-daemons_common
+- gem 安装: `gem install medularis-daemons_common`
+- Bundler: `gem "medularis-daemons_common"`
+- 最新版本: 0.0.4
+- 最新版归档: https://rubygems.org/downloads/medularis-daemons_common-0.0.4.gem
+- 版本锁定: `gem "medularis-daemons_common", "~> 0.0.4"`
+- 中央仓库: https://rubygems.org/

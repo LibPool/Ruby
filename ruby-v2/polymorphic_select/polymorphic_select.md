@@ -1,0 +1,27 @@
+# polymorphic_select
+
+**Tag**: web, template
+
+## 简介
+
+Rails 3.1 Polymorphic Select view helpers and model support
+
+## 官网
+
+- 主页: https://github.com/geoffgarside/polymorphic_select
+- RubyGems: https://rubygems.org/gems/polymorphic_select
+
+## 历史版本号
+
+- 0.0.2 (2012-01-23)
+- 0.0.1 (2011-10-04)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/polymorphic_select
+- gem 安装: `gem install polymorphic_select`
+- Bundler: `gem "polymorphic_select"`
+- 最新版本: 0.0.2
+- 最新版归档: https://rubygems.org/downloads/polymorphic_select-0.0.2.gem
+- 版本锁定: `gem "polymorphic_select", "~> 0.0.2"`
+- 中央仓库: https://rubygems.org/

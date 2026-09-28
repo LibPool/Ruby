@@ -1,0 +1,28 @@
+# corfu
+
+**Tag**: library
+
+## 简介
+
+A framework which allows the optimisation of the performance of magnetically confined fusion devices.
+
+## 官网
+
+- 主页: http://corfu.tech
+- 文档: https://www.rubydoc.info/gems/corfu/0.0.1
+- RubyGems: https://rubygems.org/gems/corfu
+
+## 历史版本号
+
+- 0.0.1 (2018-03-19)
+- 0.0.0 (2018-03-19)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/corfu
+- gem 安装: `gem install corfu`
+- Bundler: `gem "corfu"`
+- 最新版本: 0.0.1
+- 最新版归档: https://rubygems.org/downloads/corfu-0.0.1.gem
+- 版本锁定: `gem "corfu", "~> 0.0.1"`
+- 中央仓库: https://rubygems.org/

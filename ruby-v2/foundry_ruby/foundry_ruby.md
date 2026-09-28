@@ -1,0 +1,27 @@
+# foundry_ruby
+
+**Tag**: filesystem
+
+## 简介
+
+Read and write Foundry files in Ruby.
+
+## 官网
+
+- 主页: https://github.com/afstanton/foundry_ruby
+- RubyGems: https://rubygems.org/gems/foundry_ruby
+
+## 历史版本号
+
+- 0.0.2 (2023-06-24)
+- 0.0.1 (2023-05-29)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/foundry_ruby
+- gem 安装: `gem install foundry_ruby`
+- Bundler: `gem "foundry_ruby"`
+- 最新版本: 0.0.2
+- 最新版归档: https://rubygems.org/downloads/foundry_ruby-0.0.2.gem
+- 版本锁定: `gem "foundry_ruby", "~> 0.0.2"`
+- 中央仓库: https://rubygems.org/

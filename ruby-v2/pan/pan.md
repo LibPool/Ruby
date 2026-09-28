@@ -1,0 +1,28 @@
+# pan
+
+**Tag**: library
+
+## 简介
+
+A credit card number AKA Primary Account Number (PAN) often needs to be
+    masked or truncated, that is, have "enough" digits made unreadable.
+
+## 官网
+
+- 主页: http://github.com/clearhaus/pan
+- 文档: https://www.rubydoc.info/gems/pan/1.0.0
+- RubyGems: https://rubygems.org/gems/pan
+
+## 历史版本号
+
+- 1.0.0 (2016-06-22)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/pan
+- gem 安装: `gem install pan`
+- Bundler: `gem "pan"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/pan-1.0.0.gem
+- 版本锁定: `gem "pan", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

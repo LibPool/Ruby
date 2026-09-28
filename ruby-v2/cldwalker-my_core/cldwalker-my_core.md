@@ -1,0 +1,27 @@
+# cldwalker-my_core
+
+**Tag**: library
+
+## 简介
+
+My extensions to core ruby classes, similar to activesupport and facets gems.
+
+## 官网
+
+- 主页: http://github.com/cldwalker/my_core
+- 文档: https://www.rubydoc.info/gems/cldwalker-my_core/0.1.0
+- RubyGems: https://rubygems.org/gems/cldwalker-my_core
+
+## 历史版本号
+
+- 0.1.0 (2014-08-11)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/cldwalker-my_core
+- gem 安装: `gem install cldwalker-my_core`
+- Bundler: `gem "cldwalker-my_core"`
+- 最新版本: 0.1.0
+- 最新版归档: https://rubygems.org/downloads/cldwalker-my_core-0.1.0.gem
+- 版本锁定: `gem "cldwalker-my_core", "~> 0.1.0"`
+- 中央仓库: https://rubygems.org/

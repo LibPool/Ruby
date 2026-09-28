@@ -1,0 +1,33 @@
+# deep_sort
+
+**Tag**: library
+
+## 简介
+
+Sort Array/Hash/Enumerable recursively.
+
+## 官网
+
+- 主页: https://github.com/winebarrel/deep_sort
+- 文档: https://www.rubydoc.info/gems/deep_sort/0.1.6
+- RubyGems: https://rubygems.org/gems/deep_sort
+
+## 历史版本号
+
+- 0.1.6 (2016-08-21)
+- 0.1.5 (2016-08-20)
+- 0.1.4 (2016-08-20)
+- 0.1.3 (2016-08-20)
+- 0.1.2 (2016-08-19)
+- 0.1.1 (2016-08-19)
+- 0.1.0 (2016-08-19)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/deep_sort
+- gem 安装: `gem install deep_sort`
+- Bundler: `gem "deep_sort"`
+- 最新版本: 0.1.6
+- 最新版归档: https://rubygems.org/downloads/deep_sort-0.1.6.gem
+- 版本锁定: `gem "deep_sort", "~> 0.1.6"`
+- 中央仓库: https://rubygems.org/

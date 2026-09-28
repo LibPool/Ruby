@@ -1,0 +1,27 @@
+# netfilter-ruby
+
+**Tag**: library
+
+## 简介
+
+Awesome Netfilter management
+
+## 官网
+
+- 主页: http://github.com/netskin/netfilter-ruby
+- 文档: https://www.rubydoc.info/gems/netfilter-ruby/4.2
+- RubyGems: https://rubygems.org/gems/netfilter-ruby
+
+## 历史版本号
+
+- 4.2 (2013-12-20)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/netfilter-ruby
+- gem 安装: `gem install netfilter-ruby`
+- Bundler: `gem "netfilter-ruby"`
+- 最新版本: 4.2
+- 最新版归档: https://rubygems.org/downloads/netfilter-ruby-4.2.gem
+- 版本锁定: `gem "netfilter-ruby", "~> 4.2"`
+- 中央仓库: https://rubygems.org/

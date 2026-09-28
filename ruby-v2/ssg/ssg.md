@@ -1,0 +1,27 @@
+# ssg
+
+**Tag**: tooling
+
+## 简介
+
+ssg is a simple static site generator
+
+## 官网
+
+- 主页: http://github.com/manelli/ssg
+- 文档: https://www.rubydoc.info/gems/ssg/0.0.1
+- RubyGems: https://rubygems.org/gems/ssg
+
+## 历史版本号
+
+- 0.0.1 (2019-04-07)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/ssg
+- gem 安装: `gem install ssg`
+- Bundler: `gem "ssg"`
+- 最新版本: 0.0.1
+- 最新版归档: https://rubygems.org/downloads/ssg-0.0.1.gem
+- 版本锁定: `gem "ssg", "~> 0.0.1"`
+- 中央仓库: https://rubygems.org/

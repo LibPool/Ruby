@@ -1,0 +1,28 @@
+# ruby-multi-progressbar
+
+**Tag**: testing
+
+## 简介
+
+Displays multiple progress bars using Ncurses and ruby-progressbar
+Useful for displaying the status of multiple test runs or multipile threads.
+
+## 官网
+
+- 主页: https://github.com/ShaharHD/ruby-multi-progressbar
+- 文档: https://www.rubydoc.info/gems/ruby-multi-progressbar/1.0.0
+- RubyGems: https://rubygems.org/gems/ruby-multi-progressbar
+
+## 历史版本号
+
+- 1.0.0 (2014-04-11)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/ruby-multi-progressbar
+- gem 安装: `gem install ruby-multi-progressbar`
+- Bundler: `gem "ruby-multi-progressbar"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/ruby-multi-progressbar-1.0.0.gem
+- 版本锁定: `gem "ruby-multi-progressbar", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

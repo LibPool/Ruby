@@ -1,0 +1,33 @@
+# microcms-ruby-sdk
+
+**Tag**: library
+
+## 简介
+
+microCMS Ruby SDK
+
+## 官网
+
+- 主页: https://github.com/microcmsio/microcms-ruby-sdk
+- RubyGems: https://rubygems.org/gems/microcms-ruby-sdk
+
+## 历史版本号
+
+- 1.3.0 (2026-07-14)
+- 1.2.0 (2022-06-02)
+- 1.1.0 (2022-05-12)
+- 1.0.2 (2021-11-08)
+- 1.0.1 (2021-11-05)
+- 1.0.0 (2021-11-01)
+- 0.4.0 (2021-10-29)
+- 0.2.0 (2021-10-29)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/microcms-ruby-sdk
+- gem 安装: `gem install microcms-ruby-sdk`
+- Bundler: `gem "microcms-ruby-sdk"`
+- 最新版本: 1.3.0
+- 最新版归档: https://rubygems.org/downloads/microcms-ruby-sdk-1.3.0.gem
+- 版本锁定: `gem "microcms-ruby-sdk", "~> 1.3.0"`
+- 中央仓库: https://rubygems.org/

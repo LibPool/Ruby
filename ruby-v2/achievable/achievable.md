@@ -1,0 +1,27 @@
+# achievable
+
+**Tag**: web
+
+## 简介
+
+This provides achievement features for rails app.
+
+## 官网
+
+- 主页: http://rubygems.org/gems/achievable
+- RubyGems: https://rubygems.org/gems/achievable
+
+## 历史版本号
+
+- 0.0.2 (2011-04-12)
+- 0.0.1 (2011-04-12)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/achievable
+- gem 安装: `gem install achievable`
+- Bundler: `gem "achievable"`
+- 最新版本: 0.0.2
+- 最新版归档: https://rubygems.org/downloads/achievable-0.0.2.gem
+- 版本锁定: `gem "achievable", "~> 0.0.2"`
+- 中央仓库: https://rubygems.org/

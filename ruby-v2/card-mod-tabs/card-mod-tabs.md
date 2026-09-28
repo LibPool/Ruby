@@ -1,0 +1,46 @@
+# card-mod-tabs
+
+**Tag**: library
+
+## 简介
+
+tabs
+
+## 官网
+
+- 主页: https://decko.org
+- 源码仓库: https://github.com/decko-commons/decko
+- 问题追踪: https://github.com/decko-commons/decko/issues
+- RubyGems: https://rubygems.org/gems/card-mod-tabs
+
+## 历史版本号
+
+- 0.20.0 (2025-11-03)
+- 0.19.1 (2025-09-02)
+- 0.19.0 (2025-05-09)
+- 0.18.1 (2024-11-22)
+- 0.18.0 (2024-10-31)
+- 0.17.0 (2024-06-12)
+- 0.16.0 (2023-11-18)
+- 0.15.6 (2023-05-02)
+- 0.15.5 (2023-04-20)
+- 0.15.4 (2023-04-03)
+- 0.15.3 (2023-03-29)
+- 0.15.1.2 (2023-03-29)
+- 0.15.2.pre1 (2023-03-29)
+- 0.15.1.1 (2023-03-29)
+- 0.15.1 (2023-03-29)
+- 0.15.0 (2023-01-04)
+- 0.14.2 (2022-01-08)
+- 0.14.1 (2022-01-04)
+- 0.14.0 (2021-12-22)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/card-mod-tabs
+- gem 安装: `gem install card-mod-tabs`
+- Bundler: `gem "card-mod-tabs"`
+- 最新版本: 0.20.0
+- 最新版归档: https://rubygems.org/downloads/card-mod-tabs-0.20.0.gem
+- 版本锁定: `gem "card-mod-tabs", "~> 0.20.0"`
+- 中央仓库: https://rubygems.org/

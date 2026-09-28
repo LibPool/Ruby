@@ -1,0 +1,30 @@
+# indexable
+
+**Tag**: web
+
+## 简介
+
+Rack middleware that executes javascript before serving pages to crawlers.
+
+## 官网
+
+- 主页: https://github.com/vikhyat/indexable
+- 文档: https://www.rubydoc.info/gems/indexable/0.1.2
+- RubyGems: https://rubygems.org/gems/indexable
+
+## 历史版本号
+
+- 0.1.2 (2014-02-11)
+- 0.1.1 (2013-12-10)
+- 0.1.0 (2013-12-10)
+- 0.0.4 (2013-12-10)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/indexable
+- gem 安装: `gem install indexable`
+- Bundler: `gem "indexable"`
+- 最新版本: 0.1.2
+- 最新版归档: https://rubygems.org/downloads/indexable-0.1.2.gem
+- 版本锁定: `gem "indexable", "~> 0.1.2"`
+- 中央仓库: https://rubygems.org/

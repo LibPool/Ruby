@@ -1,0 +1,27 @@
+# git-remote-parser
+
+**Tag**: tooling
+
+## 简介
+
+Parse Git Remote URI into Useful object.
+
+## 官网
+
+- 主页: https://github.com/JuanitoFatas/git-remote-parser
+- 文档: https://www.rubydoc.info/gems/git-remote-parser/1.0.0
+- RubyGems: https://rubygems.org/gems/git-remote-parser
+
+## 历史版本号
+
+- 1.0.0 (2016-07-18)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/git-remote-parser
+- gem 安装: `gem install git-remote-parser`
+- Bundler: `gem "git-remote-parser"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/git-remote-parser-1.0.0.gem
+- 版本锁定: `gem "git-remote-parser", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

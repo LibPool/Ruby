@@ -1,0 +1,27 @@
+# ant-client
+
+**Tag**: web, cli
+
+## 简介
+
+Use this gem with a duo with the ant-server gem
+
+## 官网
+
+- 主页: https://github.com/tachomex/ant-client
+- 文档: https://www.rubydoc.info/gems/ant-client/0.1.0
+- RubyGems: https://rubygems.org/gems/ant-client
+
+## 历史版本号
+
+- 0.1.0 (2019-10-07)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/ant-client
+- gem 安装: `gem install ant-client`
+- Bundler: `gem "ant-client"`
+- 最新版本: 0.1.0
+- 最新版归档: https://rubygems.org/downloads/ant-client-0.1.0.gem
+- 版本锁定: `gem "ant-client", "~> 0.1.0"`
+- 中央仓库: https://rubygems.org/

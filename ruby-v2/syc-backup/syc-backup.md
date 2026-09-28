@@ -1,0 +1,92 @@
+# syc-backup
+
+**Tag**: web, database, testing, networking, filesystem, data
+
+## 简介
+
+= Backup utility for database, folders and files
+Backs up a MySQL database, folders and files to a default folder (~/backup) or to a specified folder. If the --cron switch is provided the specified database and files are not backed up rather a cron job of the provided command is added to crontab.
+
+== Install
+The application can be installed with
+    $ gem install syc-backup
+
+== Usage
+Backup a database to the default folder _~/backup_
+    $ sycbackup -d database -uuser -ppass
+
+Backup a MySQL database, a directory and files to the default folder
+    $ sycbackup -d database -uuser -ppass -f directory,file1,file2
+
+Specify a backup folder
+    $ sycbackup backup/folder -d database -uuser -ppass -f directory,file1,file2
+
+Override files in the backup folder if they exist
+    $ sycbackup backup/folder --override -f directory,file1,file2
+
+Don't compress the backup
+    $ sycbackup --no-compress -f directory,file1,file2
+
+Create a cron job that is scheduled every day at 2:30
+    $ sycbackup -d database -uuser -ppass -f directory,file1 --cron 30,2,*,*,*
+
+If the user or password contains characters as '(' you have to escape
+them. A password like 123(56 has to be provided with pass\"123\(56\".
+
+== Usage of --override and --no-compress
+Whether the backup directory and the backup files are time stamped depends how
+--override and --no-compress is set. The results are shown in the table below.
+
+    --override      --no-compress     backup directory      backup file(s)
+         0                0            w/o timestamp         w/ timestamp
+         1                0            w/o timestamp         w/ timestamp
+         0                1            w/  timestamp         uncompressed
+         1                1            w/o timestamp         uncompressed
+
+== Supported Platform
+syc-backup has been tested with 1.9.3
+
+== Notes
+The application backs up the MySQL database with _mysqldump_. The dumpfile has the form yyyymmdd-HHMMSS_databasename.sql. After the files are backed up the dumpfile will be deleted.
+
+If the --no-compress is provided the files are copied to the backup folder. Otherwise they are compressed with _tar cfz YYYYmmdd-HHMMSS_syc-backup.tar.gz_.
+
+If the --override switch is not provided the backup directory will be added a timestamp. So if you create a cron job you should every now and then delete obsolete backup folders.
+
+The source contains lib/backup/file_backup.rb which is not used in the application.
+    
+== Tests
+The tests create folders and files and will be deleted after the tests finish. _MySQLBackup_ needs to run a MySQL database with a database _test_ and a user _user_ with the password _pass_.
+
+The test files live in the test folder and begin with test_.
+
+There is a rake file available which can be used to run all tests with
+    $ rake test
+
+== Links
+* [http://sugaryourcoffee.github.com/syc-backup] - RubyDoc
+* [http://www.github.com/sugaryourcoffee/syc-backup] - Source code on GitHub
+* [http://syc.dyndns.org/drupal/content/backup-drupal-database] - Development notebook
+* [https://rubygems.org/gems/syc-backup] - RubyGems
+
+## 官网
+
+- 主页: http://syc.dyndns.org/drupal
+- RubyGems: https://rubygems.org/gems/syc-backup
+
+## 历史版本号
+
+- 0.0.7 (2013-02-07)
+- 0.0.6 (2013-02-04)
+- 0.0.5 (2013-02-02)
+- 0.0.4 (2013-02-02)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/syc-backup
+- gem 安装: `gem install syc-backup`
+- Bundler: `gem "syc-backup"`
+- 最新版本: 0.0.7
+- 最新版归档: https://rubygems.org/downloads/syc-backup-0.0.7.gem
+- 版本锁定: `gem "syc-backup", "~> 0.0.7"`
+- 中央仓库: https://rubygems.org/

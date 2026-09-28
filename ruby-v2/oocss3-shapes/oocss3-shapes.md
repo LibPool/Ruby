@@ -1,0 +1,27 @@
+# oocss3-shapes
+
+**Tag**: library
+
+## 简介
+
+a pure css3-only icons for compass
+
+## 官网
+
+- 主页: https://github.com/joelmsanto/css3-pure-icons/wiki
+- RubyGems: https://rubygems.org/gems/oocss3-shapes
+
+## 历史版本号
+
+- 0.0.2 (2012-06-10)
+- 0.0.1 (2012-06-09)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/oocss3-shapes
+- gem 安装: `gem install oocss3-shapes`
+- Bundler: `gem "oocss3-shapes"`
+- 最新版本: 0.0.2
+- 最新版归档: https://rubygems.org/downloads/oocss3-shapes-0.0.2.gem
+- 版本锁定: `gem "oocss3-shapes", "~> 0.0.2"`
+- 中央仓库: https://rubygems.org/

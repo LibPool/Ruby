@@ -1,0 +1,26 @@
+# sinatra-dm-auth
+
+**Tag**: web, security
+
+## 简介
+
+sinatra-dm-auth is an extension for Sinatra to add simple user authorization
+
+## 官网
+
+- 主页: http://github.com/daddz/sinatra-dm-auth
+- RubyGems: https://rubygems.org/gems/sinatra-dm-auth
+
+## 历史版本号
+
+- 0.0.1 (2009-10-22)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/sinatra-dm-auth
+- gem 安装: `gem install sinatra-dm-auth`
+- Bundler: `gem "sinatra-dm-auth"`
+- 最新版本: 0.0.1
+- 最新版归档: https://rubygems.org/downloads/sinatra-dm-auth-0.0.1.gem
+- 版本锁定: `gem "sinatra-dm-auth", "~> 0.0.1"`
+- 中央仓库: https://rubygems.org/

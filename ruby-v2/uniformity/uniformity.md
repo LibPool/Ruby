@@ -1,0 +1,31 @@
+# uniformity
+
+**Tag**: library
+
+## 简介
+
+Wrap external services in a uniform package.
+
+## 官网
+
+- 主页: https://github.com/spacebabies/uniformity
+- 文档: https://www.rubydoc.info/gems/uniformity/1.0.0
+- RubyGems: https://rubygems.org/gems/uniformity
+
+## 历史版本号
+
+- 1.0.0 (2020-08-20)
+- 0.9.1 (2020-04-16)
+- 0.9.0 (2020-04-16)
+- 0.2.0 (2020-03-31)
+- 0.1.0 (2019-03-18)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/uniformity
+- gem 安装: `gem install uniformity`
+- Bundler: `gem "uniformity"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/uniformity-1.0.0.gem
+- 版本锁定: `gem "uniformity", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

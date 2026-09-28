@@ -1,0 +1,90 @@
+# tagomatic
+
+**Tag**: web, cli, testing, template, filesystem
+
+## 简介
+
+= tagomatic
+
+Simple command-line mp3 tagger based on mp3info gem. Supports folder-specific configuration files.
+
+Another mp3 tagger the world does not need.
+
+But I needed it. I have a large collection of old mp3 files. From times when tagging was mostly
+based on the file and folder names. When v2 tags where nowhere close..
+
+== Overview
+
+Modes of operation:
+
+* The tagger will try to guess the tags from the full file path by applying a set of known formats.
+* The tagger will apply specific tags given on the command-line.
+* The tagger will match specific formats given on the command-line.
+* Arbitrary combination of the before-mentioned modes.
+
+The scanner supports recursive folder handling. Of course.
+
+Right now v2 tags are the focus.
+
+It is probably best to call this alpha ware.
+
+== Usage
+
+For my genre/artist/album/track.mp3 collection I use this invocation pattern:
+
+tagomatic --underscores --guess --recurse --showtags --errorstops --cleantags /media/music/
+
+Then I add folder-specific .tagomatic or .format= files whenever an error occurs.
+
+== The .tagomatic file
+
+You can put the (long version) of the command line options into folder-specific .tagomatic files.
+These options are then valid only for this folder and sub-folders.
+
+This is useful - for example - if you want to switch guessing off for sub-folders.
+
+== The .format= files
+
+You can add files named .format= to sub-folders. They will be picked up by tagomatic and added as
+custom formats just as if you would have passed them on the command line using the --format option.
+
+Because the slash is not allowed in file names you have to replace it with a vertical dash like in
+this example:
+
+.format=%g|%a|%b|%n - %t.mp3
+
+These formats are valid only for this folder and sub-folders.
+
+== Copyright
+
+Copyright (c) 2009 Daniel Lukic. See LICENSE for details.
+
+## 官网
+
+- 主页: http://github.com/DanielLukic/tagomatic
+- RubyGems: https://rubygems.org/gems/tagomatic
+
+## 历史版本号
+
+- 0.1.9 (2009-11-04)
+- 0.1.8 (2009-11-04)
+- 0.1.7 (2009-11-04)
+- 0.1.6 (2009-11-03)
+- 0.1.5 (2009-11-03)
+- 0.1.4 (2009-11-03)
+- 0.1.3 (2009-11-03)
+- 0.1.2 (2009-11-03)
+- 0.1.1 (2009-11-02)
+- 0.1.0 (2009-11-02)
+- 0.0.3 (2009-11-02)
+- 0.0.2 (2009-11-02)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/tagomatic
+- gem 安装: `gem install tagomatic`
+- Bundler: `gem "tagomatic"`
+- 最新版本: 0.1.9
+- 最新版归档: https://rubygems.org/downloads/tagomatic-0.1.9.gem
+- 版本锁定: `gem "tagomatic", "~> 0.1.9"`
+- 中央仓库: https://rubygems.org/

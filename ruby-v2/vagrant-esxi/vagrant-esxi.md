@@ -1,0 +1,27 @@
+# vagrant-esxi
+
+**Tag**: library
+
+## 简介
+
+Enables Vagrant to work with VMware ESXi guests
+
+## 官网
+
+- 主页: https://github.com/dougm/vagrant-esxi
+- 文档: https://www.rubydoc.info/gems/vagrant-esxi/0.0.1
+- RubyGems: https://rubygems.org/gems/vagrant-esxi
+
+## 历史版本号
+
+- 0.0.1 (2013-10-14)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/vagrant-esxi
+- gem 安装: `gem install vagrant-esxi`
+- Bundler: `gem "vagrant-esxi"`
+- 最新版本: 0.0.1
+- 最新版归档: https://rubygems.org/downloads/vagrant-esxi-0.0.1.gem
+- 版本锁定: `gem "vagrant-esxi", "~> 0.0.1"`
+- 中央仓库: https://rubygems.org/

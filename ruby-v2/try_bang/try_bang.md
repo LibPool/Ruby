@@ -1,0 +1,26 @@
+# try_bang
+
+**Tag**: library
+
+## 简介
+
+It provides Object#try! that tries methods after #respond_to?
+
+## 官网
+
+- 主页: https://github.com/makimoto/try_bang
+- RubyGems: https://rubygems.org/gems/try_bang
+
+## 历史版本号
+
+- 1.0.0 (2013-05-09)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/try_bang
+- gem 安装: `gem install try_bang`
+- Bundler: `gem "try_bang"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/try_bang-1.0.0.gem
+- 版本锁定: `gem "try_bang", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

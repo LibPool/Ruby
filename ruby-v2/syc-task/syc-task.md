@@ -1,0 +1,700 @@
+# syc-task
+
+**Tag**: web, cli, testing, serialization, networking, template, tooling, filesystem, data
+
+## 简介
+
+= Simple task organizer
+syctask can be used to create, plan, prioritize and schedule tasks.
+
+==Install
+The application can be installed with
+    $ gem install syc-task
+
+== Usage
+syctask provides basic task organizer functions as create, update, list and 
+complete a task. Additional functions are to plan tasks you want to accomplish 
+today. If you are not sure in which sequence to conduct the task you can 
+prioritize them with a pair wise comparisson. You can time tasks with start and 
+stop and you can finally extract tasks from a minutes of meetings file. The 
+schedule task command will print a graphical timeline of the working day 
+assigning the planned tasks to the timeline. Busy times are marked red. 
+Meetings are listed with associated tasks that are assigned to the meetings. 
+With the statistics command you can print statistical evaluation of tasks 
+duration and count.
+
+===Create tasks with new
+Create a new task in the default task directory ~/.tasks
+    $ syctask new "My first task"
+
+Provide a description
+    $ syctask new "My first task" --description "Explanation of my first task"
+
+Schedule a task with a follow-up and due date
+    $ syctask new "My first task" --follow-up "2013-02-25" --due "2013-03-11"
+
+Set a proirity for a task
+    $ syctask new "My first task" --prio 3
+
+Prompt for task input
+    $ syctask new
+will prompt for task titles. Ctrl-D will end input.
+
+Except for --description you can also provide short forms for the options.
+
+===Create tasks by scanning from files
+When writing minutes of meetings tasks that should be followed up in syctask
+can be annotated so they will be recognized by the scan command. The following
+structure shows how to annotade tasks
+
+    Some text before
+
+    @task;
+    title;description;follow_up;due_date,prio
+    Schedule meeting;Invite all developers;2016-09-12;2016-10-12;1
+    Write letter;Practice writing letters;;;3
+
+    Some text after
+
+The above annotation will only scan the next task because of the singular 'task'
+where the task values are separated with ';'. The line after the annotation
+'@task' lists the sequence of the fields of the task. It is also possible to 
+list the tasks in a table, e.g. markdown
+
+    Some text before
+
+    @tasks|
+
+    title           |description               |follow_up |due_date  |prio
+    ----------------|--------------------------|----------|----------|----
+    Schedule meeting|Invite all developers     |2016-09-12|2016-10-12|1
+    Write letter    |Practice writing letters  |          |          |3
+
+    Some text after
+
+    Call partner    |Ask for project's progress|2016-09-14|          |1
+
+    Even more text 
+
+The example above scans all tasks due to the plural 'tasks'. It also scans all
+tasks that are separated with non-task text and occur after the annotation and 
+confirm to the field structure. Lines that start with '-' will be ignored. So 
+if you want to skip only a few tasks within a task list prepend them with '-'.
+If you have tasks with different fields then you have to add another annotation
+with the new field structure. 
+
+Possible fields are
+
+    title       - the title of the task - mandatory field!
+    description - the description of the task
+    follow_up   - the follow-up date of the task in the form yyyy-mm-dd
+    due_date    - the due-date of the task in the form yyyy-mm-dd
+    prio        - the priority of the task
+    tags        - tags the task is annotated with
+    note        - a note for the task
+
+Note: follow_up and due_date can also be written as Follow-up and Due-Date. Also
+case is ignored.
+
+As inidcated in the list the title column is mandatory. Without the title column
+scan will raise an error during a scan. 
+
+Fields that are not part of the above list will be ignored. 
+
+    # | Title                                | Who
+    - | ------------------------------------ | ---
+    1 | Schedule meeting with all developers | Me
+    2 | Write letter to practice writing     | You
+
+In the table only the column Title will be scanned. The '#' and 'Who' column 
+will be ignored during scan. This table is also a table for a minimum scan
+structure.  You need at least to provide a title column so the scan function
+will recognize the table as a task list.
+
+Scanning tasks from files
+
+    $ syctask scan 2016-09-10-mom.md 2016-09-09-mom.md
+
+===Plan tasks
+The plan command will print tasks and prompts whether to (a)dd or (s)kip the 
+task. If (q)uit is selected the tasks already added will be add to the today's 
+task list. If (c)omplete is selected the complete task will be printed and the 
+user will be prompted again for adding the task.
+
+Invoke plan without filter
+    $ syctask plan
+    1 - My first task
+    (a)dd, (c)omplete, (s)kip, (q)uit? a
+    Duration (1 = 15 minutes, return 30 minutes): 3
+    --> 1 task(s) planned
+
+Invoke plan with a filter
+    $ syctask plan --id "1,3,5,8"
+    1 - My first task
+    (a)dd, (c)omplete, (s)kip, (q)uit?
+
+Move tasks to another days plan
+    $ syctask plan today --move tomorrow --id 3,5
+
+This will move the tasks with ID 3 and 5 from the today's plan to the 
+tomorrow's plan. The duration will be set to the remaining processing time but 
+at least to 30 minutes.
+
+===Prioritize tasks
+Planned tasks can be prioritized in a pair wise comparisson. So each task is
+compared to all other tasks. The task with the highest priority will bubble on
+top followed by the task with the next highest priority and so on.
+
+    $ syctask prio
+     1: My first task
+     2: My second task
+    Task 1 has (h)igher or (l)ower priority, or (q)uit: h
+     1: My first task
+     2: My third task
+    Task 1 has (h)igher or (l)ower priority, or (q)uit: l
+     1: My third task
+     2: My fourth task
+    Task 1 has (h)igher or (l)ower priority, or (q)uit: h
+    ...
+
+syctask schedule will then print tasks as follows
+    Tasks
+    -----
+    0: 10 - My fourth task
+    1:  7 - My third task
+    2:  3 - My first task
+    3:  9 - My second task 
+    ...
+    
+Instead of conducting pairwise comparisson the order of the tasks in the plan
+can be specified with the -o flag
+    $ syctask plan -o 7,3,10,9
+
+The plan or schedule command will print the tasks in the specified order
+    Tasks
+    -----
+    0:  7 - My third task
+    1:  3 - My first task
+    2: 10 - My fourth task
+    3:  9 - My second task
+
+If only a part of the tasks is provided the rest of the tasks is appended to
+the end of the task plan. If you specify a position flag the prioritized tasks 
+are added at the provided position.
+    $ syctask plan -o 7,9 -p 2
+    Tasks
+    -----
+    0:  3 - My first task
+    1: 10 - My fourth task
+    2:  7 - My third task
+    3:  9 - My second task
+
+===Create schedule
+The schedule command will print a graphical schedule with assigning the tasks
+selected with plan. When schedule command is invoked the planned tasks are 
+added at or after the current time within the time schedule. Tasks that are done
+and scheduled in the future are not shown. Tasks done and in the past are shown
+with the actual processing time.
+
+The day starts at 00:00 and ends at 23:59. So 24:00 should be 00:00.
+
+Create a schedule with working time from 8a.m. to 6p.m. and meetings between
+9a.m. and 9.30a.m. and 1p.m. and 2.45p.m.
+    $ syctask schedule -w "8:00-18:00" -b "9:00-9:30,13:00-14:45"
+
+Add titles to the meetings
+    $ syctask schedule -m "Project status,Management meeting"
+
+The output will be
+    Meetings
+    --------
+    A - Project status
+    B - Management meeting
+
+        A               B
+    xxx-///-|---|---|---///////-|---|---|---|
+    8   9  10  11  12  13  14  15  16  17  18
+    1
+
+    Tasks
+    -----
+    0 - 1: My first task
+
+Adding a task to a meeting
+    $ syctask schedule -a "A:0"
+
+will print
+    Meetings
+    --------
+    A - Project status
+        1 - My first task
+    B - Management meeting
+
+        A               B
+    ----///-|---|---|---///////-|---|---|---|
+    8   9  10  11  12  13  14  15  16  17  18
+    
+
+    Tasks
+    -----
+    0: 1 - My first task
+
+A task that is re-scheduled with
+    $ syctask update 1 -f tomorrow
+
+will be shown as done (green) in the schedule and instead of separator - it
+shows ~.
+    
+    Tasks
+    ----
+    0: 1 ~ My first task
+
+A started task will be indicated by *
+    
+    $ syctask start 1
+    $ syctask sche
+    Tasks
+    -----
+    0: 1 * My first task
+
+===List tasks
+List tasks that are not marked as done in short form
+    $ syctask list
+
+List all tasks in long form
+    $ syctask list --all --complete
+
+Search tasks that match a pattern
+    $ syctask list --id "<10" --follow_up ">2013-02-25" --title "My \w task"
+
+===Inspect tasks
+Lists each unplanned task and allows to edit, delete, mark as done or plan for
+today or another day
+    $ syctask inspect
+    0016 Create command for inspection
+    (e)dit, (d)one, de(l)ete, (p)lan, da(t)e, (c)omplete, (s)kip, (b)ack, (q)uit
+
+===Edit task
+Edit a task with ID 10 in vi
+    $ syctask edit 10
+
+===Update tasks
+Except for title and id all values can be updated. Note and tags are not
+overridden rather supplemented with the update value.
+
+Update task with ID 1 and provide some informative note
+    $ syctask update 1 --note "Some explanation about the progress on the task"
+
+===Complete tasks
+Complete the task with ID 1 and provide a final note
+    $ syctask done 1 --note "Finalize my first task"
+
+===Delete tasks
+Delete tasks with ID 1,3 and 5 from the default task directory
+    $ syctask delete --id 1,3,5
+
+Delete tasks with ID 8 and 12 from the planned tasks of today. The tasks are
+only removed from the planned tasks and not physically deleted.
+    $ syctask delete --plan today --id 8,12
+
+===Settings
+The settings command allows to define default values for task directory and to 
+create general purpose tasks that can be used for tracking and later statistical 
+evaluation.
+
+Create general purpose tasks for phone and talk
+    $ syctask setting --general PHONE,TALK
+
+List all settings
+    $ syctask setting --list
+
+===Info
+Info searches for the location of a task and lists all task directories
+
+Search for task with id 102
+    $ syctask info --id 102
+
+List all task directories
+    $ syctask info --taskdir
+
+===Statistics
+Shows statistics for work and meeting times as well as for task processing
+
+Evaluate the complete log file
+    $ syctask statistics
+
+Evaluate work times, meetings and tasks between 2013-01-01 and 2013-04-14
+    $ syctask statistics 2013-01-01 2013-04-14
+
+Evaluate yesterday and today
+    $ syctask statistics yesterday today
+
+===Task directory and project directory
+The global options --taskdir and --project determine where the command finds
+or creates the tasks. The default task directory is ~/.tasks, so if no task
+directory is specified all commands obtain tasks from or create tasks in
+~/.tasks. If a project is specified the tasks will be saved to or obtained from 
+the task directories subdirectory specified with the --project flag.
+
+    --taskdir  --project   Tasks in
+        -           -      default_task_dir
+        x           -      task_dir
+        -           x      default_task_dir/project
+        x           x      task_dir/project
+
+In the table the relation of commands to --taskdir and --project are listed.
+
+    Command  --taskdir  --project  Comment
+    delete        x          x     deletes the tasks in taskdir/project 
+    done          x          x     marks tasks in taskdir/project as done
+    help          -          -          
+    inspect       x          x     lists task to edit, done, delete, plan
+    list          x          x     lists tasks in taskdir/project
+    new           x          x     creates tasks in taskdir/project
+    plan          x          x     retrieves tasks to plan from taskdir/projekt
+    prio          -          -     input to prio are planned tasks (see plan)
+    scan          x          x     creates scanned tasks in taskdir/project
+    schedule      -          -     schedules the planned tasks (see plan)
+    start         -          -     starts task from planned tasks (see plan)
+    statistics    -          -     shows statistics of time and count
+    stop          -          -     stops task from planned task
+    update        x          x     updates task in taskdir/project   
+
+===Files
+
+* ID
+id file contains the last issued id.
+
+* IDS
+ids file contains all issued ids.
+
+* Task files
+The tasks are named ID.task where ID is any Integer as 10.task. The files are
+saved as YAML files and can be edited directly.
+
+* Planned tasks files
+The planned tasks are save to YYYY-MM-DD_planned_tasks in syctask's system
+directory. Each task is saved with the task's directory and the ID.
+
+* Schedule files
+The schedule is saved to YYYY-MM-DD_time_schedule in the default task directory.
+The files are saved as YAML files and can be changed manually.
+
+* Log file
+Creating schedule and task processings is logged to tasks.log. For example when 
+a task is started and stopped this is action is saved to tasks.log.
+
+* Tracked file
+A started task is saved to tracked_tasks. A semaphore file is created with
+ID.track when the task ID is started. When the task is stopped the semaphore
+file is deleted.
+
+* General purpose tasks
+With syctask setting -g PHONE so called general purpose tasks can be created.
+These tasks can be used for time tracking and later statistic evaluation to
+determine the amount of disturbences e.g. by phone. These tasks are saved to
+default_tasks. The general purpose tasks itself are also saved to the
+.syc/syctask directory as regular task files.
+
+* Default task dir
+The default task that is used e.g. with list is saved to default_tasks_dir. 
+This can be set with the setting command.
+
+==Working with syctask
+To work with syctask and get the most out of it there is to follow a certain
+process.
+
+===Creating a schedule
+==== View tasks
+In the morning before I start to work I scan my tasks with syctask list or 
+syctask inspect to get an overview of my open tasks.
+    $ syctask list
+    
+==== Plan tasks
+Next I start the planning phase with syctask plan. If I have a specific schedule
+for the day I will filter for the respective tasks
+    $ syctask plan
+
+==== Prioritize tasks (optionally)
+If I want to process the tasks in a specific sequence I prioritize the tasks
+with 
+    $ syctask prio
+
+==== Create schedule
+I create a schedule with my working hours and meetings that have been scheduled 
+with 
+    $ syctask schedule -w "8:00-18:00" -b "9:00-10:00,14:30-16:00" -m "Team,Status"
+
+==== Create an agenda
+I assign the topics I want to discuss in the meetings to the meetings with
+    syctask schedule -a "A:1,3,6;B:3,5"
+    
+==== Start a task
+To begin I start the first task in the schedule with syctask start -p ID 
+(where ID is the ID of the planned (-p) tasks)
+    $ syctask start -p 10
+
+==== End a task
+To end the task I invoke 
+    $ syctask stop
+This will stop the last started task
+
+==== Re-schedule a task
+If I cannot finish a task than I update the task with a new follow-up date
+    $ syctask update 23 -f tomorrow
+
+The task will be shown in the today's schedule as done.
+
+==== Complete a task
+When the task is done I call 
+    $ syctask done 23
+
+===Attachements
+* E-mails
+If an e-mail creates a task I create a new task with syctask new title_of_task.
+The subject of the e-mail I prepend with the ID and move the e-mail to a
+<b>open topics</b> directory.
+
+* Files
+If I create files in the course of a task I create a folder in the task
+directory with the ID and save the files in this directory. If there is an
+existing directory I link to the file from the ID directory
+
+==Supported platform
+syc-task up to version 0.4.2 has been tested with Ruby 1.9.3. Version 0.4.2 also runs
+with Ruby 2.7. It also works in Windows using Cygwin. Version 1.0.0 has been upgraded
+to Ruby 3.2.
+
+==Add TAB-completion to syctask
+To activate bash's TAB-completion following lines have to be added to ~/.bashrc
+
+    complete -F get_syctask_commands syctask
+
+    function get_syctask_commands
+    {
+      if [ -z $2 ] ; then
+        COMPREPLY=(`syctask help -c`)
+      else
+        COMPREPLY=(`syctask help -c $2`)
+      fi
+    }
+
+After ~/.bashrc has been updated the shell session has to be restarted with
+    $ source ~/.bashrc
+
+Now syctask followed by TAB TAB will print
+
+    $ syctask <TAB><TAB>
+    delete done list plan scan stop _doc help new prio schedule start update
+ 
+To complete a command we can type
+
+    $ syctask sch<TAB>
+
+which will complete to
+
+    $ syctask schedule
+
+==Output to Printer
+To print syctask's output to a printer pipe the command to lpr
+
+    $ syctask schedule | lpr
+
+This will print the schedule to the default printer. 
+
+To determine all available printer lpstat can be used with the lpstat -a command
+
+    $ lpstat -a
+    Canon-LBP6650-3470 accepting requests since Sat 16 Mar 2013 04:26:15 PM CET
+    Dell-B1160w-Mono accepting requests since Sat 16 Mar 2013 04:27:45 PM CET
+    
+To print to Dell-B1160w-Mono the following command can be used
+
+    $ syctask schedule | lpr -P Dell-B1160w-Mono
+
+==Release Notes
+===Version 0.0.1 
+Implementation of new, update, list and done commands.
+
+===Version 0.0.4
+* delete: deleting tasks or remove tasks from a task plan
+* plan: plan tasks and add them to the task plan
+* schedule: create a schedule with work and busy time and assign the tasks from
+  the task plan to the free times
+
+===Version 0.0.6
+* start: start a task and track the lead time
+* stop: stop the tracking and print the lead time of the task
+* start, stop: the task is logged in the ~/.tasks/task.log file when added and
+  when stopped
+* prio: prioritize tasks in the task plan, that is specifying the sequence in
+  that the tasks should be conducted
+* plan: --move flag added to move tasks from the specified plan to another days
+  task plan
+* update, new: when a follow-up or a due date is provided the task is added to
+  the provided dates task plan. If both dates are set the task is added to both
+  dates task plans
+
+===Version 0.0.7
+* updated rdoc
+
+===Version 0.1.15
+* IDs are now unique independent of the task or project directory. After
+  upgrading from a version 0.0.7 or older the user asked whether to re-index
+  the tasks. It is adviced to tar the tasks before re-indexing with
+      $ tar cvfz tasks.tar.gz .tasks other_task_directories
+* start will now show a timer in the upper right corner of the screen when
+  started with the -t (--timer) flag.
+      $ syctask start 10 -t
+  In order to use the task timer ncurses has to be installed as the task timer
+  uses tput from the ncurses library.
+* The schedule has a heading with the schedule's date and the working time
+* Planned tasks are now added at or after the current time if they are not done
+  yet. Done tasks are shown in the past with the actual processing time. Tasks 
+  done before the start of the schedule are not shown in the schedule.
+* Meetings that are at the current time are indicated with a *. Active tasks
+  are indicated with a star, re-scheduled tasks are indicated with a ~.
+* Assigning tasks to meetings in a schedule is now done with the task ID
+* Statistics show statistics about work time, meeting times, general purpose
+  tasks and task processing. Total, min, max and average time and count is
+  listed. If you have used version 0.0.7 it is adviced to delete tasks.log that
+  lives in ~/.tasks before upgrading or in ~/.syc/syctask after upgrading.
+  Otherwise the statistic results seem odd. 
+* Meeting time in time line now shows correct duration
+* Info command searches for the location of a task and lists all task
+  task directories with the tasks contained.
+* Plan move command sets the duration to the remaining processing time but at
+  least to 15 minutes
+* With the setting command the default task directory can be set and general 
+  purpose tasks can be created. A general purpose task can be used for tracking 
+  to analyse how much time for phone calls is occupied.
+  setting -l list all general purpose tasks and the default task directory
+* Prio command now takes a position flag together with the order flag to 
+  determine where to insert the newly ordered tasks
+* All commands that take an ID as argument (done, edit, start, update) look up
+  the task file associated to the id in the ids file. If it is found the 
+  provided task directory is not considered for the task file. If the id is not 
+  contained in the ids file the task is looked up in the provided directory
+* Inspect command allows to list each today's unplanned task to edit, delete,
+  mark as done or plan
+* Update command now has a duration flag to set the task's duration
+
+====Version 0.2.0
+* Migrated from TestUnit to Minitest
+* Implemented _timeleap_ {<img src="https://badge.fury.io/rb/timeleap.svg" alt="Gem Version" />}[http://badge.fury.io/rb/timeleap] 
+  which allows to specify additional time distances to yesterday, today 
+  tomorrow. Time distances come in two flavors as long and short forms.
+
+    Examples for long forms are
+    - yesterday|today|tomorrow
+    - next|previous_monday|tuesday|...|sunday
+    - monday|tuesday|...|sunday_in|back_1_week|month|year
+    - in|back_10_days|weeks|months|years
+
+    Examples for short forms are
+    - y|tod|tom
+    - n|pmo|tu|..|su
+    - mo|tu|...|sui|b1w|m|y
+    - i|b10d|w|m|y
+  
+====Version 0.2.1
+* Fix a bug in `syctask delete --plan`
+* Add indicator '>' to task list when task contains notes
+* Refactor migration from version 0.0.7 and when user has deleted system files.
+  The user can now specify the directories where the tasks are located and can
+  also define directories to be excluded. This is especially helpful to omit 
+  search in large mounted directories, like from NAS servers.
+
+====Version 0.3.1
+* Add csv output spearated by ';' to the list command
+* Fix bug when schedule file is empty
+* Add scan command to scan tasks from files
+
+====Version 0.3.2
+* Fix bugs of missing class lib/syctask/scanner.rb
+
+====Version 0.4.2
+* delete command can take now ranges of ids, e.g. 1,2,4-8,5,20-25 
+* inspect can now go back in the task list
+* inspect will now show the updated task after making changes to the task in 
+  edit
+* inspect allows to specify a follow_up date
+* scan will ignore columns that are not part of a syctask task
+* scan recognizes 'Follow-up' as well as 'follow_up' now. That is an underscore
+  can be replaced with '-'
+* Fix bug when scanning tables that have spaces between separator and column
+* When tasks.log file is missing `syctask inspect` prints warning with reason
+  why statistics cannot be printed
+
+====Version 1.0.0
+* Upgrade to Ruby 3.2.2
+
+==Development
+Pull from Github and then run 
+
+    $ bundle install 
+    
+New classes have to be added to 'lib/syctask.rb'
+
+Debugging the interface can be done with GLI_DEBUG: 
+
+    $ bundle exec env GLI_DEBUG=true bin/syctask
+
+Building and pushing the gemfile to Rubygems
+
+    $ gem build syctask.gemspec
+    $ gem push syc-task-0.2.1.gem
+
+==Tests
+The test files live in the folder test and start with test_.
+
+There is a rake file available to run all tests
+
+    $ rake test
+   
+The CLI is tested with Cucumber. To run the Cucumber features in verbose mode
+
+    $ cucumber
+
+or if you prefer cleaner output run
+
+    $ rake features
+
+==License
+syc-task is released under the {MIT License}[http://opensource.org/licenses/MIT]
+
+==Links
+* [http://www.github.com/sugaryourcoffee/syc-task] - Source code on GitHub
+* [https://rubygems.org/gems/syc-task] - RubyGems
+
+## 官网
+
+- 主页: https://github.com/sugaryourcoffee/syc-task
+- 文档: https://www.rubydoc.info/gems/syc-task/1.0.0
+- RubyGems: https://rubygems.org/gems/syc-task
+
+## 历史版本号
+
+- 1.0.0 (2024-12-15)
+- 0.4.2 (2016-10-08)
+- 0.3.2 (2016-09-11)
+- 0.3.1 (2016-09-11)
+- 0.2.1 (2016-09-03)
+- 0.2.0 (2014-06-13)
+- 0.1.15 (2013-05-03)
+- 0.0.7 (2013-03-23)
+- 0.0.6 (2013-03-23)
+- 0.0.4 (2013-03-14)
+- 0.0.3 (2013-03-11)
+- 0.0.2 (2013-03-10)
+- 0.0.1 (2013-02-25)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/syc-task
+- gem 安装: `gem install syc-task`
+- Bundler: `gem "syc-task"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/syc-task-1.0.0.gem
+- 版本锁定: `gem "syc-task", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

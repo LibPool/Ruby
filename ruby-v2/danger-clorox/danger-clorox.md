@@ -1,0 +1,32 @@
+# danger-clorox
+
+**Tag**: filesystem
+
+## 简介
+
+A Danger plugin for checking presence of file header comments.
+
+## 官网
+
+- 主页: https://github.com/barbosa/danger-clorox
+- 文档: https://www.rubydoc.info/gems/danger-clorox/2.0.2
+- RubyGems: https://rubygems.org/gems/danger-clorox
+
+## 历史版本号
+
+- 2.0.2 (2016-11-17)
+- 2.0.1 (2016-11-12)
+- 2.0.0 (2016-11-11)
+- 1.1.0 (2016-10-26)
+- 1.0.0 (2016-10-22)
+- 0.0.1 (2016-08-14)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/danger-clorox
+- gem 安装: `gem install danger-clorox`
+- Bundler: `gem "danger-clorox"`
+- 最新版本: 2.0.2
+- 最新版归档: https://rubygems.org/downloads/danger-clorox-2.0.2.gem
+- 版本锁定: `gem "danger-clorox", "~> 2.0.2"`
+- 中央仓库: https://rubygems.org/

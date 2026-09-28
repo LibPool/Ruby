@@ -1,0 +1,137 @@
+# morning_glory
+
+**Tag**: web, cli, testing, security, networking, devops, filesystem
+
+## 简介
+
+http://www.engineyard.com/blog/2010/extending-rails-3-with-railties/
+http://www.igvita.com/2010/08/04/rails-3-internals-railtie-creating-plugins/
+
+
+h1. Morning Glory
+
+Morning Glory is comprised of a rake task and helper methods that manages the deployment of static assets into an Amazon CloudFront CDN's S3 Bucket, improving the performance of static assets on your Rails web applications.
+
+_NOTE: You will require an Amazon Web Services (AWS) account in order to use this gem. Specially: S3 for storing the files you wish to distribute, and CloudFront for CDN distribution of those files._     
+
+This version of Morning Glory works with Rails 3.x and Ruby 1.9.x
+
+h2. What does it do?
+
+Morning Glory provides an easy way to deploy Ruby on Rails application assets to the Amazon CloudFront CDN. 
+
+It solves a number of common issues with S3/CloudFront. For instance, CloudFront won't automatically expire old assets stored on edge nodes when you redeploy new assets (the Cloudfront expiry time is 24 hours minimum). 
+To fix this Morning Glory will automatically namespace asset releases for you, then update all references to those renamed assets within your stylesheets ensuring there are no broken asset links.
+
+It also provides a helper method to rewrite all standard Rails asset helper generated URLs to your CloudFront CDN distributions, as well as handling switching between HTTP and HTTPS.
+
+Morning Glory was also built with SASS (Syntactically Awesome Stylesheets) in mind. If you use Sass for your stylesheets they will automatically be built before deployment to the CDN. See http://sass-lang.com/ for more information on Sass.s
+
+h2. What it doesn't do
+
+Morning Glory cannot configure your CloudFront distributions for you automatically. You will manually have to login to your AWS Management Console account, "https://console.aws.amazon.com/cloudfront/home":https://console.aws.amazon.com/cloudfront/home, and set up a distribution pointing to an S3 Bucket.
+
+h2. Installation
+
+<pre>
+gem 'morning_glory'
+</pre>
+
+h2. Usage
+
+Morning Glory provides it's functionality via rake tasks. You'll need to specify the target rails environment configuration you want to deploy for by using the @RAILS_ENV={env}@ parameter (for example, @RAILS_ENV=production@).
+
+<pre>
+rake morning_glory:cloudfront:deploy RAILS_ENV={YOUR_TARGET_ENVIRONMENT}
+</pre>
+
+h2. Configuration
+
+h3. The Morning Glory configuration file, @config/morning_glory.yml@
+
+You can specify a configuration section for every rails environment (production, staging, testing, development). This section can have the following properties defined:
+
+<pre>
+--- 
+production: 
+  enabled: true                     # Is MorningGlory enabled for this environment?
+  bucket: cdn.production.foo.com    # The bucket to deploy your assets into
+  s3_logging_enabled: true          # Log the deployment to S3
+  revision: "20100317134627"        # The revision prefix. This timestamp automatically generateed on deployment
+  delete_prev_rev: true             # Delete the previous asset release (save on S3 storage space)
+</pre>
+
+h3. The Amazon S3 authentication keys configuration file, @config/s3.yml@
+
+This file provides the access credentials for your Amazon AWS S3 account.
+You can configure keys for all your environments (production, staging, testing, development).
+
+<pre>
+---
+production:
+  access_key_id: YOUR_ACCESS_KEY
+  secret_access_key: YOUR_SECRET_ACCESS_KEY
+</pre>
+
+Note: If you are deploying your system to Heroku, you can configure your Amazon AWS S3 information with the environment variables S3_KEY and S3_SECRET instead of using a configuration file. 
+
+h3. Set up an asset_host
+
+For each environment that you'd like to utilise the CloudFront CDN for you'll need to define the asset_host within the @config/environments/{ENVIRONMENT}.rb@ configuration file.
+
+As of June 2010 AWS supports HTTPS requests on the CloudFront CDN, so you no longer have to worry about switching servers. (Yay!)
+
+h4. Example config/environments/production.rb @asset_host@ snippet:
+
+Here we're targeting a CNAME domain with HTTP support.
+
+<pre>
+ActionController::Base.asset_host = Proc.new { |source, request|
+  if request.ssl?
+    "#{request.protocol}#{request.host_with_port}"
+  else
+    "#{request.protocol}assets.example.com"
+  end
+}
+</pre>
+
+
+h3. Why do we have to use a revision-number/namespace/timestamp?
+
+Once an asset has been deployed to the Amazon Cloudfront edge servers it cannot be modified - the version exists until it expires (minimum of 24 hours).
+
+To get around this we need to prefix the asset path with a revision of some sort - in MorningGlory's case we use a timestamp. That way you can deploy many times during a 24 hour period and always have your latest revision available on your web site.
+
+h2. Dependencies
+
+h3. AWS S3
+
+Required for uploading the assets to the Amazon Web Services S3 buckets.
+See "http://amazon.rubyforge.org/":http://amazon.rubyforge.org/ for more documentation on installation.
+
+h2. About the name
+
+Perhaps not what you'd expect; a "Morning Glory":http://en.wikipedia.org/wiki/Morning_Glory_cloud is a rare cloud formation observed by glider pilots in Australia (see my side project, "YourFlightLog.com for flight-logging software for paraglider and hang-glider pilots":http://www.yourflightlog.com, from which the Morning Glory plugin was originally extracted).
+
+Copyright (c) 2010 "@AdamBurmister":http://twitter.com/adamburmister/, released under the MIT license
+
+## 官网
+
+- 主页: https://github.com/professor/morning_glory
+- RubyGems: https://rubygems.org/gems/morning_glory
+
+## 历史版本号
+
+- 0.0.3 (2011-07-24)
+- 0.0.2 (2011-07-24)
+- 0.0.1 (2011-07-21)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/morning_glory
+- gem 安装: `gem install morning_glory`
+- Bundler: `gem "morning_glory"`
+- 最新版本: 0.0.3
+- 最新版归档: https://rubygems.org/downloads/morning_glory-0.0.3.gem
+- 版本锁定: `gem "morning_glory", "~> 0.0.3"`
+- 中央仓库: https://rubygems.org/

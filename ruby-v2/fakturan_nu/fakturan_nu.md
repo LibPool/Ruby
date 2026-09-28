@@ -1,0 +1,37 @@
+# fakturan_nu
+
+**Tag**: web, cli
+
+## 简介
+
+A ruby client for the Fakturan.nu - API. Fakturan.nu is a webbapp for billing.
+
+## 官网
+
+- 主页: https://github.com/imagine-it/fakturan-nu-gem
+- 文档: https://www.rubydoc.info/gems/fakturan_nu/1.2.1
+- RubyGems: https://rubygems.org/gems/fakturan_nu
+
+## 历史版本号
+
+- 1.2.1 (2016-04-20)
+- 1.2.0 (2015-05-11)
+- 1.1.5 (2015-05-08)
+- 1.1.4 (2015-04-30)
+- 1.1.3 (2015-04-17)
+- 1.1.2 (2015-04-14)
+- 1.1.1 (2015-04-14)
+- 1.1.0 (2015-04-14)
+- 1.0.2 (2015-04-13)
+- 1.0.1 (2015-04-13)
+- 1.0.0 (2015-04-07)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/fakturan_nu
+- gem 安装: `gem install fakturan_nu`
+- Bundler: `gem "fakturan_nu"`
+- 最新版本: 1.2.1
+- 最新版归档: https://rubygems.org/downloads/fakturan_nu-1.2.1.gem
+- 版本锁定: `gem "fakturan_nu", "~> 1.2.1"`
+- 中央仓库: https://rubygems.org/
