@@ -1,0 +1,26 @@
+# mongo_tree
+
+**Tag**: library
+
+## 简介
+
+A MongoMapper plugin that adds a number of tree strategies.
+
+## 官网
+
+- 主页: http://github.com/parrish/mongo_tree
+- RubyGems: https://rubygems.org/gems/mongo_tree
+
+## 历史版本号
+
+- 0.1.0 (2010-08-03)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/mongo_tree
+- gem 安装: `gem install mongo_tree`
+- Bundler: `gem "mongo_tree"`
+- 最新版本: 0.1.0
+- 最新版归档: https://rubygems.org/downloads/mongo_tree-0.1.0.gem
+- 版本锁定: `gem "mongo_tree", "~> 0.1.0"`
+- 中央仓库: https://rubygems.org/

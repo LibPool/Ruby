@@ -1,0 +1,29 @@
+# accent_to_ascii
+
+**Tag**: library
+
+## 简介
+
+Replace the non ascii accents in a string
+
+## 官网
+
+- 主页: https://github.com/unieagle/accent_to_ascii
+- 文档: https://www.rubydoc.info/gems/accent_to_ascii/0.1.2
+- RubyGems: https://rubygems.org/gems/accent_to_ascii
+
+## 历史版本号
+
+- 0.1.2 (2016-11-10)
+- 0.1.1 (2016-11-09)
+- 0.1.0 (2016-11-09)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/accent_to_ascii
+- gem 安装: `gem install accent_to_ascii`
+- Bundler: `gem "accent_to_ascii"`
+- 最新版本: 0.1.2
+- 最新版归档: https://rubygems.org/downloads/accent_to_ascii-0.1.2.gem
+- 版本锁定: `gem "accent_to_ascii", "~> 0.1.2"`
+- 中央仓库: https://rubygems.org/

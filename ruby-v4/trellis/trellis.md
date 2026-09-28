@@ -1,0 +1,36 @@
+# trellis
+
+**Tag**: web
+
+## 简介
+
+A component based web framework
+
+## 官网
+
+- 主页: http://trellis.rubyforge.org
+- RubyGems: https://rubygems.org/gems/trellis
+
+## 历史版本号
+
+- 0.1.1 (2010-01-24)
+- 0.1.0 (2010-01-12)
+- 0.0.9 (2009-12-13)
+- 0.0.8 (2009-12-10)
+- 0.0.7 (2009-12-06)
+- 0.0.6 (2009-11-09)
+- 0.0.5 (2009-11-09)
+- 0.0.4 (2009-10-07)
+- 0.0.3 (2009-09-30)
+- 0.0.2 (2009-09-24)
+- 0.0.1 (2009-09-24)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/trellis
+- gem 安装: `gem install trellis`
+- Bundler: `gem "trellis"`
+- 最新版本: 0.1.1
+- 最新版归档: https://rubygems.org/downloads/trellis-0.1.1.gem
+- 版本锁定: `gem "trellis", "~> 0.1.1"`
+- 中央仓库: https://rubygems.org/

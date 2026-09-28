@@ -1,0 +1,29 @@
+# chillon
+
+**Tag**: data
+
+## 简介
+
+Simple way to load GUID info from the Lima Metropolitana open data platform
+
+## 官网
+
+- 主页: https://github.com/xenda/chillon
+- 文档: https://www.rubydoc.info/gems/chillon/0.0.3
+- RubyGems: https://rubygems.org/gems/chillon
+
+## 历史版本号
+
+- 0.0.3 (2013-09-15)
+- 0.0.2 (2013-09-15)
+- 0.0.1 (2013-09-15)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/chillon
+- gem 安装: `gem install chillon`
+- Bundler: `gem "chillon"`
+- 最新版本: 0.0.3
+- 最新版归档: https://rubygems.org/downloads/chillon-0.0.3.gem
+- 版本锁定: `gem "chillon", "~> 0.0.3"`
+- 中央仓库: https://rubygems.org/

@@ -1,0 +1,32 @@
+# SDzoo
+
+**Tag**: web, security
+
+## 简介
+
+Find information about all the animals listed on the San Diego Zoo website, including life span, conservation status, taxonomic information and a fun fact! The app/author is not affiliated with the SD zoo.
+
+## 官网
+
+- 主页: https://rubygems.org/gems/SDzoo
+- 文档: https://www.rubydoc.info/gems/SDzoo/0.2.2
+
+## 历史版本号
+
+- 0.2.2 (2017-08-29)
+- 0.2.1 (2017-08-29)
+- 0.2.0 (2017-08-29)
+- 0.1.3 (2017-08-29)
+- 0.1.2 (2017-08-29)
+- 0.1.1 (2017-08-29)
+- 0.1.0 (2017-08-29)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/SDzoo
+- gem 安装: `gem install SDzoo`
+- Bundler: `gem "SDzoo"`
+- 最新版本: 0.2.2
+- 最新版归档: https://rubygems.org/downloads/SDzoo-0.2.2.gem
+- 版本锁定: `gem "SDzoo", "~> 0.2.2"`
+- 中央仓库: https://rubygems.org/

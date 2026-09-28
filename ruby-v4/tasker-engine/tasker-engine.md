@@ -1,0 +1,26 @@
+# tasker-engine
+
+**Tag**: web
+
+## 简介
+
+Tasker is a comprehensive workflow orchestration engine that provides multi-step task processing, dependency management, state machine transitions, and enterprise observability features including OpenTelemetry tracing and Prometheus metrics for Rails applications.
+
+## 官网
+
+- 主页: https://github.com/tasker-systems/tasker
+- RubyGems: https://rubygems.org/gems/tasker-engine
+
+## 历史版本号
+
+- 0.1.0 (2025-07-13)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/tasker-engine
+- gem 安装: `gem install tasker-engine`
+- Bundler: `gem "tasker-engine"`
+- 最新版本: 0.1.0
+- 最新版归档: https://rubygems.org/downloads/tasker-engine-0.1.0.gem
+- 版本锁定: `gem "tasker-engine", "~> 0.1.0"`
+- 中央仓库: https://rubygems.org/

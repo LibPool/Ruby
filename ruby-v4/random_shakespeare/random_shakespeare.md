@@ -1,0 +1,29 @@
+# random_shakespeare
+
+**Tag**: library
+
+## 简介
+
+Usage:                         require 'random_shakespeare'
+                        random_shakespeare
+
+## 官网
+
+- 主页: https://github.com/matildasmeds/random_shakespeare
+- 文档: https://www.rubydoc.info/gems/random_shakespeare/0.1.1
+- RubyGems: https://rubygems.org/gems/random_shakespeare
+
+## 历史版本号
+
+- 0.1.1 (2016-05-01)
+- 0.1.0 (2016-04-30)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/random_shakespeare
+- gem 安装: `gem install random_shakespeare`
+- Bundler: `gem "random_shakespeare"`
+- 最新版本: 0.1.1
+- 最新版归档: https://rubygems.org/downloads/random_shakespeare-0.1.1.gem
+- 版本锁定: `gem "random_shakespeare", "~> 0.1.1"`
+- 中央仓库: https://rubygems.org/

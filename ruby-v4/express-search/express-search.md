@@ -1,0 +1,30 @@
+# express-search
+
+**Tag**: library
+
+## 简介
+
+used for china express search
+
+## 官网
+
+- 主页: http://github.com/chilwar/express-search
+- 文档: https://www.rubydoc.info/gems/express-search/0.1.3
+- RubyGems: https://rubygems.org/gems/express-search
+
+## 历史版本号
+
+- 0.1.3 (2016-10-21)
+- 0.1.2 (2016-08-01)
+- 0.1.1 (2016-08-01)
+- 0.1.0 (2015-05-23)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/express-search
+- gem 安装: `gem install express-search`
+- Bundler: `gem "express-search"`
+- 最新版本: 0.1.3
+- 最新版归档: https://rubygems.org/downloads/express-search-0.1.3.gem
+- 版本锁定: `gem "express-search", "~> 0.1.3"`
+- 中央仓库: https://rubygems.org/

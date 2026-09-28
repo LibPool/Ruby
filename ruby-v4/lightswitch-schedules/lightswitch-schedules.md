@@ -1,0 +1,28 @@
+# lightswitch-schedules
+
+**Tag**: library
+
+## 简介
+
+Create and persist schedules (such as daily and weekly) that lightswitch can use to turn instances on and off
+
+## 官网
+
+- 主页: http://rubygems.org/gems/lightswitch-schedules
+- 文档: https://www.rubydoc.info/gems/lightswitch-schedules/0.0.2
+- RubyGems: https://rubygems.org/gems/lightswitch-schedules
+
+## 历史版本号
+
+- 0.0.2 (2015-05-01)
+- 0.0.1 (2015-05-01)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/lightswitch-schedules
+- gem 安装: `gem install lightswitch-schedules`
+- Bundler: `gem "lightswitch-schedules"`
+- 最新版本: 0.0.2
+- 最新版归档: https://rubygems.org/downloads/lightswitch-schedules-0.0.2.gem
+- 版本锁定: `gem "lightswitch-schedules", "~> 0.0.2"`
+- 中央仓库: https://rubygems.org/

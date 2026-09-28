@@ -1,0 +1,26 @@
+# crank
+
+**Tag**: template
+
+## 简介
+
+RSS, HTML and Email output from SVN repository logs with Ruby
+
+## 官网
+
+- 主页: http://www.rubysvn2rss.com
+- RubyGems: https://rubygems.org/gems/crank
+
+## 历史版本号
+
+- 1.2 (2009-07-25)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/crank
+- gem 安装: `gem install crank`
+- Bundler: `gem "crank"`
+- 最新版本: 1.2
+- 最新版归档: https://rubygems.org/downloads/crank-1.2.gem
+- 版本锁定: `gem "crank", "~> 1.2"`
+- 中央仓库: https://rubygems.org/

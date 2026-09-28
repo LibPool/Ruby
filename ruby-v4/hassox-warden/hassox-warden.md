@@ -1,0 +1,32 @@
+# hassox-warden
+
+**Tag**: web, security
+
+## 简介
+
+Rack middleware that provides authentication for rack applications
+
+## 官网
+
+- 主页: http://github.com/hassox/warden
+- 文档: https://www.rubydoc.info/gems/hassox-warden/0.3.2
+- RubyGems: https://rubygems.org/gems/hassox-warden
+
+## 历史版本号
+
+- 0.2.1 (2014-08-11)
+- 0.2.2 (2014-08-11)
+- 0.2.3 (2014-08-11)
+- 0.3.0 (2014-08-11)
+- 0.3.1 (2014-08-11)
+- 0.3.2 (2014-08-11)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/hassox-warden
+- gem 安装: `gem install hassox-warden`
+- Bundler: `gem "hassox-warden"`
+- 最新版本: 0.3.2
+- 最新版归档: https://rubygems.org/downloads/hassox-warden-0.3.2.gem
+- 版本锁定: `gem "hassox-warden", "~> 0.3.2"`
+- 中央仓库: https://rubygems.org/

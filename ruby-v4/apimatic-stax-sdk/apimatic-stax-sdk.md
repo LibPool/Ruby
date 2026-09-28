@@ -1,0 +1,28 @@
+# apimatic-stax-sdk
+
+**Tag**: web
+
+## 简介
+
+Sample SDK for Stax Payments APIs
+
+## 官网
+
+- 主页: https://apimatic.io
+- 文档: https://www.rubydoc.info/gems/apimatic-stax-sdk/0.0.2
+- RubyGems: https://rubygems.org/gems/apimatic-stax-sdk
+
+## 历史版本号
+
+- 0.0.2 (2026-02-23)
+- 0.0.1 (2026-02-23)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/apimatic-stax-sdk
+- gem 安装: `gem install apimatic-stax-sdk`
+- Bundler: `gem "apimatic-stax-sdk"`
+- 最新版本: 0.0.2
+- 最新版归档: https://rubygems.org/downloads/apimatic-stax-sdk-0.0.2.gem
+- 版本锁定: `gem "apimatic-stax-sdk", "~> 0.0.2"`
+- 中央仓库: https://rubygems.org/

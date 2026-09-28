@@ -1,0 +1,42 @@
+# vagrant-phpstorm-tunnel
+
+**Tag**: library
+
+## 简介
+
+Installs a proxy php binary which can be configured as a php-interpreter in PhpStorm
+
+## 官网
+
+- 主页: https://github.com/cargomedia/vagrant-phpstorm-tunnel
+- 文档: https://www.rubydoc.info/gems/vagrant-phpstorm-tunnel/0.1.11
+- RubyGems: https://rubygems.org/gems/vagrant-phpstorm-tunnel
+
+## 历史版本号
+
+- 0.1.11 (2016-02-19)
+- 0.1.10 (2014-07-31)
+- 0.1.9 (2014-07-02)
+- 0.1.8 (2014-04-09)
+- 0.1.7 (2014-03-28)
+- 0.1.6 (2014-03-25)
+- 0.1.5 (2014-02-28)
+- 0.1.4 (2014-02-26)
+- 0.1.2 (2014-02-25)
+- 0.1.1 (2014-02-25)
+- 0.1.0 (2014-02-24)
+- 0.0.7 (2014-02-23)
+- 0.0.6 (2014-02-23)
+- 0.0.5 (2014-02-23)
+- 0.0.4 (2014-02-23)
+- 0.0.3 (2014-02-21)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/vagrant-phpstorm-tunnel
+- gem 安装: `gem install vagrant-phpstorm-tunnel`
+- Bundler: `gem "vagrant-phpstorm-tunnel"`
+- 最新版本: 0.1.11
+- 最新版归档: https://rubygems.org/downloads/vagrant-phpstorm-tunnel-0.1.11.gem
+- 版本锁定: `gem "vagrant-phpstorm-tunnel", "~> 0.1.11"`
+- 中央仓库: https://rubygems.org/

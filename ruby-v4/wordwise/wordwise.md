@@ -1,0 +1,36 @@
+# wordwise
+
+**Tag**: library
+
+## 简介
+
+Given a random word, choose the correct definition from a list. Option to see word origin.
+
+## 官网
+
+- 主页: https://github.com/ronsala/wordwise
+- 文档: https://github.com/ronsala/wordwise/blob/master/README.md
+- RubyGems: https://rubygems.org/gems/wordwise
+
+## 历史版本号
+
+- 1.0.4 (2022-05-17)
+- 1.0.3 (2020-03-01)
+- 1.0.2 (2019-09-01)
+- 1.0.1 (2019-02-08)
+- 1.0.0 (2019-02-07)
+- 0.2.2 (2018-05-23)
+- 0.2.1 (2018-05-23)
+- 0.2.0 (2018-05-13)
+- 0.1.1 (2018-05-06)
+- 0.1.0 (2018-05-06)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/wordwise
+- gem 安装: `gem install wordwise`
+- Bundler: `gem "wordwise"`
+- 最新版本: 1.0.4
+- 最新版归档: https://rubygems.org/downloads/wordwise-1.0.4.gem
+- 版本锁定: `gem "wordwise", "~> 1.0.4"`
+- 中央仓库: https://rubygems.org/

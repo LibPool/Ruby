@@ -1,0 +1,31 @@
+# maddox-newzcache
+
+**Tag**: library
+
+## 简介
+
+The Newzcache gem lets you talk to Newzcache
+
+## 官网
+
+- 主页: http://github.com/maddox/newzcache
+- 文档: https://www.rubydoc.info/gems/maddox-newzcache/0.3.0
+- RubyGems: https://rubygems.org/gems/maddox-newzcache
+
+## 历史版本号
+
+- 0.1.0 (2014-08-11)
+- 0.1.1 (2014-08-11)
+- 0.2.0 (2014-08-11)
+- 0.2.1 (2014-08-11)
+- 0.3.0 (2014-08-11)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/maddox-newzcache
+- gem 安装: `gem install maddox-newzcache`
+- Bundler: `gem "maddox-newzcache"`
+- 最新版本: 0.3.0
+- 最新版归档: https://rubygems.org/downloads/maddox-newzcache-0.3.0.gem
+- 版本锁定: `gem "maddox-newzcache", "~> 0.3.0"`
+- 中央仓库: https://rubygems.org/

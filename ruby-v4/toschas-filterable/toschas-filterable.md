@@ -1,0 +1,29 @@
+# toschas-filterable
+
+**Tag**: library
+
+## 简介
+
+Filterable gem aims to simplify the process of filtering active record objects.It provides an easy way to define filters on the model (without having to write scopes) and apply them on any active record collection.
+
+## 官网
+
+- 主页: https://github.com/toschas/filterable
+- 文档: https://github.com/toschas/filterable/blob/master/README.md
+- 问题追踪: https://github.com/toschas/filterable/issues
+- RubyGems: https://rubygems.org/gems/toschas-filterable
+
+## 历史版本号
+
+- 1.0.2 (2016-05-24)
+- 1.0.1 (2016-05-19)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/toschas-filterable
+- gem 安装: `gem install toschas-filterable`
+- Bundler: `gem "toschas-filterable"`
+- 最新版本: 1.0.2
+- 最新版归档: https://rubygems.org/downloads/toschas-filterable-1.0.2.gem
+- 版本锁定: `gem "toschas-filterable", "~> 1.0.2"`
+- 中央仓库: https://rubygems.org/

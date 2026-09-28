@@ -1,0 +1,39 @@
+# shadow_model
+
+**Tag**: web, data
+
+## 简介
+
+A rails plugin use reids to cache models data.
+
+## 官网
+
+- 主页: https://github.com/cctiger36/shadow_model
+- 文档: https://www.rubydoc.info/gems/shadow_model/1.0.0
+- RubyGems: https://rubygems.org/gems/shadow_model
+
+## 历史版本号
+
+- 1.0.0 (2014-02-05)
+- 0.3.0 (2013-10-25)
+- 0.2.7 (2013-10-25)
+- 0.2.6 (2013-10-25)
+- 0.2.5 (2013-10-25)
+- 0.2.4 (2013-10-24)
+- 0.2.3 (2013-10-24)
+- 0.2.2 (2013-10-24)
+- 0.2.1 (2013-10-24)
+- 0.2.0 (2013-10-24)
+- 0.1.2 (2013-09-25)
+- 0.1.1 (2013-09-24)
+- 0.1.0 (2013-09-24)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/shadow_model
+- gem 安装: `gem install shadow_model`
+- Bundler: `gem "shadow_model"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/shadow_model-1.0.0.gem
+- 版本锁定: `gem "shadow_model", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

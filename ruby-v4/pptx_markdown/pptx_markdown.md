@@ -1,0 +1,27 @@
+# pptx_markdown
+
+**Tag**: library
+
+## 简介
+
+PPTX &lt;-&gt; Markdown
+
+## 官网
+
+- 主页: https://github.com/droptheplot/pptx_markdown
+- 文档: https://www.rubydoc.info/gems/pptx_markdown/0.0.1
+- RubyGems: https://rubygems.org/gems/pptx_markdown
+
+## 历史版本号
+
+- 0.0.1 (2016-07-01)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/pptx_markdown
+- gem 安装: `gem install pptx_markdown`
+- Bundler: `gem "pptx_markdown"`
+- 最新版本: 0.0.1
+- 最新版归档: https://rubygems.org/downloads/pptx_markdown-0.0.1.gem
+- 版本锁定: `gem "pptx_markdown", "~> 0.0.1"`
+- 中央仓库: https://rubygems.org/

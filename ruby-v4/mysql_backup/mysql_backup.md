@@ -1,0 +1,28 @@
+# mysql_backup
+
+**Tag**: database, data
+
+## 简介
+
+A simple backup tool for MySQL that takes a backup of all MySQL databases.
+
+## 官网
+
+- 主页: http://github.com/christianhellsten/mysql-backup
+- RubyGems: https://rubygems.org/gems/mysql_backup
+
+## 历史版本号
+
+- 0.2.1 (2009-11-01)
+- 0.2.0 (2009-11-01)
+- 0.1.0 (2009-11-01)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/mysql_backup
+- gem 安装: `gem install mysql_backup`
+- Bundler: `gem "mysql_backup"`
+- 最新版本: 0.2.1
+- 最新版归档: https://rubygems.org/downloads/mysql_backup-0.2.1.gem
+- 版本锁定: `gem "mysql_backup", "~> 0.2.1"`
+- 中央仓库: https://rubygems.org/

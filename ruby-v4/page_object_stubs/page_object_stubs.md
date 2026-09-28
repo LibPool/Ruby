@@ -1,0 +1,33 @@
+# page_object_stubs
+
+**Tag**: web, networking, tooling
+
+## 简介
+
+PageObject stub generator for RubyMine.
+
+## 官网
+
+- 主页: https://github.com/bootstraponline/page_object_stubs
+- 文档: https://www.rubydoc.info/gems/page_object_stubs/2.0.1
+- RubyGems: https://rubygems.org/gems/page_object_stubs
+
+## 历史版本号
+
+- 2.0.1 (2016-06-08)
+- 2.0.0 (2015-09-24)
+- 1.0.1 (2015-06-19)
+- 1.0.0 (2015-06-06)
+- 0.0.3 (2015-05-10)
+- 0.0.2 (2015-05-10)
+- 0.0.1 (2015-05-09)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/page_object_stubs
+- gem 安装: `gem install page_object_stubs`
+- Bundler: `gem "page_object_stubs"`
+- 最新版本: 2.0.1
+- 最新版归档: https://rubygems.org/downloads/page_object_stubs-2.0.1.gem
+- 版本锁定: `gem "page_object_stubs", "~> 2.0.1"`
+- 中央仓库: https://rubygems.org/

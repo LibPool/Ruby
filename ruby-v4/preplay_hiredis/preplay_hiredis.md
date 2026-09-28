@@ -1,0 +1,26 @@
+# preplay_hiredis
+
+**Tag**: database
+
+## 简介
+
+Ruby extension that wraps Hiredis (blocking connection and reply parsing)
+
+## 官网
+
+- 主页: http://github.com/pietern/hiredis-rb
+- RubyGems: https://rubygems.org/gems/preplay_hiredis
+
+## 历史版本号
+
+- 0.4.6 (2012-10-19)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/preplay_hiredis
+- gem 安装: `gem install preplay_hiredis`
+- Bundler: `gem "preplay_hiredis"`
+- 最新版本: 0.4.6
+- 最新版归档: https://rubygems.org/downloads/preplay_hiredis-0.4.6.gem
+- 版本锁定: `gem "preplay_hiredis", "~> 0.4.6"`
+- 中央仓库: https://rubygems.org/

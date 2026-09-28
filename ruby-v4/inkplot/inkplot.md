@@ -1,0 +1,30 @@
+# inkplot
+
+**Tag**: tooling
+
+## 简介
+
+Build line, bar, scatter, histogram, and other charts as standalone SVG or PNG.
+
+## 官网
+
+- 主页: https://github.com/rbgfx/inkplot
+- 源码仓库: https://github.com/rbgfx/inkplot/tree/main
+- RubyGems: https://rubygems.org/gems/inkplot
+
+## 历史版本号
+
+- 0.3.2 (2026-09-26)
+- 0.3.1 (2026-09-25)
+- 0.3.0 (2026-09-25)
+- 0.1.0 (2026-09-25)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/inkplot
+- gem 安装: `gem install inkplot`
+- Bundler: `gem "inkplot"`
+- 最新版本: 0.3.2
+- 最新版归档: https://rubygems.org/downloads/inkplot-0.3.2.gem
+- 版本锁定: `gem "inkplot", "~> 0.3.2"`
+- 中央仓库: https://rubygems.org/

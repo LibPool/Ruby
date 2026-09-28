@@ -1,0 +1,27 @@
+# idonethis
+
+**Tag**: web, cli
+
+## 简介
+
+Simple client for the iDoneThis API
+
+## 官网
+
+- 主页: https://github.com/stympy/idonethis
+- 文档: https://www.rubydoc.info/gems/idonethis/1.0.0
+- RubyGems: https://rubygems.org/gems/idonethis
+
+## 历史版本号
+
+- 1.0.0 (2014-08-11)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/idonethis
+- gem 安装: `gem install idonethis`
+- Bundler: `gem "idonethis"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/idonethis-1.0.0.gem
+- 版本锁定: `gem "idonethis", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

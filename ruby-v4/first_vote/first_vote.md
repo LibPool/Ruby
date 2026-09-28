@@ -1,0 +1,26 @@
+# first_vote
+
+**Tag**: library
+
+## 简介
+
+voteing gem weitten in ROR project
+
+## 官网
+
+- 文档: https://www.rubydoc.info/gems/first_vote/0.1.0
+- RubyGems: https://rubygems.org/gems/first_vote
+
+## 历史版本号
+
+- 0.1.0 (2016-11-13)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/first_vote
+- gem 安装: `gem install first_vote`
+- Bundler: `gem "first_vote"`
+- 最新版本: 0.1.0
+- 最新版归档: https://rubygems.org/downloads/first_vote-0.1.0.gem
+- 版本锁定: `gem "first_vote", "~> 0.1.0"`
+- 中央仓库: https://rubygems.org/

@@ -1,0 +1,26 @@
+# manageiq-providers-awx
+
+**Tag**: library
+
+## 简介
+
+manageiq-providers-awx
+
+## 官网
+
+- 主页: https://github.com/ManageIQ/manageiq-providers-awx
+- RubyGems: https://rubygems.org/gems/manageiq-providers-awx
+
+## 历史版本号
+
+- 0.0.1 (2022-07-26)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/manageiq-providers-awx
+- gem 安装: `gem install manageiq-providers-awx`
+- Bundler: `gem "manageiq-providers-awx"`
+- 最新版本: 0.0.1
+- 最新版归档: https://rubygems.org/downloads/manageiq-providers-awx-0.0.1.gem
+- 版本锁定: `gem "manageiq-providers-awx", "~> 0.0.1"`
+- 中央仓库: https://rubygems.org/

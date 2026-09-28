@@ -1,0 +1,33 @@
+# nt_studio_game
+
+**Tag**: library
+
+## 简介
+
+blahblah
+blahblah
+blahblah
+blahblah
+blahblah
+blahblah
+blahblah
+
+## 官网
+
+- 主页: http://www.pragmaticstudio.com
+- 文档: https://www.rubydoc.info/gems/nt_studio_game/1.0.0
+- RubyGems: https://rubygems.org/gems/nt_studio_game
+
+## 历史版本号
+
+- 1.0.0 (2014-06-16)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/nt_studio_game
+- gem 安装: `gem install nt_studio_game`
+- Bundler: `gem "nt_studio_game"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/nt_studio_game-1.0.0.gem
+- 版本锁定: `gem "nt_studio_game", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

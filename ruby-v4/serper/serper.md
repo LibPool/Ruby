@@ -1,0 +1,27 @@
+# serper
+
+**Tag**: library
+
+## 简介
+
+Parse SERP result page.
+
+## 官网
+
+- 主页: https://github.com/semseo/serper
+- 文档: https://www.rubydoc.info/gems/serper/0.1.0
+- RubyGems: https://rubygems.org/gems/serper
+
+## 历史版本号
+
+- 0.1.0 (2014-08-04)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/serper
+- gem 安装: `gem install serper`
+- Bundler: `gem "serper"`
+- 最新版本: 0.1.0
+- 最新版归档: https://rubygems.org/downloads/serper-0.1.0.gem
+- 版本锁定: `gem "serper", "~> 0.1.0"`
+- 中央仓库: https://rubygems.org/

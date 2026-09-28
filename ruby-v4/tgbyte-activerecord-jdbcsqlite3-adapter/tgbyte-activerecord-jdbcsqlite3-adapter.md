@@ -1,0 +1,27 @@
+# tgbyte-activerecord-jdbcsqlite3-adapter
+
+**Tag**: web, database
+
+## 简介
+
+Install this gem to use Sqlite3 with JRuby on Rails.
+
+## 官网
+
+- 主页: https://github.com/tgbyte/activerecord-jdbc-adapter
+- RubyGems: https://rubygems.org/gems/tgbyte-activerecord-jdbcsqlite3-adapter
+
+## 历史版本号
+
+- 1.2.2.5 (2012-10-24)
+- 1.2.2.4 (2012-10-24)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/tgbyte-activerecord-jdbcsqlite3-adapter
+- gem 安装: `gem install tgbyte-activerecord-jdbcsqlite3-adapter`
+- Bundler: `gem "tgbyte-activerecord-jdbcsqlite3-adapter"`
+- 最新版本: 1.2.2.5
+- 最新版归档: https://rubygems.org/downloads/tgbyte-activerecord-jdbcsqlite3-adapter-1.2.2.5.gem
+- 版本锁定: `gem "tgbyte-activerecord-jdbcsqlite3-adapter", "~> 1.2.2.5"`
+- 中央仓库: https://rubygems.org/

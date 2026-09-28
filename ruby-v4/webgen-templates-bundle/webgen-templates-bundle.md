@@ -1,0 +1,28 @@
+# webgen-templates-bundle
+
+**Tag**: web, template
+
+## 简介
+
+This webgen extension bundle provides 10+ website templates that can be
+used when creating a new website.
+
+## 官网
+
+- 主页: http://github.com/gettalong/webgen-templates-bundle
+- 文档: https://www.rubydoc.info/gems/webgen-templates-bundle/1.0.0
+- RubyGems: https://rubygems.org/gems/webgen-templates-bundle
+
+## 历史版本号
+
+- 1.0.0 (2013-08-25)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/webgen-templates-bundle
+- gem 安装: `gem install webgen-templates-bundle`
+- Bundler: `gem "webgen-templates-bundle"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/webgen-templates-bundle-1.0.0.gem
+- 版本锁定: `gem "webgen-templates-bundle", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

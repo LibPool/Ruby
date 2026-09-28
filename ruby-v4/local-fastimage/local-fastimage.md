@@ -1,0 +1,33 @@
+# local-fastimage
+
+**Tag**: library
+
+## 简介
+
+Local FastImage finds the size or type of an image reading as little bytes as needed.
+
+## 官网
+
+- 主页: https://github.com/planio-gmbh/local-fastimage
+- 文档: https://www.rubydoc.info/gems/local-fastimage/3.1.3
+- RubyGems: https://rubygems.org/gems/local-fastimage
+
+## 历史版本号
+
+- 3.1.3 (2018-09-10)
+- 3.1.2 (2018-05-09)
+- 3.1.1 (2018-05-02)
+- 3.1.0 (2018-04-24)
+- 3.0.2 (2016-10-17)
+- 3.0.1 (2016-06-02)
+- 3.0.0 (2016-06-02)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/local-fastimage
+- gem 安装: `gem install local-fastimage`
+- Bundler: `gem "local-fastimage"`
+- 最新版本: 3.1.3
+- 最新版归档: https://rubygems.org/downloads/local-fastimage-3.1.3.gem
+- 版本锁定: `gem "local-fastimage", "~> 3.1.3"`
+- 中央仓库: https://rubygems.org/

@@ -1,0 +1,32 @@
+# nomadize
+
+**Tag**: database, data
+
+## 简介
+
+Nomadize is a collection of rake tasks for managing migrations using a PostgreSQL database. It does not import an entire ORM and aims to be a small / simple utility.
+
+## 官网
+
+- 主页: https://github.com/piisalie/nomadize
+- 文档: https://www.rubydoc.info/gems/nomadize/0.4.2
+- RubyGems: https://rubygems.org/gems/nomadize
+
+## 历史版本号
+
+- 0.4.2 (2016-09-06)
+- 0.4.1 (2016-03-28)
+- 0.4.0 (2015-12-04)
+- 0.3.0 (2015-12-02)
+- 0.2.0 (2015-11-26)
+- 0.1.0 (2015-11-10)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/nomadize
+- gem 安装: `gem install nomadize`
+- Bundler: `gem "nomadize"`
+- 最新版本: 0.4.2
+- 最新版归档: https://rubygems.org/downloads/nomadize-0.4.2.gem
+- 版本锁定: `gem "nomadize", "~> 0.4.2"`
+- 中央仓库: https://rubygems.org/

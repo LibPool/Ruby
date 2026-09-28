@@ -1,0 +1,27 @@
+# bookmark_page
+
+**Tag**: web
+
+## 简介
+
+BookmarkPage creates nice looking web pages from bookmarks exported from your browser
+
+## 官网
+
+- 主页: https://github.com/chriscaragianis/bookmark_page
+- 文档: https://www.rubydoc.info/gems/bookmark_page/0.0.2
+- RubyGems: https://rubygems.org/gems/bookmark_page
+
+## 历史版本号
+
+- 0.0.2 (2016-05-14)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/bookmark_page
+- gem 安装: `gem install bookmark_page`
+- Bundler: `gem "bookmark_page"`
+- 最新版本: 0.0.2
+- 最新版归档: https://rubygems.org/downloads/bookmark_page-0.0.2.gem
+- 版本锁定: `gem "bookmark_page", "~> 0.0.2"`
+- 中央仓库: https://rubygems.org/

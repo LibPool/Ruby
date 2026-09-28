@@ -1,0 +1,29 @@
+# agentgif
+
+**Tag**: cli
+
+## 简介
+
+Upload, search, and manage terminal demo GIFs on AgentGIF.com. Generate terminal-themed package badges.
+
+## 官网
+
+- 主页: https://agentgif.com
+- 源码仓库: https://github.com/agentgif/cli-ruby
+- 文档: https://agentgif.com/docs/cli/
+- 问题追踪: https://github.com/agentgif/cli-ruby/issues
+- RubyGems: https://rubygems.org/gems/agentgif
+
+## 历史版本号
+
+- 0.2.0 (2026-03-17)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/agentgif
+- gem 安装: `gem install agentgif`
+- Bundler: `gem "agentgif"`
+- 最新版本: 0.2.0
+- 最新版归档: https://rubygems.org/downloads/agentgif-0.2.0.gem
+- 版本锁定: `gem "agentgif", "~> 0.2.0"`
+- 中央仓库: https://rubygems.org/

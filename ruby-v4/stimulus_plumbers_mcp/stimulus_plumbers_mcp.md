@@ -1,0 +1,39 @@
+# stimulus_plumbers_mcp
+
+**Tag**: web
+
+## 简介
+
+A local MCP server that exposes the stimulus-plumbers API schema and documentation to LLM-powered IDEs
+
+## 官网
+
+- 主页: https://github.com/ryancyq/stimulus-plumbers
+- 源码仓库: https://github.com/ryancyq/stimulus-plumbers/tree/main/stimulus-plumbers-mcp
+- 更新日志: https://github.com/ryancyq/stimulus-plumbers/blob/main/CHANGELOG.md
+- RubyGems: https://rubygems.org/gems/stimulus_plumbers_mcp
+
+## 历史版本号
+
+- 0.4.17 (2026-08-21)
+- 0.4.16 (2026-08-06)
+- 0.4.15 (2026-07-23)
+- 0.4.14 (2026-07-20)
+- 0.4.13 (2026-07-20)
+- 0.4.12 (2026-07-19)
+- 0.4.11 (2026-07-19)
+- 0.4.10 (2026-07-19)
+- 0.4.9 (2026-07-18)
+- 0.4.8 (2026-07-03)
+- 0.4.5 (2026-07-01)
+- 0.4.4 (2026-06-30)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/stimulus_plumbers_mcp
+- gem 安装: `gem install stimulus_plumbers_mcp`
+- Bundler: `gem "stimulus_plumbers_mcp"`
+- 最新版本: 0.4.17
+- 最新版归档: https://rubygems.org/downloads/stimulus_plumbers_mcp-0.4.17.gem
+- 版本锁定: `gem "stimulus_plumbers_mcp", "~> 0.4.17"`
+- 中央仓库: https://rubygems.org/

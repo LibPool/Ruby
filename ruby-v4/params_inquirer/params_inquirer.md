@@ -1,0 +1,27 @@
+# params_inquirer
+
+**Tag**: library
+
+## 简介
+
+ParamsInquirer gives you a prettier way to inquire params value.
+
+## 官网
+
+- 主页: https://github.com/naoty/params_inquirer
+- RubyGems: https://rubygems.org/gems/params_inquirer
+
+## 历史版本号
+
+- 0.0.2 (2013-01-26)
+- 0.0.1 (2013-01-19)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/params_inquirer
+- gem 安装: `gem install params_inquirer`
+- Bundler: `gem "params_inquirer"`
+- 最新版本: 0.0.2
+- 最新版归档: https://rubygems.org/downloads/params_inquirer-0.0.2.gem
+- 版本锁定: `gem "params_inquirer", "~> 0.0.2"`
+- 中央仓库: https://rubygems.org/

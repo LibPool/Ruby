@@ -1,0 +1,29 @@
+# pushybullet
+
+**Tag**: web
+
+## 简介
+
+A ruby gem for the pushybullet api
+
+## 官网
+
+- 主页: https://github.com/arcticfoxnv/pushybullet-gem
+- 更新日志: https://github.com/arcticfoxnv/pushybullet-gem/blob/master/CHANGELOG.md
+- RubyGems: https://rubygems.org/gems/pushybullet
+
+## 历史版本号
+
+- 0.1.2 (2020-11-19)
+- 0.1.1 (2020-11-18)
+- 0.1.0 (2020-11-18)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/pushybullet
+- gem 安装: `gem install pushybullet`
+- Bundler: `gem "pushybullet"`
+- 最新版本: 0.1.2
+- 最新版归档: https://rubygems.org/downloads/pushybullet-0.1.2.gem
+- 版本锁定: `gem "pushybullet", "~> 0.1.2"`
+- 中央仓库: https://rubygems.org/

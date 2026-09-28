@@ -1,0 +1,47 @@
+# appoxy_sessions
+
+**Tag**: library
+
+## 简介
+
+Appoxy Sessions gem description...
+
+## 官网
+
+- 主页: http://www.appoxy.com
+- RubyGems: https://rubygems.org/gems/appoxy_sessions
+
+## 历史版本号
+
+- 0.0.22 (2010-12-20)
+- 0.0.21 (2010-12-17)
+- 0.0.20 (2010-07-28)
+- 0.0.19 (2010-07-28)
+- 0.0.18 (2010-06-19)
+- 0.0.17 (2010-06-08)
+- 0.0.16 (2010-06-08)
+- 0.0.15 (2010-04-17)
+- 0.0.14 (2010-03-30)
+- 0.0.13 (2010-03-30)
+- 0.0.12 (2010-03-07)
+- 0.0.11 (2010-02-15)
+- 0.0.10 (2010-02-15)
+- 0.0.9 (2010-02-15)
+- 0.0.8 (2010-02-10)
+- 0.0.7 (2010-02-05)
+- 0.0.6 (2010-02-05)
+- 0.0.5 (2010-02-05)
+- 0.0.4 (2010-02-03)
+- 0.0.3 (2010-02-03)
+- 0.0.2 (2010-02-03)
+- 0.0.1 (2010-02-03)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/appoxy_sessions
+- gem 安装: `gem install appoxy_sessions`
+- Bundler: `gem "appoxy_sessions"`
+- 最新版本: 0.0.22
+- 最新版归档: https://rubygems.org/downloads/appoxy_sessions-0.0.22.gem
+- 版本锁定: `gem "appoxy_sessions", "~> 0.0.22"`
+- 中央仓库: https://rubygems.org/

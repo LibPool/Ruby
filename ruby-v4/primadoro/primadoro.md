@@ -1,0 +1,27 @@
+# primadoro
+
+**Tag**: library
+
+## 简介
+
+A gem for executing custom actions during Pomodoros
+
+## 官网
+
+- 主页: http://github.com/jm/primadoro
+- RubyGems: https://rubygems.org/gems/primadoro
+
+## 历史版本号
+
+- 0.0.1 (2010-07-30)
+- 0.0.0 (2010-07-30)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/primadoro
+- gem 安装: `gem install primadoro`
+- Bundler: `gem "primadoro"`
+- 最新版本: 0.0.1
+- 最新版归档: https://rubygems.org/downloads/primadoro-0.0.1.gem
+- 版本锁定: `gem "primadoro", "~> 0.0.1"`
+- 中央仓库: https://rubygems.org/

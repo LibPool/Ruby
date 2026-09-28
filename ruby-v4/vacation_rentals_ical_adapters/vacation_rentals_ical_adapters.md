@@ -1,0 +1,29 @@
+# vacation_rentals_ical_adapters
+
+**Tag**: library
+
+## 简介
+
+Channel-based adapters for transforming input into iCal format
+
+## 官网
+
+- 主页: http://github.com/Azdaroth/decent_presenter/vacation_rentals_ical_adapters
+- 文档: https://www.rubydoc.info/gems/vacation_rentals_ical_adapters/0.1.2
+- RubyGems: https://rubygems.org/gems/vacation_rentals_ical_adapters
+
+## 历史版本号
+
+- 0.1.2 (2016-12-11)
+- 0.1.1 (2016-11-04)
+- 0.1.0 (2016-11-04)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/vacation_rentals_ical_adapters
+- gem 安装: `gem install vacation_rentals_ical_adapters`
+- Bundler: `gem "vacation_rentals_ical_adapters"`
+- 最新版本: 0.1.2
+- 最新版归档: https://rubygems.org/downloads/vacation_rentals_ical_adapters-0.1.2.gem
+- 版本锁定: `gem "vacation_rentals_ical_adapters", "~> 0.1.2"`
+- 中央仓库: https://rubygems.org/

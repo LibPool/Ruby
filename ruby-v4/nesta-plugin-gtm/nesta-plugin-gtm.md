@@ -1,0 +1,26 @@
+# nesta-plugin-gtm
+
+**Tag**: library
+
+## 简介
+
+my first nesta plugin
+
+## 官网
+
+- 文档: https://www.rubydoc.info/gems/nesta-plugin-gtm/0.1.0
+- RubyGems: https://rubygems.org/gems/nesta-plugin-gtm
+
+## 历史版本号
+
+- 0.1.0 (2017-08-08)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/nesta-plugin-gtm
+- gem 安装: `gem install nesta-plugin-gtm`
+- Bundler: `gem "nesta-plugin-gtm"`
+- 最新版本: 0.1.0
+- 最新版归档: https://rubygems.org/downloads/nesta-plugin-gtm-0.1.0.gem
+- 版本锁定: `gem "nesta-plugin-gtm", "~> 0.1.0"`
+- 中央仓库: https://rubygems.org/

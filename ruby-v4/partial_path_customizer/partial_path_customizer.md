@@ -1,0 +1,27 @@
+# partial_path_customizer
+
+**Tag**: web, filesystem
+
+## 简介
+
+Easily override #to_partial_path on Rails models
+
+## 官网
+
+- 主页: https://github.com/AnimasCodeLabs/partial_path_customizer
+- 文档: https://www.rubydoc.info/gems/partial_path_customizer/0.1.0
+- RubyGems: https://rubygems.org/gems/partial_path_customizer
+
+## 历史版本号
+
+- 0.1.0 (2014-10-09)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/partial_path_customizer
+- gem 安装: `gem install partial_path_customizer`
+- Bundler: `gem "partial_path_customizer"`
+- 最新版本: 0.1.0
+- 最新版归档: https://rubygems.org/downloads/partial_path_customizer-0.1.0.gem
+- 版本锁定: `gem "partial_path_customizer", "~> 0.1.0"`
+- 中央仓库: https://rubygems.org/

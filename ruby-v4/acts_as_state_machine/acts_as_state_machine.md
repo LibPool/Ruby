@@ -1,0 +1,28 @@
+# acts_as_state_machine
+
+**Tag**: library
+
+## 简介
+
+This act gives an Active Record model the ability to act as a finite state machine (FSM).
+
+## 官网
+
+- 主页: http://github.com/jcnetdev/acts_as_state_machine
+- RubyGems: https://rubygems.org/gems/acts_as_state_machine
+
+## 历史版本号
+
+- 2.2.0 (2010-02-14)
+- 2.1.3 (2010-02-14)
+- 2.1.20080704 (2010-01-04)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/acts_as_state_machine
+- gem 安装: `gem install acts_as_state_machine`
+- Bundler: `gem "acts_as_state_machine"`
+- 最新版本: 2.2.0
+- 最新版归档: https://rubygems.org/downloads/acts_as_state_machine-2.2.0.gem
+- 版本锁定: `gem "acts_as_state_machine", "~> 2.2.0"`
+- 中央仓库: https://rubygems.org/

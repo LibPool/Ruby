@@ -1,0 +1,27 @@
+# giraffesoft-is_taggable
+
+**Tag**: library
+
+## 简介
+
+tagging that doesn't want to be on steroids. it's skinny and happy to stay that way.
+
+## 官网
+
+- 主页: http://github.com/giraffesoft/is_taggable
+- 文档: https://www.rubydoc.info/gems/giraffesoft-is_taggable/0.1.0
+- RubyGems: https://rubygems.org/gems/giraffesoft-is_taggable
+
+## 历史版本号
+
+- 0.1.0 (2014-08-11)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/giraffesoft-is_taggable
+- gem 安装: `gem install giraffesoft-is_taggable`
+- Bundler: `gem "giraffesoft-is_taggable"`
+- 最新版本: 0.1.0
+- 最新版归档: https://rubygems.org/downloads/giraffesoft-is_taggable-0.1.0.gem
+- 版本锁定: `gem "giraffesoft-is_taggable", "~> 0.1.0"`
+- 中央仓库: https://rubygems.org/

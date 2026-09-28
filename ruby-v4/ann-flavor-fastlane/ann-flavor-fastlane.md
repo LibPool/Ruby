@@ -1,0 +1,31 @@
+# ann-flavor-fastlane
+
+**Tag**: tooling
+
+## 简介
+
+A fastlane plugin to manage Flutter build flavors and shared setup.
+
+## 官网
+
+- 主页: https://github.com/anntech-dev
+- 文档: https://www.rubydoc.info/gems/ann-flavor-fastlane/1.0.4
+- RubyGems: https://rubygems.org/gems/ann-flavor-fastlane
+
+## 历史版本号
+
+- 1.0.4 (2026-09-09)
+- 1.0.3 (2026-09-04)
+- 1.0.2 (2026-09-03)
+- 1.0.1 (2026-08-31)
+- 1.0.0 (2026-08-31)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/ann-flavor-fastlane
+- gem 安装: `gem install ann-flavor-fastlane`
+- Bundler: `gem "ann-flavor-fastlane"`
+- 最新版本: 1.0.4
+- 最新版归档: https://rubygems.org/downloads/ann-flavor-fastlane-1.0.4.gem
+- 版本锁定: `gem "ann-flavor-fastlane", "~> 1.0.4"`
+- 中央仓库: https://rubygems.org/

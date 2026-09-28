@@ -1,0 +1,28 @@
+# merb-recaptcha
+
+**Tag**: library
+
+## 简介
+
+Merb plugin that provides helpers for recaptcha.net service
+
+## 官网
+
+- 主页: http://github.com/antage/merb-recaptcha/
+- 源码仓库: http://github.com/antage/merb-recaptcha
+- 文档: http://rdoc.info/projects/antage/merb-recaptcha
+- RubyGems: https://rubygems.org/gems/merb-recaptcha
+
+## 历史版本号
+
+- 1.0.3 (2009-10-08)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/merb-recaptcha
+- gem 安装: `gem install merb-recaptcha`
+- Bundler: `gem "merb-recaptcha"`
+- 最新版本: 1.0.3
+- 最新版归档: https://rubygems.org/downloads/merb-recaptcha-1.0.3.gem
+- 版本锁定: `gem "merb-recaptcha", "~> 1.0.3"`
+- 中央仓库: https://rubygems.org/

@@ -1,0 +1,37 @@
+# runapi-happyhorse
+
+**Tag**: web, testing
+
+## 简介
+
+The HappyHorse Ruby SDK is the language-specific package for HappyHorse on RunAPI. Use this package for video generation, animation, and video editing workflows when your application needs request bodies, task status lookup, and consistent RunAPI errors in Ruby.
+
+## 官网
+
+- 主页: https://runapi.ai/models/happyhorse
+- 源码仓库: https://github.com/runapi-ai/happyhorse-sdk
+- 文档: https://github.com/runapi-ai/happyhorse-sdk/blob/main/ruby/README.md
+- 更新日志: https://github.com/runapi-ai/happyhorse-sdk/blob/main/CHANGELOG.md
+- 问题追踪: https://github.com/runapi-ai/happyhorse-sdk/issues
+- RubyGems: https://rubygems.org/gems/runapi-happyhorse
+
+## 历史版本号
+
+- 0.2.11 (2026-09-04)
+- 0.2.10 (2026-08-18)
+- 0.2.9 (2026-07-28)
+- 0.2.8 (2026-07-20)
+- 0.2.7 (2026-07-02)
+- 0.2.6 (2026-06-18)
+- 0.2.5 (2026-06-01)
+- 0.2.4 (2026-05-30)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/runapi-happyhorse
+- gem 安装: `gem install runapi-happyhorse`
+- Bundler: `gem "runapi-happyhorse"`
+- 最新版本: 0.2.11
+- 最新版归档: https://rubygems.org/downloads/runapi-happyhorse-0.2.11.gem
+- 版本锁定: `gem "runapi-happyhorse", "~> 0.2.11"`
+- 中央仓库: https://rubygems.org/

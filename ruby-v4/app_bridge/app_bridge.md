@@ -1,0 +1,137 @@
+# app_bridge
+
+**Tag**: web, testing
+
+## 简介
+
+The app_bridge gem is designed to enable seamless interaction with WebAssembly components that adhere to the WIT specification `standout:app`. It is developed for use in Standout's products.
+
+## 官网
+
+- 主页: https://github.com/standout/app_bridge
+- 更新日志: https://github.com/standout/app_bridge/blob/main/CHANGELOG.md
+- RubyGems: https://rubygems.org/gems/app_bridge
+
+## 历史版本号
+
+- 5.0.0 (2026-08-28)
+- 5.0.0-x86_64-linux (2026-08-28)
+- 5.0.0-x86_64-linux-musl (2026-08-28)
+- 5.0.0-x86_64-darwin (2026-08-28)
+- 5.0.0-arm64-darwin (2026-08-28)
+- 5.0.0-aarch64-linux (2026-08-28)
+- 5.0.0-aarch64-linux-musl (2026-08-28)
+- 4.1.1 (2026-02-10)
+- 4.1.1-x86_64-linux (2026-02-10)
+- 4.1.1-x86_64-linux-musl (2026-02-10)
+- 4.1.1-x86_64-darwin (2026-02-10)
+- 4.1.1-arm64-darwin (2026-02-10)
+- 4.1.1-aarch64-linux (2026-02-10)
+- 4.1.1-aarch64-linux-musl (2026-02-10)
+- 4.1.0-x86_64-linux-musl (2026-02-10)
+- 4.1.0-arm64-darwin (2026-02-10)
+- 4.1.0-aarch64-linux-musl (2026-02-10)
+- 4.1.0-aarch64-linux (2026-02-10)
+- 4.1.0-x86_64-darwin (2026-02-10)
+- 4.1.0 (2026-02-10)
+- 4.0.0-x86_64-linux-musl (2026-01-27)
+- 4.0.0-x86_64-linux (2026-01-27)
+- 4.0.0-arm64-darwin (2026-01-27)
+- 4.0.0-aarch64-linux (2026-01-27)
+- 4.0.0-x86_64-darwin (2026-01-27)
+- 4.0.0-aarch64-linux-musl (2026-01-27)
+- 4.0.0 (2026-01-27)
+- 3.0.0-aarch64-linux (2025-10-29)
+- 3.0.0-x86_64-linux-musl (2025-10-29)
+- 3.0.0-aarch64-linux-musl (2025-10-29)
+- 3.0.0-x86_64-linux (2025-10-29)
+- 3.0.0-x86_64-darwin (2025-10-29)
+- 3.0.0-arm64-darwin (2025-10-29)
+- 3.0.0 (2025-10-29)
+- 2.1.2-x86_64-linux (2025-10-03)
+- 2.1.2-aarch64-linux (2025-10-03)
+- 2.1.2-aarch64-linux-musl (2025-10-03)
+- 2.1.2-x86_64-darwin (2025-10-03)
+- 2.1.2-arm64-darwin (2025-10-03)
+- 2.1.2 (2025-10-03)
+- 2.1.1-x86_64-darwin (2025-10-03)
+- 2.1.1-aarch64-linux (2025-10-03)
+- 2.1.1 (2025-10-03)
+- 2.1.0-x86_64-darwin (2025-10-02)
+- 2.1.0-x86_64-linux (2025-10-02)
+- 2.1.0-x86_64-linux-musl (2025-10-02)
+- 2.1.0-aarch64-linux (2025-10-02)
+- 2.1.0-aarch64-linux-musl (2025-10-02)
+- 2.1.0-arm64-darwin (2025-10-02)
+- 2.1.0 (2025-10-02)
+- 2.0.1-x86_64-linux-musl (2025-04-14)
+- 2.0.1-x86_64-darwin (2025-04-14)
+- 2.0.1-arm64-darwin (2025-04-14)
+- 2.0.1 (2025-04-14)
+- 2.0.1-x86_64-linux (2025-04-14)
+- 2.0.1-aarch64-linux (2025-04-14)
+- 2.0.1-aarch64-linux-musl (2025-04-14)
+- 2.0.0-aarch64-linux-musl (2025-04-14)
+- 2.0.0-arm64-darwin (2025-04-14)
+- 2.0.0-x86_64-linux (2025-04-14)
+- 2.0.0-x86_64-linux-musl (2025-04-14)
+- 2.0.0 (2025-04-14)
+- 1.0.0 (2025-04-03)
+- 1.0.0-aarch64-linux-musl (2025-04-03)
+- 1.0.0-arm64-darwin (2025-04-03)
+- 1.0.0-x86_64-linux-musl (2025-04-03)
+- 1.0.0-x86_64-linux (2025-04-03)
+- 1.0.0-x86_64-darwin (2025-04-03)
+- 1.0.0-aarch64-linux (2025-04-03)
+- 0.8.4-aarch64-linux-musl (2025-02-28)
+- 0.8.4-x86_64-linux-musl (2025-02-28)
+- 0.8.4 (2025-02-28)
+- 0.8.4-aarch64-linux (2025-02-28)
+- 0.8.4-x86_64-linux (2025-02-28)
+- 0.8.4-x86_64-darwin (2025-02-28)
+- 0.8.4-arm64-darwin (2025-02-28)
+- 0.8.2-x86_64-darwin (2025-02-27)
+- 0.8.2-x86_64-linux-musl (2025-02-27)
+- 0.8.2-x86_64-linux (2025-02-27)
+- 0.8.2-aarch64-linux (2025-02-27)
+- 0.8.2-aarch64-linux-musl (2025-02-27)
+- 0.8.2-arm64-darwin (2025-02-27)
+- 0.8.2 (2025-02-27)
+- 0.8.0-x86_64-linux (2025-02-27)
+- 0.8.0-arm64-darwin (2025-02-27)
+- 0.8.0-aarch64-linux-musl (2025-02-27)
+- 0.8.0-aarch64-linux (2025-02-27)
+- 0.8.0 (2025-02-27)
+- 0.7.2-arm64-darwin (2025-02-26)
+- 0.7.2-x86_64-linux-musl (2025-02-26)
+- 0.7.2-x86_64-linux (2025-02-26)
+- 0.7.2-aarch64-linux (2025-02-26)
+- 0.7.2-aarch64-linux-musl (2025-02-26)
+- 0.7.2-x86_64-darwin (2025-02-26)
+- 0.7.2 (2025-02-26)
+- 0.7.1-aarch64-linux (2025-02-26)
+- 0.7.1-x86_64-linux (2025-02-26)
+- 0.7.1-x86_64-linux-musl (2025-02-26)
+- 0.7.1-aarch64-linux-musl (2025-02-26)
+- 0.7.1 (2025-02-26)
+- 0.7.0-arm64-darwin (2025-02-26)
+- 0.7.0-aarch64-linux (2025-02-26)
+- 0.7.0 (2025-02-26)
+- 0.7.0-x86_64-darwin (2025-02-26)
+- 0.7.0-x86_64-linux (2025-02-26)
+- 0.6.0-arm64-darwin (2025-02-26)
+- 0.6.0-aarch64-linux (2025-02-26)
+- 0.6.0-x86_64-linux (2025-02-26)
+- 0.6.0-x86_64-darwin (2025-02-26)
+- 0.2.0 (2025-02-24)
+- 0.1.0 (2025-02-24)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/app_bridge
+- gem 安装: `gem install app_bridge`
+- Bundler: `gem "app_bridge"`
+- 最新版本: 5.0.0
+- 最新版归档: https://rubygems.org/downloads/app_bridge-5.0.0.gem
+- 版本锁定: `gem "app_bridge", "~> 5.0.0"`
+- 中央仓库: https://rubygems.org/

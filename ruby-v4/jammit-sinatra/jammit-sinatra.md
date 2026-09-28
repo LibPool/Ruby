@@ -1,0 +1,31 @@
+# jammit-sinatra
+
+**Tag**: web, template, tooling, filesystem, data
+
+## 简介
+
+Jammit is an industrial strength asset packaging library for Sinatra/Padrino,
+    providing both the CSS and JavaScript concatenation and compression that
+    you'd expect, as well as YUI Compressor and Closure Compiler compatibility,
+    ahead-of-time gzipping, built-in JavaScript template support, and optional
+    Data-URI / MHTML image embedding.
+
+## 官网
+
+- 主页: http://documentcloud.github.com/jammit/
+- RubyGems: https://rubygems.org/gems/jammit-sinatra
+
+## 历史版本号
+
+- 0.6.0.2 (2012-03-22)
+- 0.6.0.1 (2011-04-10)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/jammit-sinatra
+- gem 安装: `gem install jammit-sinatra`
+- Bundler: `gem "jammit-sinatra"`
+- 最新版本: 0.6.0.2
+- 最新版归档: https://rubygems.org/downloads/jammit-sinatra-0.6.0.2.gem
+- 版本锁定: `gem "jammit-sinatra", "~> 0.6.0.2"`
+- 中央仓库: https://rubygems.org/

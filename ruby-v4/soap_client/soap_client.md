@@ -1,0 +1,31 @@
+# soap_client
+
+**Tag**: cli
+
+## 简介
+
+Wrapper around SOAP clients (starts with Savon).
+
+## 官网
+
+- 主页: https://github.com/imacchiato/soap_client
+- 文档: https://www.rubydoc.info/gems/soap_client/1.0.1
+- RubyGems: https://rubygems.org/gems/soap_client
+
+## 历史版本号
+
+- 1.0.1 (2017-02-17)
+- 1.0.0 (2017-02-16)
+- 0.3.0 (2017-02-13)
+- 0.2.0 (2016-03-09)
+- 0.1.0 (2016-03-01)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/soap_client
+- gem 安装: `gem install soap_client`
+- Bundler: `gem "soap_client"`
+- 最新版本: 1.0.1
+- 最新版归档: https://rubygems.org/downloads/soap_client-1.0.1.gem
+- 版本锁定: `gem "soap_client", "~> 1.0.1"`
+- 中央仓库: https://rubygems.org/

@@ -1,0 +1,27 @@
+# yahoo_sports_ff
+
+**Tag**: library
+
+## 简介
+
+asdgasdg
+
+## 官网
+
+- 主页: https://github.com/aadamson/yahoo_sports_ff
+- 文档: https://www.rubydoc.info/gems/yahoo_sports_ff/0.0.0
+- RubyGems: https://rubygems.org/gems/yahoo_sports_ff
+
+## 历史版本号
+
+- 0.0.0 (2013-12-14)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/yahoo_sports_ff
+- gem 安装: `gem install yahoo_sports_ff`
+- Bundler: `gem "yahoo_sports_ff"`
+- 最新版本: 0.0.0
+- 最新版归档: https://rubygems.org/downloads/yahoo_sports_ff-0.0.0.gem
+- 版本锁定: `gem "yahoo_sports_ff", "~> 0.0.0"`
+- 中央仓库: https://rubygems.org/
