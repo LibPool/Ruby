@@ -1,0 +1,32 @@
+# eli-theme
+
+**Tag**: library
+
+## 简介
+
+This theme was designed for modern blogs with an emphasis on niche aesthetic.
+
+## 官网
+
+- 主页: https://github.com/thegoobs/eli-theme
+- 文档: https://www.rubydoc.info/gems/eli-theme/0.1.5
+- RubyGems: https://rubygems.org/gems/eli-theme
+
+## 历史版本号
+
+- 0.1.5 (2018-06-07)
+- 0.1.4 (2018-06-05)
+- 0.1.3 (2018-06-05)
+- 0.1.2 (2018-06-05)
+- 0.1.1 (2018-06-05)
+- 0.1.0 (2018-06-03)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/eli-theme
+- gem 安装: `gem install eli-theme`
+- Bundler: `gem "eli-theme"`
+- 最新版本: 0.1.5
+- 最新版归档: https://rubygems.org/downloads/eli-theme-0.1.5.gem
+- 版本锁定: `gem "eli-theme", "~> 0.1.5"`
+- 中央仓库: https://rubygems.org/

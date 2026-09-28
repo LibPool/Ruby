@@ -1,0 +1,28 @@
+# plum-jekyll
+
+**Tag**: library
+
+## 简介
+
+Themes for Jekyll
+
+## 官网
+
+- 主页: https://diansadulloh.com
+- 文档: https://www.rubydoc.info/gems/plum-jekyll/0.1.1
+- RubyGems: https://rubygems.org/gems/plum-jekyll
+
+## 历史版本号
+
+- 0.1.1 (2019-07-25)
+- 0.1.0 (2019-07-25)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/plum-jekyll
+- gem 安装: `gem install plum-jekyll`
+- Bundler: `gem "plum-jekyll"`
+- 最新版本: 0.1.1
+- 最新版归档: https://rubygems.org/downloads/plum-jekyll-0.1.1.gem
+- 版本锁定: `gem "plum-jekyll", "~> 0.1.1"`
+- 中央仓库: https://rubygems.org/

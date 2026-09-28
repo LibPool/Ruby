@@ -1,0 +1,323 @@
+# ragerender
+
+**Tag**: web, cli, testing, security, serialization, networking, template, tooling, filesystem, data
+
+## 简介
+
+== What's this?
+
+{ComicFury}[https://comicfury.com] is an excellent no-bullshit webcomic hosting
+site created and maintained by the legend Kyo. You should support them on
+{Patreon}[https://www.patreon.com/comicfury]!
+
+{Jekyll}[https://jekyllrb.com] is a highly regarded and widespread static site
+generator. It builds simple slowly-changing content into HTML files using
+templates.
+
+RageRender allows you to use your ComicFury templates to generate a static
+version of your webcomic site using Jekyll. You just supply your templates,
+comics and blogs, and RageRender will output a site that mimics your ComicFury
+site.
+
+Well, I say "mimics". Output is a static site, which means all of the
+interactive elements of ComicFury don't work. This includes comments,
+subscriptions, search, and comic management.
+
+=== But why?!
+
+RageRender allows those of us who work on making changes to ComicFury site
+templates to test our changes before we put them live.
+
+With RageRender, you can edit your CSS, HTML templates and site settings before
+you upload them to ComicFury. This makes the process of testing changes quicker
+and makes it much more likely that you catch mistakes before any comic readers
+have a chance to see them.
+
+RageRender doesn't compete with the most excellent ComicFury (who's Patreon you
+should contribute to, as I do!) – you should continue to use ComicFury for all
+your day-to-day artistic rage management needs. But if you find yourself making
+changes to a site design, RageRender may be able to help you.
+
+== Getting started
+
+First, you need to have {Ruby}[https://www.ruby-lang.org/] and
+{Bundler}[https://bundle.io/] installed. The Jekyll site has {good guides on how
+to do that}[https://jekyllrb.com/docs/installation/] depending on your operating
+system.
+
+To set up a new site, open a terminal and type:
+
+  mkdir mycomic && cd mycomic
+  bundle init
+  bundle add jekyll
+  bundle add ragerender --group=jekyll_plugins
+
+Now you can add comics! Add the image into an <tt>images</tt> folder:
+
+  mkdir images
+  cp 'cool comic.jpg' 'images/My first page.jpg'
+
+The file name of the image will be the title of your comic page. And that's it,
+you added your first comic!
+
+If you want to add an author note, create a text file in a folder called
+<tt>_comics</tt> that has the same file name, but with a <tt>.txt</tt> extension:
+
+  mkdir _comics
+  echo "Check out my cool comic y'all!" > '_comics/My first page.txt'
+
+Or use HTML:
+
+  echo "This is my <strong>first</strong> page!" > '_comics/My first page.html'
+
+Generate the site using:
+
+  bundle exec jekyll build
+
+Or start a local website to see it in your browser:
+
+  bundle exec jekyll serve
+  # Now visit http://localhost:4000!
+
+=== Customising your site
+
+You'll notice a few things that might be off about your site, including that the
+webcomic title and author name are probably not what you were expecting.
+
+You can create a configuration file to tell RageRender the important details.
+Put something like this in your webcomic folder and call it
+<tt>_config.yml</tt>:
+
+  title: "My awesome webcomic!"
+  slogan: "It's the best!"
+  description: >
+    My epic story about how him and her
+    fell into a romantic polycule with they and them
+  status: active
+  genres:
+  - Comedy
+  - Romance
+
+  defaults:
+  - scope:
+      path: ''
+    values:
+      author: "John smith"
+
+  theme: ragerender
+
+Your webcomic now has its basic information set up.
+
+=== Adding your layouts
+
+If you want to use your own layout code, then create a <tt>_layouts</tt>
+directory and put the contents of each of your ComicFury layout tabs in there,
+and then put your CSS in the main folder.
+
+The easiest way is to go to your Webcomic Management, click "Edit Layout", then
+in the box labelled "Useful", click "Download Layout Backup". Pass this file to
+RageRender, which will <tt>unpack</tt> it for you:
+
+    bundle exec jekyll unpack mycomic-2025-09-13.cflxml
+
+You should end up with a full set of files like:
+
+  _layouts
+    archive.html
+    blog-archive.html
+    blog-display.html
+    comic-page.html
+    error-page.html
+    overall.html
+    overview.html
+    search.html
+  layout.css
+
+Now when you build your site, your custom templates and styles will be used
+instead.
+
+=== Adding blogs
+
+Add your blogs into a folder called <tt>_posts</tt>:
+
+  cat _posts/2025-05-29-my-new-comic.md
+  Hey guys, welcome to my new comic! It's gonna be so sick!
+
+Note that the name of your blog post has to include the date and the title, or
+it'll be ignored.
+
+=== Customising comics and blogs
+
+You can add {Front Matter}[https://jekyllrb.com/docs/front-matter/] to set the
+details of your author notes and blogs manually:
+
+  ---
+  title: "spooky comic page"
+  date: "2025-03-05 16:20"
+  image: "images/ghost.png"
+  author: "Jane doe"
+  description: "Some spooky mouseover text"
+  keywords: [excellent, comic page, spooky]
+  custom:
+    # use yes and no for tickbox settings
+    spooky: yes
+    # use text in quotes for short texts
+    mantra: "live long and prosper"
+    # use indented text for long texts
+    haiku: >
+      Testing webcomics
+      Now easier than ever
+      Thanks to RageRender
+  transcript: >
+    The transcript contains a machine-readable version
+    of all the text in your comic image.
+  comments:
+    - author: "Skippy"
+      date: "13 Mar 2025, 3.45 PM"
+      comment: "Wow this is so sick!"
+  ---
+  Your author note still goes at the end, like this!
+
+=== Adding extra pages
+
+You can add extra pages just by adding new HTML files to your webcomic folder.
+The name of the file becomes the URL that it will use.
+
+Pages by default won't be embedded into your 'Overall' layout. You can change
+that and more with optional Front Matter:
+
+  ---
+  # Include this line to set the page title
+  title: "Bonus content"
+  # Include this line to hide the page from the navigation menu
+  hidden: yes
+  # Include this line to embed this page in the overall layout
+  layout: Overall
+  ---
+  <h1>yo check out my bonus content!</h1>
+
+=== Controlling the front page
+
+As on ComicFury you have a few options for setting the front page of you site.
+You control this by setting a <tt>frontpage</tt> key in your site config.
+
+- <tt>latest</tt> will display the latest comic (also the default)
+- <tt>first</tt> will display the first comic
+- <tt>chapter</tt> will display the first comic in the latest chapter
+- <tt>blog</tt> will display the list of blog posts
+- <tt>archive</tt> will display the comic archive
+- <tt>overview</tt> will display the comic overview (blogs and latest page)
+- anything else will display the extra page that has the matching
+  <tt>slug</tt> in its Front Matter
+
+=== Comics with custom HTML code
+
+You can use custom HTML code in place of an image for your comic page. Instead
+of creating an image, just create an HTML file in your <tt>images</tt> folder:
+
+  cat '<video src="/files/my-animation.webm"></video>" > images/1.html
+
+=== Multi-image comics
+
+You can add up to 12 images to each comic page on ComicFury. To do that in
+RageRender, add each image to an <tt>images</tt> key in your comic page:
+
+  ---
+  title: "Comic with many pages"
+  date: "2026-04-20 16:20"
+  images:
+  - /images/first.png
+  - /images/second.png
+  - /images/third.png
+  ---
+
+=== Testing search pages
+
+Live search does not work in RageRender, as your site is statically built and
+can't respond to new data from the browser. However, you can simulate a search
+when you build the site to help test search results designs. To do that, add a
+`searchterm` to the search page using defaults in your `_config.yml`:
+
+    defaults:
+    - scope:
+        path: ''
+        layout: search
+      values:
+        searchterm: "my character"
+
+The search that gets performed will be somewhat similar to how ComicFury will
+search your comic, but may not be exactly the same.
+
+=== Putting changes on ComicFury
+
+Once you're done making changes, you can <tt>pack</tt> your layout:
+
+    bundle exec jekyll pack
+
+The resulting file can be uploaded to ComicFury by going to your Webcomic
+Management, clicking "Edit Layout", then in the box labelled "Useful", click
+"Restore Layout Backup".
+
+=== Stuff that doesn't work
+
+Here is a probably incomplete list of things you can expect to be different
+about your local site compared to ComicFury:
+
+- Any comments you specify in Front Matter will be present, but you can't add
+  new ones
+- Search doesn't do anything at all
+- Saving and loading your place in the comic isn't implemented
+- GET and POST variables in templates are ignored and will always be blank
+- Random numbers in templates will be random only once per site build, not once
+  per page call
+
+== Without Jekyll
+
+RageRender can also be used without Jekyll to turn ComicFury templates into
+templates in other languages.
+
+E.g:
+
+  gem install ragerender
+  echo "[c:iscomicpage]<div>[f:js|v:comictitle]</div>[/]" > template.html
+  ruby $(gem which ragerender/to_liquid) template.html
+  # {% if iscomicpage   %}<div>{{ comictitle | escape }}</div>{% endif %}
+  ruby $(gem which ragerender/to_erb) template.html
+  # <% if  iscomicpage   %><div><%= js(comictitle) %></div><% end %>
+
+You still need to pass the correct variables to these templates; browse {this
+unofficial documentation}[https://github.com/heyeinin/comicfury-documentation]
+or RageRender::ComicDrop etc. to see which variables work on which templates.
+
+== Get help
+
+That's not a proclamation but an invitation! Reach out if you're having trouble
+by {raising an issue}[https://github.com/simonwo/ragerender/issues] or posting
+in the ComicFury forums.
+
+## 官网
+
+- 主页: https://github.com/simonwo/ragerender
+- RubyGems: https://rubygems.org/gems/ragerender
+
+## 历史版本号
+
+- 0.1.9 (2026-05-02)
+- 0.1.8 (2026-04-14)
+- 0.1.7 (2026-02-26)
+- 0.1.6 (2025-09-21)
+- 0.1.5 (2025-09-06)
+- 0.1.4 (2025-07-20)
+- 0.1.3 (2025-07-02)
+- 0.1.2 (2025-06-09)
+- 0.1.1 (2025-05-30)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/ragerender
+- gem 安装: `gem install ragerender`
+- Bundler: `gem "ragerender"`
+- 最新版本: 0.1.9
+- 最新版归档: https://rubygems.org/downloads/ragerender-0.1.9.gem
+- 版本锁定: `gem "ragerender", "~> 0.1.9"`
+- 中央仓库: https://rubygems.org/

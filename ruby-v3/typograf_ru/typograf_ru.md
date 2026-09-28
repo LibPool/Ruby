@@ -1,0 +1,26 @@
+# typograf_ru
+
+**Tag**: web, networking
+
+## 简介
+
+Gem adds ability to format russian text by http://typograf.ru for AcitveRecord attributes.
+
+## 官网
+
+- RubyGems: https://rubygems.org/gems/typograf_ru
+
+## 历史版本号
+
+- 0.0.2 (2012-11-26)
+- 0.0.1 (2012-03-27)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/typograf_ru
+- gem 安装: `gem install typograf_ru`
+- Bundler: `gem "typograf_ru"`
+- 最新版本: 0.0.2
+- 最新版归档: https://rubygems.org/downloads/typograf_ru-0.0.2.gem
+- 版本锁定: `gem "typograf_ru", "~> 0.0.2"`
+- 中央仓库: https://rubygems.org/

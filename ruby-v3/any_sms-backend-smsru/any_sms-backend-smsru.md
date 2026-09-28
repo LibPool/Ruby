@@ -1,0 +1,27 @@
+# any_sms-backend-smsru
+
+**Tag**: library
+
+## 简介
+
+AnySMS backend for sms.ru service
+
+## 官网
+
+- 主页: https://github.com/Fedcomp/any_sms-backend-smsru
+- 文档: https://www.rubydoc.info/gems/any_sms-backend-smsru/0.1.0
+- RubyGems: https://rubygems.org/gems/any_sms-backend-smsru
+
+## 历史版本号
+
+- 0.1.0 (2018-02-01)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/any_sms-backend-smsru
+- gem 安装: `gem install any_sms-backend-smsru`
+- Bundler: `gem "any_sms-backend-smsru"`
+- 最新版本: 0.1.0
+- 最新版归档: https://rubygems.org/downloads/any_sms-backend-smsru-0.1.0.gem
+- 版本锁定: `gem "any_sms-backend-smsru", "~> 0.1.0"`
+- 中央仓库: https://rubygems.org/

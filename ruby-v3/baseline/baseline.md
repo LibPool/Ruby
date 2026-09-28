@@ -1,0 +1,26 @@
+# baseline
+
+**Tag**: library
+
+## 简介
+
+FIX ME
+
+## 官网
+
+- 主页: http://banisterfiend.wordpress.com
+- RubyGems: https://rubygems.org/gems/baseline
+
+## 历史版本号
+
+- 0.1.0 (2011-01-29)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/baseline
+- gem 安装: `gem install baseline`
+- Bundler: `gem "baseline"`
+- 最新版本: 0.1.0
+- 最新版归档: https://rubygems.org/downloads/baseline-0.1.0.gem
+- 版本锁定: `gem "baseline", "~> 0.1.0"`
+- 中央仓库: https://rubygems.org/

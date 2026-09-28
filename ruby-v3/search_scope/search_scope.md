@@ -1,0 +1,34 @@
+# search_scope
+
+**Tag**: library
+
+## 简介
+
+Simplify searching a model by defining custom named_scopes.
+
+## 官网
+
+- 主页: http://rubyforge.org/projects/search-scope
+- RubyGems: https://rubygems.org/gems/search_scope
+
+## 历史版本号
+
+- 0.1.0 (2009-08-18)
+- 0.1.3 (2009-08-18)
+- 0.1.4 (2009-08-18)
+- 0.1.5 (2009-08-18)
+- 0.1.6 (2009-08-18)
+- 0.1.7 (2009-08-18)
+- 0.1.8 (2009-08-18)
+- 0.1.9 (2009-08-18)
+- 0.2.1 (2009-08-18)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/search_scope
+- gem 安装: `gem install search_scope`
+- Bundler: `gem "search_scope"`
+- 最新版本: 0.2.1
+- 最新版归档: https://rubygems.org/downloads/search_scope-0.2.1.gem
+- 版本锁定: `gem "search_scope", "~> 0.2.1"`
+- 中央仓库: https://rubygems.org/

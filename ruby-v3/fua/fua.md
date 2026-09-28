@@ -1,0 +1,27 @@
+# fua
+
+**Tag**: web
+
+## 简介
+
+Fake User-Agents of about %80 of real devices to use in headers of web crawlers. It keeps your script away from being nested by many UA strings.
+
+## 官网
+
+- 主页: https://github.com/behdadahmadi/fua
+- 文档: https://www.rubydoc.info/gems/fua/1.0.3
+- RubyGems: https://rubygems.org/gems/fua
+
+## 历史版本号
+
+- 1.0.3 (2016-12-04)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/fua
+- gem 安装: `gem install fua`
+- Bundler: `gem "fua"`
+- 最新版本: 1.0.3
+- 最新版归档: https://rubygems.org/downloads/fua-1.0.3.gem
+- 版本锁定: `gem "fua", "~> 1.0.3"`
+- 中央仓库: https://rubygems.org/

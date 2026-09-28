@@ -1,0 +1,34 @@
+# gauze
+
+**Tag**: library
+
+## 简介
+
+Using scopes on a model that only need to accessed in a controller seems like a leakage of SRP. This gem will allow you to write simple filtering logic that translates your params to AREL queries.
+
+## 官网
+
+- 主页: https://github.com/TheKidCoder/Gauze
+- 文档: https://www.rubydoc.info/gems/gauze/0.1.1
+- RubyGems: https://rubygems.org/gems/gauze
+
+## 历史版本号
+
+- 0.1.1 (2017-04-02)
+- 0.1.0 (2017-04-02)
+- 0.0.6 (2015-03-17)
+- 0.0.5 (2015-03-17)
+- 0.0.4 (2015-02-07)
+- 0.0.3 (2015-01-14)
+- 0.0.2 (2015-01-13)
+- 0.0.1 (2015-01-13)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/gauze
+- gem 安装: `gem install gauze`
+- Bundler: `gem "gauze"`
+- 最新版本: 0.1.1
+- 最新版归档: https://rubygems.org/downloads/gauze-0.1.1.gem
+- 版本锁定: `gem "gauze", "~> 0.1.1"`
+- 中央仓库: https://rubygems.org/

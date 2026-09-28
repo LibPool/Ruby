@@ -1,0 +1,26 @@
+# timbl_client
+
+**Tag**: web, cli
+
+## 简介
+
+timbl_client is a Ruby client for interacting with TimblServer.
+
+## 官网
+
+- 主页: http://github.com/bmaland/timbl_client
+- RubyGems: https://rubygems.org/gems/timbl_client
+
+## 历史版本号
+
+- 0.0.1 (2010-11-22)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/timbl_client
+- gem 安装: `gem install timbl_client`
+- Bundler: `gem "timbl_client"`
+- 最新版本: 0.0.1
+- 最新版归档: https://rubygems.org/downloads/timbl_client-0.0.1.gem
+- 版本锁定: `gem "timbl_client", "~> 0.0.1"`
+- 中央仓库: https://rubygems.org/

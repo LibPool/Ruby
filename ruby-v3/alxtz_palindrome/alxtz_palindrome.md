@@ -1,0 +1,28 @@
+# alxtz_palindrome
+
+**Tag**: library
+
+## 简介
+
+Learn Enough Ruby palindrome detector
+
+## 官网
+
+- 主页: https://github.com/mhartl/mhartl_palindrome
+- 源码仓库: TODO: Put your gem's public repo URL here.
+- 更新日志: TODO: Put your gem's CHANGELOG.md URL here.
+- RubyGems: https://rubygems.org/gems/alxtz_palindrome
+
+## 历史版本号
+
+- 0.1.0 (2019-09-17)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/alxtz_palindrome
+- gem 安装: `gem install alxtz_palindrome`
+- Bundler: `gem "alxtz_palindrome"`
+- 最新版本: 0.1.0
+- 最新版归档: https://rubygems.org/downloads/alxtz_palindrome-0.1.0.gem
+- 版本锁定: `gem "alxtz_palindrome", "~> 0.1.0"`
+- 中央仓库: https://rubygems.org/

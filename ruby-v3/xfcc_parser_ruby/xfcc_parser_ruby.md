@@ -1,0 +1,35 @@
+# xfcc_parser_ruby
+
+**Tag**: cli, tooling
+
+## 简介
+
+Envoy x-forwarded-client-cert (XFCC) parser written in Rust for Ruby
+
+## 官网
+
+- 主页: https://github.com/Frederick888/xfcc_parser_ruby/
+- 更新日志: https://github.com/Frederick888/xfcc_parser_ruby/blob/master/CHANGELOG.md
+- RubyGems: https://rubygems.org/gems/xfcc_parser_ruby
+
+## 历史版本号
+
+- 0.1.2-x86_64-linux (2023-03-30)
+- 0.1.2-x86_64-darwin (2023-03-30)
+- 0.1.2 (2023-03-30)
+- 0.1.1-x86_64-linux (2023-03-28)
+- 0.1.1-x86_64-darwin-19 (2023-03-28)
+- 0.1.1 (2023-03-28)
+- 0.1.0-x86_64-darwin-19 (2023-03-28)
+- 0.1.0-x86_64-linux (2023-03-28)
+- 0.1.0 (2023-03-28)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/xfcc_parser_ruby
+- gem 安装: `gem install xfcc_parser_ruby`
+- Bundler: `gem "xfcc_parser_ruby"`
+- 最新版本: 0.1.2
+- 最新版归档: https://rubygems.org/downloads/xfcc_parser_ruby-0.1.2.gem
+- 版本锁定: `gem "xfcc_parser_ruby", "~> 0.1.2"`
+- 中央仓库: https://rubygems.org/

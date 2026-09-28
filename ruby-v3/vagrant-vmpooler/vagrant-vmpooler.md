@@ -1,0 +1,36 @@
+# vagrant-vmpooler
+
+**Tag**: library
+
+## 简介
+
+Enables Vagrant to manage machines in vmpooler.
+
+## 官网
+
+- 主页: https://github.com/briancain/vagrant-vmpooler
+- 文档: https://www.rubydoc.info/gems/vagrant-vmpooler/0.2.0
+- RubyGems: https://rubygems.org/gems/vagrant-vmpooler
+
+## 历史版本号
+
+- 0.2.0 (2018-12-10)
+- 0.1.9 (2016-11-12)
+- 0.1.8 (2016-11-03)
+- 0.1.7 (2016-10-11)
+- 0.1.6 (2016-09-13)
+- 0.1.5 (2016-08-15)
+- 0.1.4 (2016-08-10)
+- 0.1.2 (2016-07-18)
+- 0.1.1 (2016-07-18)
+- 0.1.0 (2016-07-17)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/vagrant-vmpooler
+- gem 安装: `gem install vagrant-vmpooler`
+- Bundler: `gem "vagrant-vmpooler"`
+- 最新版本: 0.2.0
+- 最新版归档: https://rubygems.org/downloads/vagrant-vmpooler-0.2.0.gem
+- 版本锁定: `gem "vagrant-vmpooler", "~> 0.2.0"`
+- 中央仓库: https://rubygems.org/

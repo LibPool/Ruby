@@ -1,0 +1,26 @@
+# puts_utils
+
+**Tag**: library
+
+## 简介
+
+Helpful utilities to puts in colour, tables and more.
+
+## 官网
+
+- 主页: https://github.com/collcoll/puts_utils
+- RubyGems: https://rubygems.org/gems/puts_utils
+
+## 历史版本号
+
+- 0.1.0 (2019-11-25)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/puts_utils
+- gem 安装: `gem install puts_utils`
+- Bundler: `gem "puts_utils"`
+- 最新版本: 0.1.0
+- 最新版归档: https://rubygems.org/downloads/puts_utils-0.1.0.gem
+- 版本锁定: `gem "puts_utils", "~> 0.1.0"`
+- 中央仓库: https://rubygems.org/

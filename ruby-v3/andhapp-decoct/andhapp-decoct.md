@@ -1,0 +1,44 @@
+# andhapp-decoct
+
+**Tag**: web, testing, tooling
+
+## 简介
+
+Sinatra Rspec project generator
+
+## 官网
+
+- 主页: http://github.com/andhapp/decoct
+- 文档: https://www.rubydoc.info/gems/andhapp-decoct/1.9.9
+- RubyGems: https://rubygems.org/gems/andhapp-decoct
+
+## 历史版本号
+
+- 1.0.0 (2014-08-11)
+- 1.1.0 (2014-08-11)
+- 1.2.0 (2014-08-11)
+- 1.3.0 (2014-08-11)
+- 1.4.0 (2014-08-11)
+- 1.4.1 (2014-08-11)
+- 1.4.2 (2014-08-11)
+- 1.4.3 (2014-08-11)
+- 1.4.4 (2014-08-11)
+- 1.5.4 (2014-08-11)
+- 1.6.4 (2014-08-11)
+- 1.7.4 (2014-08-11)
+- 1.8.4 (2014-08-11)
+- 1.9.5 (2014-08-11)
+- 1.9.6 (2014-08-11)
+- 1.9.7 (2014-08-11)
+- 1.9.8 (2014-08-11)
+- 1.9.9 (2014-08-11)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/andhapp-decoct
+- gem 安装: `gem install andhapp-decoct`
+- Bundler: `gem "andhapp-decoct"`
+- 最新版本: 1.9.9
+- 最新版归档: https://rubygems.org/downloads/andhapp-decoct-1.9.9.gem
+- 版本锁定: `gem "andhapp-decoct", "~> 1.9.9"`
+- 中央仓库: https://rubygems.org/

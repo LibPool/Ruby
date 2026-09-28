@@ -1,0 +1,25 @@
+# takami
+
+**Tag**: library
+
+## 简介
+
+Some toolbox which I usually used in my projects.
+
+## 官网
+
+- RubyGems: https://rubygems.org/gems/takami
+
+## 历史版本号
+
+- 0.0.1 (2012-03-13)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/takami
+- gem 安装: `gem install takami`
+- Bundler: `gem "takami"`
+- 最新版本: 0.0.1
+- 最新版归档: https://rubygems.org/downloads/takami-0.0.1.gem
+- 版本锁定: `gem "takami", "~> 0.0.1"`
+- 中央仓库: https://rubygems.org/

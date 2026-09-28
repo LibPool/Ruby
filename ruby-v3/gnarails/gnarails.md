@@ -1,0 +1,34 @@
+# gnarails
+
+**Tag**: web
+
+## 简介
+
+Easily create a gnarly rails app.
+
+## 官网
+
+- 主页: https://github.com/TheGnarCo/gnarails
+- 文档: https://www.rubydoc.info/gems/gnarails/3.0.1
+- RubyGems: https://rubygems.org/gems/gnarails
+
+## 历史版本号
+
+- 3.0.1 (2022-05-05)
+- 3.0.0 (2019-09-20)
+- 2.0.0 (2019-03-01)
+- 1.0.0 (2018-03-28)
+- 0.9.3 (2018-03-28)
+- 0.9.2 (2018-03-28)
+- 0.9.1 (2018-03-27)
+- 0.9.0 (2018-03-27)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/gnarails
+- gem 安装: `gem install gnarails`
+- Bundler: `gem "gnarails"`
+- 最新版本: 3.0.1
+- 最新版归档: https://rubygems.org/downloads/gnarails-3.0.1.gem
+- 版本锁定: `gem "gnarails", "~> 3.0.1"`
+- 中央仓库: https://rubygems.org/

@@ -1,0 +1,40 @@
+# rolypoly
+
+**Tag**: security
+
+## 简介
+
+Tools for handling per-action and per-app Role authorization
+
+## 官网
+
+- 主页: https://github.com/sportngin/rolypoly
+- 文档: https://www.rubydoc.info/gems/rolypoly/1.0.4
+- RubyGems: https://rubygems.org/gems/rolypoly
+
+## 历史版本号
+
+- 1.0.4 (2017-10-19)
+- 1.0.3 (2017-10-05)
+- 1.0.2 (2017-07-25)
+- 1.0.1 (2017-06-26)
+- 1.0.0 (2017-06-22)
+- 0.2.0 (2016-12-09)
+- 0.1.2 (2013-12-02)
+- 0.1.1 (2013-10-30)
+- 0.1.0 (2013-10-24)
+- 0.0.5 (2013-09-25)
+- 0.0.4 (2013-09-25)
+- 0.0.3 (2013-09-24)
+- 0.0.2 (2013-09-05)
+- 0.0.1 (2013-09-03)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/rolypoly
+- gem 安装: `gem install rolypoly`
+- Bundler: `gem "rolypoly"`
+- 最新版本: 1.0.4
+- 最新版归档: https://rubygems.org/downloads/rolypoly-1.0.4.gem
+- 版本锁定: `gem "rolypoly", "~> 1.0.4"`
+- 中央仓库: https://rubygems.org/

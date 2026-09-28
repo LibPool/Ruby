@@ -1,0 +1,30 @@
+# compose_url
+
+**Tag**: library
+
+## 简介
+
+Abstract away the details of composing a URL with query parameters.
+
+## 官网
+
+- 主页: https://github.com/ryanburnette/compose_url
+- 文档: https://www.rubydoc.info/gems/compose_url/0.1.3
+- RubyGems: https://rubygems.org/gems/compose_url
+
+## 历史版本号
+
+- 0.1.3 (2014-12-21)
+- 0.1.2 (2014-12-02)
+- 0.1.1 (2014-12-02)
+- 0.1.0 (2014-12-01)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/compose_url
+- gem 安装: `gem install compose_url`
+- Bundler: `gem "compose_url"`
+- 最新版本: 0.1.3
+- 最新版归档: https://rubygems.org/downloads/compose_url-0.1.3.gem
+- 版本锁定: `gem "compose_url", "~> 0.1.3"`
+- 中央仓库: https://rubygems.org/

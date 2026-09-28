@@ -1,0 +1,28 @@
+# chmeetings
+
+**Tag**: web
+
+## 简介
+
+A Ruby wrapper for the ChMeetings API
+
+## 官网
+
+- 主页: https://github.com/taylorbrooks/chmeetings
+- 文档: https://www.rubydoc.info/gems/chmeetings/0.0.2
+- RubyGems: https://rubygems.org/gems/chmeetings
+
+## 历史版本号
+
+- 0.0.2 (2026-02-12)
+- 0.0.1 (2026-02-12)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/chmeetings
+- gem 安装: `gem install chmeetings`
+- Bundler: `gem "chmeetings"`
+- 最新版本: 0.0.2
+- 最新版归档: https://rubygems.org/downloads/chmeetings-0.0.2.gem
+- 版本锁定: `gem "chmeetings", "~> 0.0.2"`
+- 中央仓库: https://rubygems.org/

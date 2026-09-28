@@ -1,0 +1,28 @@
+# scrag
+
+**Tag**: library
+
+## 简介
+
+Helps me design my DSL tools quicker
+
+## 官网
+
+- 主页: https://github.com/JC-LL/scrag
+- 文档: https://www.rubydoc.info/gems/scrag/0.0.2
+- RubyGems: https://rubygems.org/gems/scrag
+
+## 历史版本号
+
+- 0.0.2 (2020-03-30)
+- 0.0.1 (2020-03-30)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/scrag
+- gem 安装: `gem install scrag`
+- Bundler: `gem "scrag"`
+- 最新版本: 0.0.2
+- 最新版归档: https://rubygems.org/downloads/scrag-0.0.2.gem
+- 版本锁定: `gem "scrag", "~> 0.0.2"`
+- 中央仓库: https://rubygems.org/

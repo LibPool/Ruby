@@ -1,0 +1,27 @@
+# rx_ruby
+
+**Tag**: library
+
+## 简介
+
+Reactive Extensions for Ruby
+
+## 官网
+
+- 主页: https://github.com/ReactiveX/RxRuby
+- 文档: https://www.rubydoc.info/gems/rx_ruby/0.0.2
+- RubyGems: https://rubygems.org/gems/rx_ruby
+
+## 历史版本号
+
+- 0.0.2 (2015-12-25)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/rx_ruby
+- gem 安装: `gem install rx_ruby`
+- Bundler: `gem "rx_ruby"`
+- 最新版本: 0.0.2
+- 最新版归档: https://rubygems.org/downloads/rx_ruby-0.0.2.gem
+- 版本锁定: `gem "rx_ruby", "~> 0.0.2"`
+- 中央仓库: https://rubygems.org/

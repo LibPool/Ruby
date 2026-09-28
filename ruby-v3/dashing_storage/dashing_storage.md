@@ -1,0 +1,28 @@
+# dashing_storage
+
+**Tag**: library
+
+## 简介
+
+Add storage feature to the Dashing dashboard (mongoDb support)
+
+## 官网
+
+- 源码仓库: http://github.com/bencolon/dashing_storage
+- 文档: https://www.rubydoc.info/gems/dashing_storage/0.0.2
+- RubyGems: https://rubygems.org/gems/dashing_storage
+
+## 历史版本号
+
+- 0.0.2 (2013-05-21)
+- 0.0.1 (2013-05-21)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/dashing_storage
+- gem 安装: `gem install dashing_storage`
+- Bundler: `gem "dashing_storage"`
+- 最新版本: 0.0.2
+- 最新版归档: https://rubygems.org/downloads/dashing_storage-0.0.2.gem
+- 版本锁定: `gem "dashing_storage", "~> 0.0.2"`
+- 中央仓库: https://rubygems.org/

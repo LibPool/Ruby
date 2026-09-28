@@ -1,0 +1,29 @@
+# net-server
+
+**Tag**: web
+
+## 简介
+
+Ruby Net server.
+
+## 官网
+
+- 主页: https://github.com/mjwelchphd/net-server
+- 文档: https://www.rubydoc.info/gems/net-server/1.2.0
+- RubyGems: https://rubygems.org/gems/net-server
+
+## 历史版本号
+
+- 1.2.0 (2016-09-18)
+- 1.1.0 (2016-09-14)
+- 1.0.0 (2016-09-13)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/net-server
+- gem 安装: `gem install net-server`
+- Bundler: `gem "net-server"`
+- 最新版本: 1.2.0
+- 最新版归档: https://rubygems.org/downloads/net-server-1.2.0.gem
+- 版本锁定: `gem "net-server", "~> 1.2.0"`
+- 中央仓库: https://rubygems.org/

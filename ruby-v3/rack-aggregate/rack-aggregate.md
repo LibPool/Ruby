@@ -1,0 +1,26 @@
+# rack-aggregate
+
+**Tag**: web, data
+
+## 简介
+
+Rack response-time statistics aggregator middleware
+
+## 官网
+
+- 主页: http://github.com/igrigorik/rack-aggregate
+- RubyGems: https://rubygems.org/gems/rack-aggregate
+
+## 历史版本号
+
+- 0.1.0 (2011-01-09)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/rack-aggregate
+- gem 安装: `gem install rack-aggregate`
+- Bundler: `gem "rack-aggregate"`
+- 最新版本: 0.1.0
+- 最新版归档: https://rubygems.org/downloads/rack-aggregate-0.1.0.gem
+- 版本锁定: `gem "rack-aggregate", "~> 0.1.0"`
+- 中央仓库: https://rubygems.org/

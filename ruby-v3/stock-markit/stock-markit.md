@@ -1,0 +1,28 @@
+# stock-markit
+
+**Tag**: web, networking
+
+## 简介
+
+the stock-markit gem brings all the great information from Markit on Demand to your ruby project (http://dev.markitondemand.com/)
+
+## 官网
+
+- 主页: https://github.com/parabuzzle/stock-markit
+- 文档: https://www.rubydoc.info/gems/stock-markit/0.0.2
+- RubyGems: https://rubygems.org/gems/stock-markit
+
+## 历史版本号
+
+- 0.0.2 (2016-09-08)
+- 0.0.1 (2016-09-08)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/stock-markit
+- gem 安装: `gem install stock-markit`
+- Bundler: `gem "stock-markit"`
+- 最新版本: 0.0.2
+- 最新版归档: https://rubygems.org/downloads/stock-markit-0.0.2.gem
+- 版本锁定: `gem "stock-markit", "~> 0.0.2"`
+- 中央仓库: https://rubygems.org/

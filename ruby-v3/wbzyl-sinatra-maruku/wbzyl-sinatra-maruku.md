@@ -1,0 +1,32 @@
+# wbzyl-sinatra-maruku
+
+**Tag**: web, template
+
+## 简介
+
+An extension providing Maruku templates for Sinatra applications.
+
+## 官网
+
+- 主页: http://github.com/wbzyl/sinatra-maruku
+- 文档: https://www.rubydoc.info/gems/wbzyl-sinatra-maruku/0.10.1
+- RubyGems: https://rubygems.org/gems/wbzyl-sinatra-maruku
+
+## 历史版本号
+
+- 0.0.4 (2014-08-10)
+- 0.0.6 (2014-08-10)
+- 0.0.8 (2014-08-10)
+- 0.1.0 (2014-08-10)
+- 0.1.1 (2014-08-10)
+- 0.10.1 (2014-08-10)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/wbzyl-sinatra-maruku
+- gem 安装: `gem install wbzyl-sinatra-maruku`
+- Bundler: `gem "wbzyl-sinatra-maruku"`
+- 最新版本: 0.10.1
+- 最新版归档: https://rubygems.org/downloads/wbzyl-sinatra-maruku-0.10.1.gem
+- 版本锁定: `gem "wbzyl-sinatra-maruku", "~> 0.10.1"`
+- 中央仓库: https://rubygems.org/

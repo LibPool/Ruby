@@ -1,0 +1,27 @@
+# nampt
+
+**Tag**: library
+
+## 简介
+
+Payment gem
+
+## 官网
+
+- 主页: https://example.com
+- 文档: https://www.rubydoc.info/gems/nampt/1.0.0
+- RubyGems: https://rubygems.org/gems/nampt
+
+## 历史版本号
+
+- 1.0.0 (2020-09-16)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/nampt
+- gem 安装: `gem install nampt`
+- Bundler: `gem "nampt"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/nampt-1.0.0.gem
+- 版本锁定: `gem "nampt", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

@@ -1,0 +1,27 @@
+# george-sanitize_email
+
+**Tag**: library
+
+## 简介
+
+allows you to play with your application's email abilities without worrying that emails will get sent to actual live addresses
+
+## 官网
+
+- 主页: http://github.com/george/sanitize_email
+- 文档: https://www.rubydoc.info/gems/george-sanitize_email/0.2.0
+- RubyGems: https://rubygems.org/gems/george-sanitize_email
+
+## 历史版本号
+
+- 0.2.0 (2014-08-11)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/george-sanitize_email
+- gem 安装: `gem install george-sanitize_email`
+- Bundler: `gem "george-sanitize_email"`
+- 最新版本: 0.2.0
+- 最新版归档: https://rubygems.org/downloads/george-sanitize_email-0.2.0.gem
+- 版本锁定: `gem "george-sanitize_email", "~> 0.2.0"`
+- 中央仓库: https://rubygems.org/

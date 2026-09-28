@@ -1,0 +1,28 @@
+# mongoid-ancestry-fixes
+
+**Tag**: library
+
+## 简介
+
+Organise Mongoid model into a tree structure
+
+## 官网
+
+- 主页: http://github.com/skyeagle/mongoid-ancestry
+- 文档: https://www.rubydoc.info/gems/mongoid-ancestry-fixes/0.0.2
+- RubyGems: https://rubygems.org/gems/mongoid-ancestry-fixes
+
+## 历史版本号
+
+- 0.0.2 (2015-03-22)
+- 0.0.1 (2015-03-22)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/mongoid-ancestry-fixes
+- gem 安装: `gem install mongoid-ancestry-fixes`
+- Bundler: `gem "mongoid-ancestry-fixes"`
+- 最新版本: 0.0.2
+- 最新版归档: https://rubygems.org/downloads/mongoid-ancestry-fixes-0.0.2.gem
+- 版本锁定: `gem "mongoid-ancestry-fixes", "~> 0.0.2"`
+- 中央仓库: https://rubygems.org/

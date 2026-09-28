@@ -1,0 +1,29 @@
+# nrpeclient
+
+**Tag**: cli
+
+## 简介
+
+Executed the command passed at the remote machine where NRPE daemon is running.
+
+## 官网
+
+- 主页: https://github.com/scaria/NrpeClient-Gem
+- 文档: https://www.rubydoc.info/gems/nrpeclient/0.1.3
+- RubyGems: https://rubygems.org/gems/nrpeclient
+
+## 历史版本号
+
+- 0.1.3 (2016-02-05)
+- 0.1.2 (2015-07-13)
+- 0.1.1 (2015-07-13)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/nrpeclient
+- gem 安装: `gem install nrpeclient`
+- Bundler: `gem "nrpeclient"`
+- 最新版本: 0.1.3
+- 最新版归档: https://rubygems.org/downloads/nrpeclient-0.1.3.gem
+- 版本锁定: `gem "nrpeclient", "~> 0.1.3"`
+- 中央仓库: https://rubygems.org/

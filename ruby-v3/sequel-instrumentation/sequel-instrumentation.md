@@ -1,0 +1,27 @@
+# sequel-instrumentation
+
+**Tag**: library
+
+## 简介
+
+OpenTracing instrumentation for Sequel.
+
+## 官网
+
+- 主页: https://github.com/signalfx/ruby-sequel-instrumentation
+- 文档: https://www.rubydoc.info/gems/sequel-instrumentation/0.1.0
+- RubyGems: https://rubygems.org/gems/sequel-instrumentation
+
+## 历史版本号
+
+- 0.1.0 (2019-01-25)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/sequel-instrumentation
+- gem 安装: `gem install sequel-instrumentation`
+- Bundler: `gem "sequel-instrumentation"`
+- 最新版本: 0.1.0
+- 最新版归档: https://rubygems.org/downloads/sequel-instrumentation-0.1.0.gem
+- 版本锁定: `gem "sequel-instrumentation", "~> 0.1.0"`
+- 中央仓库: https://rubygems.org/

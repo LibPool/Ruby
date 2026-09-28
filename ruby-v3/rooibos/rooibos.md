@@ -1,0 +1,411 @@
+# rooibos
+
+**Tag**: web, cli, testing, serialization, networking, template, tooling, filesystem, data
+
+## 简介
+
+== Confidently Build Terminal Apps
+
+Rooibos[https://rooibos.run] helps you build interactive terminal applications.
+Keep your code understandable and testable as it scales. Rooibos handles
+keyboard, mouse, and async work so you can focus on behavior and user experience.
+
+  gem install rooibos
+
+<i>Currently in beta. APIs may change before 1.0.</i>
+
+=== Get Started in Seconds
+
+  rooibos new my_app
+  cd my_app
+  rooibos run
+
+That's it. You have a working app with keyboard navigation, mouse support,
+and clickable buttons. Open <tt>lib/my_app.rb</tt> to make it your own.
+
+
+---
+
+=== The Pattern
+
+\Rooibos uses Model-View-Update, the architecture behind
+Elm[https://guide.elm-lang.org/architecture/],
+Redux[https://redux.js.org/], and {Bubble
+Tea}[https://github.com/charmbracelet/bubbletea].
+State lives in one place. Updates flow in one direction. The runtime handles
+rendering and runs background work for you.
+
+---
+
+=== Hello, MVU
+
+The simplest \Rooibos app. Press any key to increment the counter. Press
+<tt>Ctrl</tt>+<tt>C</tt> to quit.
+
+  require "rooibos"
+
+  module Counter
+    # Init: How do you create the initial model?
+    Init = -> { 0 }
+ 
+    # View: What does the user see?
+    View = -> (model, tui) { tui.paragraph(text: <<~END) }
+      Current count: #{model}.
+      Press any key to increment.
+      Press Ctrl+C to quit.
+    END
+ 
+    # Update: What happens when things change?
+    Update = -> (message, model) {
+      if message.ctrl_c?
+        Rooibos::Command.exit
+      elsif message.key?
+        model + 1
+      end
+    }
+  end
+
+  Rooibos.run(Counter)
+
+That's the whole pattern: Model holds state, Init creates it, View renders it,
+and Update changes it. The runtime handles everything else.
+
+
+---
+
+=== Your First Real Application
+
+A file browser in sixty lines. It opens files, navigates directories, handles
+errors, styles directories and hidden files differently, and supports vim-style
+keyboard shortcuts. If you can do this much with this little code, imagine how
+easy _your_ app will be to build.
+
+  require "rooibos"
+  
+  module FileBrowser
+    # Model: What state does your app need?
+    Model = Data.define(:path, :entries, :selected, :error)
+  
+    Init = -> {
+      path    = Dir.pwd
+      entries = Entries[path]
+      Ractor.make_shareable( # Ensures thread safety
+        Model.new(path:, entries:, selected: entries.first, error: nil))
+    }
+  
+    View = -> (model, tui) {
+      tui.block(
+        titles: [model.error || model.path,
+                 { content: KEYS, position: :bottom, alignment: :right}],
+        borders: [:all],
+        border_style: if model.error then tui.style(fg: :red) else nil end,
+        children: [tui.list(items: model.entries.map(&ListItem[model, tui]),
+                            selected_index: model.entries.index(model.selected),
+                            highlight_symbol: "",
+                            highlight_style: tui.style(modifiers: [:reversed]))]
+      )
+    }
+  
+    Update = -> (message, model) {
+      return model.with(error: ERROR) if message.error?
+      model = model.with(error: nil) if model.error && message.key?
+  
+      if message.ctrl_c? || message.q? then Rooibos::Command.exit
+      elsif message.home? || message.g? then model.with(selected: model.entries.first)
+      elsif message.end? || message.G? then model.with(selected: model.entries.last)
+      elsif message.up_arrow? || message.k? then Select[:-, model]
+      elsif message.down_arrow? || message.j? then Select[:+, model]
+      elsif message.enter? then Open[model]
+      elsif message.escape? then Navigate[File.dirname(model.path), model]
+      end
+    }
+  
+    private # Lines below this are implementation details
+  
+    KEYS  = "↑/↓/Home/End: Select | Enter: Open | Esc: Navigate Up | q: Quit"
+    ERROR = "Sorry, opening the selected file failed."
+  
+    ListItem = -> (model, tui) { -> (name) {
+      modifiers = name.start_with?(".") ? [:dim] : []
+      fg        = :blue if name.end_with?("/")
+      tui.list_item(content: name, style: tui.style(fg:, modifiers:))
+    } }
+  
+    Select = -> (operator, model) {
+      new_index = model.entries.index(model.selected).public_send(operator, 1)
+      model.with(selected: model.entries[new_index.clamp(0, model.entries.length - 1)])
+    }
+  
+    Open = -> (model) {
+      full = File.join(model.path, model.selected.delete_suffix("/"))
+      model.selected.end_with?("/") ? Navigate[full, model] : Rooibos::Command.open(full)
+    }
+  
+    Navigate = -> (path, model) {
+      entries = Entries[path]
+      model.with(path:, entries:, selected: entries.first, error: nil)
+    }
+  
+    Entries = -> (path) {
+      Dir.children(path).map { |name|
+        File.directory?(File.join(path, name)) ? "#{name}/" : name
+      }.sort_by { |name| [name.end_with?("/") ? 0 : 1, name.downcase] }
+    }
+  end
+
+  Rooibos.run(FileBrowser)
+
+
+---
+
+=== Batteries Included
+
+==== Commands
+
+Applications fetch data, run shell commands, and set timers. \Rooibos Commands
+run off the main thread and send results back as messages.
+
+<b>HTTP requests:</b>
+
+  Update = -> (message, model) {
+    case message
+    in :fetch_users
+      [model.with(loading: true), Rooibos::Command.http(:get, "/api/users", :got_users)]
+    in { type: :http, envelope: :got_users, status: 200, body: }
+      model.with(loading: false, users: JSON.parse(body))
+    in { type: :http, envelope: :got_users, status: }
+      model.with(error: "HTTP #{status}")
+    end
+  }
+
+<b>Shell commands:</b>
+
+  Update = -> (message, model) {
+    case message
+    in :list_files
+      Rooibos::Command.system("ls -la", :listed_files)
+    in { type: :system, envelope: :listed_files, stdout:, status: 0 }
+      model.with(files: stdout.lines.map(&:chomp))
+    in { type: :system, envelope: :listed_files, stderr:, status: }
+      model.with(error: stderr)
+    end
+  }
+
+<b>Timers:</b>
+
+  Update = -> (message, model) {
+    case message
+    in { type: :timer, envelope: :tick, elapsed: }
+      [model.with(frame: model.frame + 1), Rooibos::Command.wait(1.0 / 24, :tick)]
+    end
+  }
+
+<b>And more!</b> \Rooibos includes <tt>all</tt>, <tt>batch</tt>, <tt>bubble</tt>,
+<tt>cancel</tt>, <tt>custom</tt>, <tt>deliver</tt>, <tt>exit</tt>,
+<tt>http</tt>, <tt>map</tt>, <tt>open</tt>, <tt>system</tt>, <tt>tick</tt>,
+and <tt>wait</tt> commands.  You can also define your own custom commands
+for complex orchestration. 
+
+Every command produces a message, and Update handles it the same way.
+
+==== Testing
+
+\Rooibos makes TUIs so easy to test, you'll save more time by writing tests than
+by not testing.
+
+<b>Unit test Update, View, and Init.</b> No terminal needed. Test helpers included.
+
+  def test_moves_selection_down_with_j
+    model = Ractor.make_shareable(FileBrowser::Model.new(
+      path: "/", entries: %w[bin exe lib], selected: "bin", error: nil))
+    message = RatatuiRuby::Event::Key.new(code: "j")
+
+    result = FileBrowser::Update.call(message, model)
+
+    assert_equal "exe", result.selected
+  end
+
+<b>Style assertions.</b> Draw to a headless terminal, verify colors and modifiers.
+
+  def test_directories_are_blue
+    with_test_terminal(60, 10) do
+      model = Ractor.make_shareable(FileBrowser::Model.new(
+        path: "/", entries: %w[file.txt subdir/], selected: "file.txt", error: nil))
+      widget = FileBrowser::View.call(model, RatatuiRuby::TUI.new)
+
+      RatatuiRuby.draw { |frame| frame.render_widget(widget, frame.area) }
+
+      assert_blue(1, 2) # "subdir/" at column 1, row 2
+    end
+  end
+
+<b>System tests.</b> Inject events, run the full app, snapshot the result.
+
+  def test_selection_moves_down
+    with_test_terminal(120, 30) do
+      Dir.mktmpdir do |dir|
+        FileUtils.touch(File.join(dir, "a"))
+        FileUtils.touch(File.join(dir, "b"))
+        FileUtils.touch(File.join(dir, "c"))
+
+        inject_key(:down)
+        inject_key(:ctrl_c)
+
+        # Tests use explicit params to inject deterministic initial state.
+        Rooibos.run(
+          model: Ractor.make_shareable(FileBrowser::Model.new(
+            path: dir, entries: %w[a b c], selected: "a", error: nil)),
+          view: FileBrowser::View,
+          update: FileBrowser::Update
+        )
+
+        assert_snapshots("selection_moved_down") do |lines|
+          title = "┌/tmp/test#{'─' * 107}┐"
+          lines.map do |l|
+            l.gsub(/┌#{Regexp.escape(dir)}[^┐]*┐/, title)
+          end
+        end
+      end
+    end
+  end
+
+Snapshots record both plain text and ANSI colors. Normalization blocks mask
+dynamic content (timestamps, temp paths) for cross-platform reproducibility.
+Run <tt>UPDATE_SNAPSHOTS=1 rake test</tt> to regenerate baselines.
+
+==== Scale Up
+
+Large applications decompose into fragments. Each fragment has its own Model,
+View, Update, and Init. Parents compose children. The pattern scales.
+
+The Router DSL eliminates boilerplate:
+
+  module Dashboard
+    include Rooibos::Router
+
+    route :stats, to: StatsPanel
+    route :network, to: NetworkPanel
+
+    receive_events :ctrl_c, -> { Rooibos::Command.exit }
+
+    only when: -> (_message, model) { !model.modal_open } do
+      receive_events :q, -> { Rooibos::Command.exit }
+      forward_events :s, to: :stats, as: :fetch
+      forward_events :p, to: :network, as: :ping
+    end
+
+    Update = from_router
+
+    # ... Model, Init, View below
+  end
+
+Declare routes and event handlers. The router generates Update for you. Use
+guards to ignore messages when needed.
+
+==== CLI
+
+The <tt>rooibos</tt> command scaffolds projects and runs applications.
+
+  rooibos new my_app    # Generate project structure
+  rooibos run           # Run the app in current directory
+
+Generated apps include tests, type signatures, and a working welcome
+screen with keyboard and mouse support.
+
+
+---
+
+=== The Ecosystem
+
+\Rooibos builds on RatatuiRuby[https://www.ratatui-ruby.dev], a Rubygem built on
+Ratatui[https://ratatui.rs]. You get native performance with the joy of Ruby.
+\Rooibos is one way to manage state and composition. Kit is another.
+
+==== Rooibos[https://www.rooibos.run]
+
+Model-View-Update architecture. Inspired by Elm, Bubble Tea, and React +
+Redux. Your UI is a pure function of state.
+
+- Functional programming with MVU
+- Commands work off the main thread
+- Messages, not callbacks, drive updates
+
+==== {Kit}[https://sr.ht/~kerrick/ratatui_ruby/#chapter-3-the-object-path--kit] (Coming Soon)
+
+Component-based architecture. Encapsulate state, input handling, and
+rendering in reusable pieces.
+
+- OOP with stateful components
+- Separate UI state from domain logic
+- Built-in focus management & click handling
+
+Both use the same widget library and rendering engine. Pick the paradigm
+that fits your brain.
+
+
+---
+
+=== Links
+
+[Get Started]
+  {Getting Started}[https://www.rooibos.run/docs/trunk/doc/getting_started/index_md.html],
+  {Tutorial}[https://www.rooibos.run/docs/trunk/doc/tutorial/index_md.html],
+  {Examples}[https://www.rooibos.run/docs/trunk/examples/app_fractal_dashboard/README_md.html]
+
+[Coming From...]
+  {React/Redux}[https://www.rooibos.run/docs/trunk/doc/getting_started/for_react_developers_md.html],
+  {BubbleTea}[https://www.rooibos.run/docs/trunk/doc/getting_started/for_go_developers_md.html],
+  {Textual}[https://www.rooibos.run/docs/trunk/doc/getting_started/for_python_developers_md.html]
+
+[Learn More]
+  {Essentials}[https://www.rooibos.run/docs/trunk/doc/essentials/index_md.html],
+  {Scaling Up}[https://www.rooibos.run/docs/trunk/doc/scaling_up/index_md.html],
+  {Best Practices}[https://www.rooibos.run/docs/trunk/doc/best_practices/index_md.html],
+  {Troubleshooting}[https://www.rooibos.run/docs/trunk/doc/troubleshooting/index_md.html]
+
+[Community]
+  {Forum}[https://forum.setdef.com/c/rooibos],
+  {Announcements}[https://forum.setdef.com/tags/c/rooibos/announcement],
+  {Bug Tracker}[https://forum.setdef.com/tags/c/rooibos/bug],
+  {Contribution Guide}[https://github.com/setdef/Rooibos/blob/trunk/CONTRIBUTING.md],
+  {Code of Conduct}[https://github.com/setdef/Rooibos/blob/trunk/CODE_OF_CONDUCT.md]
+
+
+---
+
+[Website] https://rooibos.run
+[Source] https://github.com/setdef/Rooibos
+[RubyGems] https://rubygems.org/gems/rooibos
+
+© 2026 Kerrick Long · Library: LGPL-3.0-or-later · Website: CC-BY-NC-ND-4.0 · Snippets: MIT-0
+
+## 官网
+
+- 主页: https://rooibos.run
+- 源码仓库: https://github.com/setdef/Rooibos
+- 文档: https://rooibos.run/docs/
+- 更新日志: https://rooibos.run/docs/trunk/CHANGELOG_md.html
+- 问题追踪: https://forum.setdef.com/tags/c/rooibos/bug
+- RubyGems: https://rubygems.org/gems/rooibos
+
+## 历史版本号
+
+- 0.8.0 (2026-04-19)
+- 0.7.3 (2026-02-26)
+- 0.7.2 (2026-02-21)
+- 0.7.1 (2026-02-20)
+- 0.7.0 (2026-02-19)
+- 0.6.2 (2026-01-27)
+- 0.6.1 (2026-01-27)
+- 0.6.0 (2026-01-26)
+- 0.5.0 (2026-01-16)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/rooibos
+- gem 安装: `gem install rooibos`
+- Bundler: `gem "rooibos"`
+- 最新版本: 0.8.0
+- 最新版归档: https://rubygems.org/downloads/rooibos-0.8.0.gem
+- 版本锁定: `gem "rooibos", "~> 0.8.0"`
+- 中央仓库: https://rubygems.org/

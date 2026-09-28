@@ -1,0 +1,31 @@
+# bluepan_client
+
+**Tag**: web, cli
+
+## 简介
+
+Ruby wrapper for Bluepan's API - access to Pay86 and payments to Korea
+
+## 官网
+
+- 主页: https://github.com/imacchiato/bluepan_client-ruby
+- 文档: https://www.rubydoc.info/gems/bluepan_client/1.0.0
+- RubyGems: https://rubygems.org/gems/bluepan_client
+
+## 历史版本号
+
+- 1.0.0 (2017-12-28)
+- 0.4.0 (2017-06-20)
+- 0.3.0 (2016-11-15)
+- 0.2.0 (2016-11-14)
+- 0.1.0 (2016-11-11)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/bluepan_client
+- gem 安装: `gem install bluepan_client`
+- Bundler: `gem "bluepan_client"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/bluepan_client-1.0.0.gem
+- 版本锁定: `gem "bluepan_client", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

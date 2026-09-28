@@ -1,0 +1,27 @@
+# Maisettelingua
+
+**Tag**: library
+
+## 简介
+
+This scripting allows you to write butt hat conditionals.
+
+## 官网
+
+- 主页: https://lwflouisa.itch.io/
+- 文档: https://www.rubydoc.info/gems/Maisettelingua/0.1.0
+- RubyGems: https://rubygems.org/gems/Maisettelingua
+
+## 历史版本号
+
+- 0.1.0 (2025-08-18)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/Maisettelingua
+- gem 安装: `gem install Maisettelingua`
+- Bundler: `gem "Maisettelingua"`
+- 最新版本: 0.1.0
+- 最新版归档: https://rubygems.org/downloads/Maisettelingua-0.1.0.gem
+- 版本锁定: `gem "Maisettelingua", "~> 0.1.0"`
+- 中央仓库: https://rubygems.org/

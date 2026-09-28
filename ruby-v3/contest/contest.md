@@ -1,0 +1,28 @@
+# contest
+
+**Tag**: testing
+
+## 简介
+
+Write declarative tests using nested contexts without performance penalties. Contest is less than 100 lines of code and gets the job done.
+
+## 官网
+
+- 主页: http://github.com/citrusbyte/contest
+- RubyGems: https://rubygems.org/gems/contest
+
+## 历史版本号
+
+- 0.1.3 (2011-05-08)
+- 0.1.2 (2009-08-05)
+- 0.1.1 (2009-07-25)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/contest
+- gem 安装: `gem install contest`
+- Bundler: `gem "contest"`
+- 最新版本: 0.1.3
+- 最新版归档: https://rubygems.org/downloads/contest-0.1.3.gem
+- 版本锁定: `gem "contest", "~> 0.1.3"`
+- 中央仓库: https://rubygems.org/

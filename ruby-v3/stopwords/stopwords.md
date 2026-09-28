@@ -1,0 +1,28 @@
+# stopwords
+
+**Tag**: library
+
+## 简介
+
+A stopword library
+
+## 官网
+
+- 主页: http://endax.github.com/
+- 源码仓库: http://github.com/endax/stopwords
+- RubyGems: https://rubygems.org/gems/stopwords
+
+## 历史版本号
+
+- 0.2 (2010-01-30)
+- 0.1 (2010-01-30)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/stopwords
+- gem 安装: `gem install stopwords`
+- Bundler: `gem "stopwords"`
+- 最新版本: 0.2
+- 最新版归档: https://rubygems.org/downloads/stopwords-0.2.gem
+- 版本锁定: `gem "stopwords", "~> 0.2"`
+- 中央仓库: https://rubygems.org/

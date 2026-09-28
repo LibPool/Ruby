@@ -1,0 +1,32 @@
+# gaqzi-youtube-downloader
+
+**Tag**: library
+
+## 简介
+
+Downloads youtube videos to your local harddrive and optionally rips the audio from the video.
+
+## 官网
+
+- 主页: http://github.com/ba/youtube-downloader
+- 文档: https://www.rubydoc.info/gems/gaqzi-youtube-downloader/1.0
+- RubyGems: https://rubygems.org/gems/gaqzi-youtube-downloader
+
+## 历史版本号
+
+- 0.5.1 (2014-08-11)
+- 0.5 (2014-08-11)
+- 0.6.1 (2014-08-11)
+- 0.6.2 (2014-08-11)
+- 0.6 (2014-08-11)
+- 1.0 (2014-08-11)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/gaqzi-youtube-downloader
+- gem 安装: `gem install gaqzi-youtube-downloader`
+- Bundler: `gem "gaqzi-youtube-downloader"`
+- 最新版本: 1.0
+- 最新版归档: https://rubygems.org/downloads/gaqzi-youtube-downloader-1.0.gem
+- 版本锁定: `gem "gaqzi-youtube-downloader", "~> 1.0"`
+- 中央仓库: https://rubygems.org/

@@ -1,0 +1,34 @@
+# time
+
+**Tag**: library
+
+## 简介
+
+Extends the Time class with methods for parsing and conversion.
+
+## 官网
+
+- 主页: https://github.com/ruby/time
+- RubyGems: https://rubygems.org/gems/time
+
+## 历史版本号
+
+- 0.4.2 (2025-12-17)
+- 0.4.1 (2024-11-08)
+- 0.4.0 (2024-09-06)
+- 0.3.0 (2023-11-07)
+- 0.2.2 (2023-03-30)
+- 0.1.1 (2023-03-30)
+- 0.2.1 (2022-12-14)
+- 0.2.0 (2021-10-14)
+- 0.1.0 (2020-09-18)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/time
+- gem 安装: `gem install time`
+- Bundler: `gem "time"`
+- 最新版本: 0.4.2
+- 最新版归档: https://rubygems.org/downloads/time-0.4.2.gem
+- 版本锁定: `gem "time", "~> 0.4.2"`
+- 中央仓库: https://rubygems.org/

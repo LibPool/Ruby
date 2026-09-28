@@ -1,0 +1,76 @@
+# owasp-esapi-ruby
+
+**Tag**: web, testing, networking, filesystem, data
+
+## 简介
+
+= The Owasp ESAPI Ruby project
+
+== Introduction
+
+The Owasp ESAPI Ruby is a port for outstanding release quality Owasp ESAPI
+project to the Ruby programming language. 
+
+Ruby is now a famous programming language due to its Rails framework developed by David Heinemeier Hansson (http://twitter.com/dhh) that simplify the creation of a web application using a convention over configuration approach to simplify programmers' life.
+
+Despite Rails diffusion, there are a lot of Web framework out there that allow people to write web apps in Ruby (merb, sinatra, vintage) [http://accidentaltechnologist.com/ruby/10-alternative-ruby-web-frameworks/]. Owasp Esapi Ruby wants to bring all Ruby deevelopers a gem full of Secure APIs they can use whatever the framework they choose.
+
+== Why supporting only Ruby 1.9.2 and beyond?
+
+The OWASP Esapi Ruby gem will require at least version 1.9.2 of Ruby interpreter to make sure to have full advantages of the newer language APIs.
+
+In particular version 1.9.2 introduces radical changes in the following areas:
+
+=== Regular expression engine
+(to be written)
+
+=== UTF-8 support
+Unicode support in 1.9.2 is much better and provides better support for character set encoding/decoding
+* All strings have an additional chunk of info attached: Encoding
+* String#size takes encoding into account – returns the encoded character count
+* You can get the raw datasize
+* Indexed access is by encoded data – characters, not bytes
+* You can change encoding by force but it doesn’t convert the data
+
+=== Dates and Time
+From "Programming Ruby 1.9"
+
+"As of Ruby 1.9.2, the range of dates that can be represented is no longer limited by the under- lying operating system’s time representation (so there’s no year 2038 problem). As a result, the year passed to the methods gm, local, new, mktime, and utc must now include the century—a year of 90 now represents 90 and not 1990."
+
+== Roadmap
+
+Please see ChangeLog file. 
+
+== Note on Patches/Pull Requests
+ 
+* Fork the project.
+* Create documentation with rake yard task
+* Make your feature addition or bug fix.
+* Add tests for it. This is important so I don't break it in a
+  future version unintentionally.
+* Commit, do not mess with rakefile, version, or history.
+  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
+* Send me a pull request. Bonus points for topic branches.
+
+== Copyright
+
+Copyright (c) 2011 the OWASP Foundation. See LICENSE for details.
+
+## 官网
+
+- 主页: http://github.com/thesp0nge/owasp-esapi-ruby
+- RubyGems: https://rubygems.org/gems/owasp-esapi-ruby
+
+## 历史版本号
+
+- 0.30.0 (2011-03-09)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/owasp-esapi-ruby
+- gem 安装: `gem install owasp-esapi-ruby`
+- Bundler: `gem "owasp-esapi-ruby"`
+- 最新版本: 0.30.0
+- 最新版归档: https://rubygems.org/downloads/owasp-esapi-ruby-0.30.0.gem
+- 版本锁定: `gem "owasp-esapi-ruby", "~> 0.30.0"`
+- 中央仓库: https://rubygems.org/

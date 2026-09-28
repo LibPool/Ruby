@@ -1,0 +1,26 @@
+# firefox
+
+**Tag**: library
+
+## 简介
+
+Helper gem for Mozilla Firefox.
+
+## 官网
+
+- 主页: http://github.com/wynst/firefox
+- RubyGems: https://rubygems.org/gems/firefox
+
+## 历史版本号
+
+- 0.1.0 (2010-07-26)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/firefox
+- gem 安装: `gem install firefox`
+- Bundler: `gem "firefox"`
+- 最新版本: 0.1.0
+- 最新版归档: https://rubygems.org/downloads/firefox-0.1.0.gem
+- 版本锁定: `gem "firefox", "~> 0.1.0"`
+- 中央仓库: https://rubygems.org/

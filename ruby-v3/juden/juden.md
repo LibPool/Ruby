@@ -1,0 +1,27 @@
+# juden
+
+**Tag**: library
+
+## 简介
+
+Notify battery capacity on your linux laptop
+
+## 官网
+
+- 主页: https://github.com/iberianpig/juden
+- 文档: https://www.rubydoc.info/gems/juden/0.1.0
+- RubyGems: https://rubygems.org/gems/juden
+
+## 历史版本号
+
+- 0.1.0 (2018-05-26)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/juden
+- gem 安装: `gem install juden`
+- Bundler: `gem "juden"`
+- 最新版本: 0.1.0
+- 最新版归档: https://rubygems.org/downloads/juden-0.1.0.gem
+- 版本锁定: `gem "juden", "~> 0.1.0"`
+- 中央仓库: https://rubygems.org/

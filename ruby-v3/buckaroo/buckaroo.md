@@ -1,0 +1,27 @@
+# buckaroo
+
+**Tag**: web, networking
+
+## 简介
+
+Buckaroo payment gateway (see http://www.buckaroo.nl)
+
+## 官网
+
+- 主页: http://opensource.inventid.nl/buckaroo
+- 文档: https://www.rubydoc.info/gems/buckaroo/1.0.0
+- RubyGems: https://rubygems.org/gems/buckaroo
+
+## 历史版本号
+
+- 1.0.0 (2014-09-17)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/buckaroo
+- gem 安装: `gem install buckaroo`
+- Bundler: `gem "buckaroo"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/buckaroo-1.0.0.gem
+- 版本锁定: `gem "buckaroo", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

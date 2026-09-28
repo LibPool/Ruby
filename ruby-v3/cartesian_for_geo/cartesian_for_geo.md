@@ -1,0 +1,30 @@
+# cartesian_for_geo
+
+**Tag**: database
+
+## 简介
+
+Helper for transform Polygons from GoogleMaps to PSQL DB correctly
+
+## 官网
+
+- 主页: https://github.com/WorstOfAny/cartesian_for_geo
+- 文档: https://www.rubydoc.info/gems/cartesian_for_geo/2.0.0
+- RubyGems: https://rubygems.org/gems/cartesian_for_geo
+
+## 历史版本号
+
+- 2.0.0 (2021-07-19)
+- 1.1.1 (2021-07-09)
+- 1.1.0 (2021-07-09)
+- 1.0.1 (2018-07-31)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/cartesian_for_geo
+- gem 安装: `gem install cartesian_for_geo`
+- Bundler: `gem "cartesian_for_geo"`
+- 最新版本: 2.0.0
+- 最新版归档: https://rubygems.org/downloads/cartesian_for_geo-2.0.0.gem
+- 版本锁定: `gem "cartesian_for_geo", "~> 2.0.0"`
+- 中央仓库: https://rubygems.org/

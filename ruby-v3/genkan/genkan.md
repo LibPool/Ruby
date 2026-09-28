@@ -1,0 +1,31 @@
+# genkan
+
+**Tag**: web, security
+
+## 简介
+
+Genkan is authentication engine for Rails
+
+## 官网
+
+- 主页: https://github.com/yhirano55/genkan
+- 文档: https://www.rubydoc.info/gems/genkan/0.2.3
+- RubyGems: https://rubygems.org/gems/genkan
+
+## 历史版本号
+
+- 0.2.3 (2017-07-25)
+- 0.2.2 (2017-07-24)
+- 0.2.1 (2017-07-09)
+- 0.2.0 (2017-07-07)
+- 0.1.0 (2017-07-06)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/genkan
+- gem 安装: `gem install genkan`
+- Bundler: `gem "genkan"`
+- 最新版本: 0.2.3
+- 最新版归档: https://rubygems.org/downloads/genkan-0.2.3.gem
+- 版本锁定: `gem "genkan", "~> 0.2.3"`
+- 中央仓库: https://rubygems.org/

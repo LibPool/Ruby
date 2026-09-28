@@ -1,0 +1,35 @@
+# counters
+
+**Tag**: web
+
+## 简介
+
+Using the provided API, record metrics (such as number of hits to a particular controller, bytes in/out, compression ratio) within your system. Visualization is NOT provided within this gem.
+
+## 官网
+
+- 主页: https://github.com/francois/counters
+- RubyGems: https://rubygems.org/gems/counters
+
+## 历史版本号
+
+- 1.3.1 (2011-06-03)
+- 1.3.0 (2011-06-01)
+- 1.2.0 (2011-05-31)
+- 1.1.3 (2011-04-11)
+- 1.1.2 (2011-04-08)
+- 1.1.1 (2011-03-30)
+- 1.1.0 (2011-03-29)
+- 1.0.2 (2011-03-22)
+- 1.0.1 (2011-02-26)
+- 1.0.0 (2011-02-26)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/counters
+- gem 安装: `gem install counters`
+- Bundler: `gem "counters"`
+- 最新版本: 1.3.1
+- 最新版归档: https://rubygems.org/downloads/counters-1.3.1.gem
+- 版本锁定: `gem "counters", "~> 1.3.1"`
+- 中央仓库: https://rubygems.org/

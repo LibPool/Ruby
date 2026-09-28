@@ -1,0 +1,29 @@
+# case_sensitive_attributes
+
+**Tag**: library
+
+## 简介
+
+Case sensitive for attributes
+
+## 官网
+
+- 主页: https://github.com/sliwecki/case_sensitive_attributes
+- 文档: https://www.rubydoc.info/gems/case_sensitive_attributes/0.3.0
+- RubyGems: https://rubygems.org/gems/case_sensitive_attributes
+
+## 历史版本号
+
+- 0.3.0 (2016-03-03)
+- 0.2.1 (2016-03-02)
+- 0.1.0 (2016-02-29)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/case_sensitive_attributes
+- gem 安装: `gem install case_sensitive_attributes`
+- Bundler: `gem "case_sensitive_attributes"`
+- 最新版本: 0.3.0
+- 最新版归档: https://rubygems.org/downloads/case_sensitive_attributes-0.3.0.gem
+- 版本锁定: `gem "case_sensitive_attributes", "~> 0.3.0"`
+- 中央仓库: https://rubygems.org/

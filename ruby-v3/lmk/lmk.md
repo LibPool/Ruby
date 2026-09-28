@@ -1,0 +1,29 @@
+# lmk
+
+**Tag**: library
+
+## 简介
+
+runs a command and sends the output via sms
+
+## 官网
+
+- 主页: http://www.lukewinikates.com/lmk
+- 源码仓库: https://github.com/LukeWinikates/lmk
+- 问题追踪: https://github.com/LukeWinikates/lmk/issues
+- RubyGems: https://rubygems.org/gems/lmk
+
+## 历史版本号
+
+- 0.0.2 (2013-05-08)
+- 0.0.1 (2013-05-06)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/lmk
+- gem 安装: `gem install lmk`
+- Bundler: `gem "lmk"`
+- 最新版本: 0.0.2
+- 最新版归档: https://rubygems.org/downloads/lmk-0.0.2.gem
+- 版本锁定: `gem "lmk", "~> 0.0.2"`
+- 中央仓库: https://rubygems.org/

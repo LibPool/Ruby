@@ -1,0 +1,27 @@
+# webget_ruby_password_text
+
+**Tag**: web, tooling
+
+## 简介
+
+WebGet Ruby Gem: Password text generator for strong web-savvy passwords
+
+## 官网
+
+- 主页: http://webget.com/
+- RubyGems: https://rubygems.org/gems/webget_ruby_password_text
+
+## 历史版本号
+
+- 1.2.1 (2010-02-18)
+- 1.2.0 (2010-02-18)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/webget_ruby_password_text
+- gem 安装: `gem install webget_ruby_password_text`
+- Bundler: `gem "webget_ruby_password_text"`
+- 最新版本: 1.2.1
+- 最新版归档: https://rubygems.org/downloads/webget_ruby_password_text-1.2.1.gem
+- 版本锁定: `gem "webget_ruby_password_text", "~> 1.2.1"`
+- 中央仓库: https://rubygems.org/

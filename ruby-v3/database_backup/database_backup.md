@@ -1,0 +1,27 @@
+# database_backup
+
+**Tag**: web, database, data
+
+## 简介
+
+Back up your rails database using rails configurations.
+
+## 官网
+
+- 主页: http://codn.mx/en
+- 文档: https://www.rubydoc.info/gems/database_backup/1.0.0
+- RubyGems: https://rubygems.org/gems/database_backup
+
+## 历史版本号
+
+- 1.0.0 (2018-07-30)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/database_backup
+- gem 安装: `gem install database_backup`
+- Bundler: `gem "database_backup"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/database_backup-1.0.0.gem
+- 版本锁定: `gem "database_backup", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

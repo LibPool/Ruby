@@ -1,0 +1,35 @@
+# kakao_msg
+
+**Tag**: library
+
+## 简介
+
+send kakaotalk msg gem for bizm
+
+## 官网
+
+- 主页: http://rubygems.org/gems/kakao_msg
+- 文档: https://www.rubydoc.info/gems/kakao_msg/0.3.0
+- RubyGems: https://rubygems.org/gems/kakao_msg
+
+## 历史版本号
+
+- 0.3.0 (2021-03-03)
+- 0.2.5 (2021-03-03)
+- 0.2.4 (2021-03-03)
+- 0.2.3 (2020-04-20)
+- 0.2.2 (2020-04-17)
+- 0.2.1 (2020-03-17)
+- 0.2.0 (2020-03-14)
+- 0.1.0 (2020-03-14)
+- 0.0.11 (2020-03-13)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/kakao_msg
+- gem 安装: `gem install kakao_msg`
+- Bundler: `gem "kakao_msg"`
+- 最新版本: 0.3.0
+- 最新版归档: https://rubygems.org/downloads/kakao_msg-0.3.0.gem
+- 版本锁定: `gem "kakao_msg", "~> 0.3.0"`
+- 中央仓库: https://rubygems.org/

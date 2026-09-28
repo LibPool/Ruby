@@ -1,0 +1,52 @@
+# ack_rocket_cms_mongoid
+
+**Tag**: library
+
+## 简介
+
+AckRocketCMS - RocketCMS fork - Mongoid metapackage
+
+## 官网
+
+- 主页: https://github.com/ack43/rocket_cms
+- 文档: https://www.rubydoc.info/gems/ack_rocket_cms_mongoid/0.9.2
+- RubyGems: https://rubygems.org/gems/ack_rocket_cms_mongoid
+
+## 历史版本号
+
+- 0.9.2 (2015-12-13)
+- 0.9.1.3 (2015-10-14)
+- 0.9.1.2 (2015-10-14)
+- 0.9.1.1 (2015-10-14)
+- 0.9.1 (2015-10-14)
+- 0.8.2 (2015-08-11)
+- 0.8.0 (2015-07-14)
+- 0.7.7.1 (2015-06-13)
+- 0.7.7 (2015-06-08)
+- 0.7.6.4 (2015-06-08)
+- 0.7.6.3 (2015-05-21)
+- 0.7.6.2 (2015-05-21)
+- 0.7.6.1 (2015-05-13)
+- 0.7.6 (2015-05-12)
+- 0.7.5.2 (2015-04-06)
+- 0.7.5.1 (2015-04-02)
+- 0.7.5 (2015-03-25)
+- 0.7.4.1 (2015-03-23)
+- 0.7.4 (2015-03-23)
+- 0.7.3 (2015-03-16)
+- 0.7.2.4 (2015-03-03)
+- 0.7.2.3.2 (2015-03-02)
+- 0.7.2.3.1 (2015-03-02)
+- 0.7.2.3 (2015-03-02)
+- 0.7.2.2 (2015-02-25)
+- 0.7.2.1 (2015-02-13)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/ack_rocket_cms_mongoid
+- gem 安装: `gem install ack_rocket_cms_mongoid`
+- Bundler: `gem "ack_rocket_cms_mongoid"`
+- 最新版本: 0.9.2
+- 最新版归档: https://rubygems.org/downloads/ack_rocket_cms_mongoid-0.9.2.gem
+- 版本锁定: `gem "ack_rocket_cms_mongoid", "~> 0.9.2"`
+- 中央仓库: https://rubygems.org/

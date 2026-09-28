@@ -1,0 +1,28 @@
+# phpass-ruby
+
+**Tag**: library
+
+## 简介
+
+phpass for ruby
+
+## 官网
+
+- 主页: http://github.com/tt25/phpass-ruby
+- RubyGems: https://rubygems.org/gems/phpass-ruby
+
+## 历史版本号
+
+- 0.1.2 (2010-12-14)
+- 0.1.1 (2010-12-14)
+- 0.1.0 (2010-12-14)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/phpass-ruby
+- gem 安装: `gem install phpass-ruby`
+- Bundler: `gem "phpass-ruby"`
+- 最新版本: 0.1.2
+- 最新版归档: https://rubygems.org/downloads/phpass-ruby-0.1.2.gem
+- 版本锁定: `gem "phpass-ruby", "~> 0.1.2"`
+- 中央仓库: https://rubygems.org/

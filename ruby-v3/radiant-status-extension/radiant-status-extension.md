@@ -1,0 +1,27 @@
+# radiant-status-extension
+
+**Tag**: library
+
+## 简介
+
+Integrate status for elastic beanstalk
+
+## 官网
+
+- 主页: http://github.com/sealink/radiant-status-extension
+- 文档: https://www.rubydoc.info/gems/radiant-status-extension/0.1.0
+- RubyGems: https://rubygems.org/gems/radiant-status-extension
+
+## 历史版本号
+
+- 0.1.0 (2016-09-14)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/radiant-status-extension
+- gem 安装: `gem install radiant-status-extension`
+- Bundler: `gem "radiant-status-extension"`
+- 最新版本: 0.1.0
+- 最新版归档: https://rubygems.org/downloads/radiant-status-extension-0.1.0.gem
+- 版本锁定: `gem "radiant-status-extension", "~> 0.1.0"`
+- 中央仓库: https://rubygems.org/

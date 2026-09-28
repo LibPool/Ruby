@@ -1,0 +1,268 @@
+# u
+
+**Tag**: web, cli, database, testing, security, networking, tooling
+
+## 简介
+
+U
+
+  U extends Ruby’s Unicode support.  It provides a string class called
+  U::String with an interface that mimics that of the String class in Ruby 2.0,
+  but that can also be used from both Ruby 1.8.  This interface also has more
+  complete Unicode support and never modifies the receiver.  Thus, a U::String
+  is an immutable value object.
+
+  U comes with complete and very accurate documentation¹.  The documentation can
+  realistically also be used as a reference to the Ruby String API and may
+  actually be preferable, as it’s a lot more explicit and complete than the
+  documentation that comes with Ruby.
+
+¹ See http://disu.se/software/u-1.0/api/
+
+§ Installation
+
+    Install u with
+
+      % gem install u
+
+§ Usage
+
+    Usage is basically the following:
+
+      require 'u-1.0'
+
+      a = 'äbc'
+      a.upcase # ⇒ 'äBC'
+      a.u.upcase # ⇒ 'ÄBC'
+
+    That is, you require the library, then you invoke #u on a String.  This’ll
+    give you a U::String that has much better Unicode support than a normal
+    String.  It’s important to note that U only uses UTF-8, which means that #u
+    will try to #encode the String as such.  This shouldn’t be an issue in most
+    cases, as UTF-8 is now more or less the universal encoding – and rightfully
+    so.
+
+    As U::Strings¹ are immutable value objects, there’s also a U::Buffer²
+    available for building U::Strings efficiently.
+
+    See the API³ for more complete usage information.  The following sections
+    will only cover the extensions and differences that U::String exhibit from
+    Ruby’s built-in String class.
+
+  ¹ See http://disu.se/software/u-1.0/api/U/String/
+  ² See http://disu.se/software/u-1.0/api/U/Buffer/
+  ³ See http://disu.se/software/u-1.0/api/
+
+  § Unicode Properties
+
+      There are quite a few property-checking interrogators that let you check
+      if all characters in a U::String have the given Unicode property:
+
+    •   #alnum?¹
+    •   #alpha?²
+    •   #assigned?³
+    •   #case_ignorable?⁴
+    •   #cased?⁵
+    •   #cntrl?⁶
+    •   #defined?⁷
+    •   #digit?⁸
+    •   #graph?⁹
+    •   #newline?¹⁰
+    •   #print?¹¹
+    •   #punct?¹²
+    •   #soft_dotted?¹³
+    •   #space?¹⁴
+    •   #title?¹⁵
+    •   #valid?¹⁶
+    •   #wide?¹⁷
+    •   #wide_cjk?¹⁸
+    •   #xdigit?¹⁹
+    •   #zero_width?²⁰
+
+    ¹  See http://disu.se/software/u-1.0/api/U/String/#alnum-p-instance-method
+    ²  See http://disu.se/software/u-1.0/api/U/String/#alpha-p-instance-method
+    ³  See http://disu.se/software/u-1.0/api/U/String/#assigned-p-instance-method
+    ⁴  See http://disu.se/software/u-1.0/api/U/String/#case_ignorable-p-instance-method
+    ⁵  See http://disu.se/software/u-1.0/api/U/String/#cased-p-instance-method
+    ⁶  See http://disu.se/software/u-1.0/api/U/String/#cntrl-p-instance-method
+    ⁷  See http://disu.se/software/u-1.0/api/U/String/#defined-p-instance-method
+    ⁸  See http://disu.se/software/u-1.0/api/U/String/#digit-p-instance-method
+    ⁹  See http://disu.se/software/u-1.0/api/U/String/#graph-p-instance-method
+    ¹⁰ See http://disu.se/software/u-1.0/api/U/String/#newline-p-instance-method
+    ¹¹ See http://disu.se/software/u-1.0/api/U/String/#print-p-instance-method
+    ¹² See http://disu.se/software/u-1.0/api/U/String/#punct-p-instance-method
+    ¹³ See http://disu.se/software/u-1.0/api/U/String/#soft_dotted-p-instance-method
+    ¹⁴ See http://disu.se/software/u-1.0/api/U/String/#space-p-instance-method
+    ¹⁵ See http://disu.se/software/u-1.0/api/U/String/#title-p-instance-method
+    ¹⁶ See http://disu.se/software/u-1.0/api/U/String/#valid-p-instance-method
+    ¹⁷ See http://disu.se/software/u-1.0/api/U/String/#wide-p-instance-method
+    ¹⁸ See http://disu.se/software/u-1.0/api/U/String/#wide_cjk-p-instance-method
+    ¹⁹ See http://disu.se/software/u-1.0/api/U/String/#xdigit-p-instance-method
+    ²⁰ See http://disu.se/software/u-1.0/api/U/String/#zero_width-p-instance-method
+
+      Similar to these methods are
+
+    •   #folded?¹
+    •   #lower?²
+    •   #upper?³
+
+      which check whether a ‹U::String› has been cased in a given manner.
+
+    ¹ See http://disu.se/software/u-1.0/api/U/String/#folded-p-instance-method
+    ² See http://disu.se/software/u-1.0/api/U/String/#lower-p-instance-method
+    ³ See http://disu.se/software/u-1.0/api/U/String/#upper-p-instance-method
+
+      There’s also a #normalized?¹ method that checks whether a ‹U::String› has
+      been normalized on a given form.
+
+    ¹ See http://disu.se/software/u-1.0/api/U/String/#normalized-p-instance-method
+
+      You can also access certain Unicode properties of the characters of a
+      U::String:
+
+    •   #canonical_combining_class¹
+    •   #general_category²
+    •   #grapheme_break³
+    •   #line_break⁴
+    •   #script⁵
+    •   #word_break⁶
+
+    ¹  See http://disu.se/software/u-1.0/api/U/String/#canonical_combining_class-instance-method
+    ²  See http://disu.se/software/u-1.0/api/U/String/#general_category-instance-method
+    ³  See http://disu.se/software/u-1.0/api/U/String/#grapheme_break-instance-method
+    ⁴  See http://disu.se/software/u-1.0/api/U/String/#line_break-instance-method
+    ⁵  See http://disu.se/software/u-1.0/api/U/String/#script-instance-method
+    ⁶  See http://disu.se/software/u-1.0/api/U/String/#word_break-instance-method
+
+  § Locale-specific Comparisons
+
+      Comparisons of U::Strings respect the current locale (and also allow you
+      to specify a locale to use): ‹#&lt;=&gt;›¹, #casecmp², and #collation_key³.
+
+    ¹  See http://disu.se/software/u-1.0/api/U/String/#comparison-operator
+    ²  See http://disu.se/software/u-1.0/api/U/String/#casecmp-instance-method
+    ³  See http://disu.se/software/u-1.0/api/U/String/#collation_key-instance-method
+
+  § Additional Enumerators
+
+      There are a couple of additional enumerators in #each_grapheme_cluster¹
+      and #each_word² (along with aliases #grapheme_clusters³ and #words⁴).
+
+    ¹  See http://disu.se/software/u-1.0/api/U/String/#each_grapheme_cluster-instance-method
+    ²  See http://disu.se/software/u-1.0/api/U/String/#each_word-instance-method
+    ³  See http://disu.se/software/u-1.0/api/U/String/#grapheme_clusters-instance-method
+    ⁴  See http://disu.se/software/u-1.0/api/U/String/#words-instance-method
+
+  § Unicode-aware Sub-sequence Removal
+
+      #Chomp¹, #chop², #lstrip³, #rstrip⁴, and #strip⁵ all look for Unicode
+      newline and space characters, rather than only ASCII ones.
+
+    ¹  See http://disu.se/software/u-1.0/api/U/String/#chomp-instance-method
+    ²  See http://disu.se/software/u-1.0/api/U/String/#chop-instance-method
+    ³  See http://disu.se/software/u-1.0/api/U/String/#lstrip-instance-method
+    ⁴  See http://disu.se/software/u-1.0/api/U/String/#rstrip-instance-method
+    ⁵  See http://disu.se/software/u-1.0/api/U/String/#strip-instance-method
+
+  § Unicode-aware Conversions
+
+      Case-shifting methods #downcase¹ and #upcase² do proper Unicode casing
+      and the interface is further augmented by #foldcase³ and #titlecase⁴.
+      #Mirror⁵ and #normalize⁶ do conversions similar in nature to the
+      case-shifting methods.
+
+    ¹  See http://disu.se/software/u-1.0/api/U/String/#downcase-instance-method
+    ²  See http://disu.se/software/u-1.0/api/U/String/#upcase-instance-method
+    ³  See http://disu.se/software/u-1.0/api/U/String/#foldcase-instance-method
+    ⁴  See http://disu.se/software/u-1.0/api/U/String/#titlecase-instance-method
+    ⁵  See http://disu.se/software/u-1.0/api/U/String/#mirror-instance-method
+    ⁶  See http://disu.se/software/u-1.0/api/U/String/#normalize-instance-method
+
+  § Width Calculations
+
+      #Width¹ will return the number of cells on a terminal that a U::String
+      will occupy.
+
+      #Center², #ljust³, and #rjust⁴ deal in width rather than length, making
+      them much more useful for generating terminal output.  #%⁵ (and its alias
+      #format⁶) similarly deal in width.
+
+    ¹  See http://disu.se/software/u-1.0/api/U/String/#width-instance-method
+    ²  See http://disu.se/software/u-1.0/api/U/String/#center-instance-method
+    ³  See http://disu.se/software/u-1.0/api/U/String/#ljust-instance-method
+    ⁴  See http://disu.se/software/u-1.0/api/U/String/#rjust-instance-method
+    ⁵  See http://disu.se/software/u-1.0/api/U/String/#modulo-operator
+    ⁶  See http://disu.se/software/u-1.0/api/U/String/#format-instance-method
+
+  § Extended Type Conversions
+
+      Finally, #hex¹, #oct², and #to_i³ use Unicode alpha-numerics for their
+      respective conversions.
+
+    ¹  See http://disu.se/software/u-1.0/api/U/String/#hex-instance-method
+    ²  See http://disu.se/software/u-1.0/api/U/String/#oct-instance-method
+    ³  See http://disu.se/software/u-1.0/api/U/String/#to_i-instance-method
+
+§ News
+
+  § 1.0.0
+
+      Initial public release!
+
+§ Financing
+
+    Currently, most of my time is spent at my day job and in my rather busy
+    private life.  Please motivate me to spend time on this piece of software
+    by donating some of your money to this project.  Yeah, I realize that
+    requesting money to develop software is a bit, well, capitalistic of me.
+    But please realize that I live in a capitalistic society and I need money
+    to have other people give me the things that I need to continue living
+    under the rules of said society.  So, if you feel that this piece of
+    software has helped you out enough to warrant a reward, please PayPal a
+    donation to now@disu.se¹.  Thanks!  Your support won’t go unnoticed!
+
+¹ Send a donation:
+  https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=now@disu.se&amp;item_name=U
+
+§ Reporting Bugs
+
+    Please report any bugs that you encounter to the {issue tracker}¹.
+
+¹ See https://github.com/now/u/issues
+
+§ Authors
+
+    Nikolai Weibull wrote the code, the tests, the documentation, and this
+    README.
+
+§ Licensing
+
+    U is free software: you may redistribute it and/or modify it under the
+    terms of the {GNU Lesser General Public License, version 3}¹ or later², as
+    published by the {Free Software Foundation}³.
+
+¹ See http://disu.se/licenses/lgpl-3.0/
+² See http://gnu.org/licenses/
+³ See http://fsf.org/
+
+## 官网
+
+- 主页: http://disu.se/software/u-1.0/
+- 文档: https://www.rubydoc.info/gems/u/1.0.2
+- RubyGems: https://rubygems.org/gems/u
+
+## 历史版本号
+
+- 1.0.2 (2015-10-31)
+- 1.0.0 (2013-06-04)
+- 0.5.0 (2011-03-21)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/u
+- gem 安装: `gem install u`
+- Bundler: `gem "u"`
+- 最新版本: 1.0.2
+- 最新版归档: https://rubygems.org/downloads/u-1.0.2.gem
+- 版本锁定: `gem "u", "~> 1.0.2"`
+- 中央仓库: https://rubygems.org/

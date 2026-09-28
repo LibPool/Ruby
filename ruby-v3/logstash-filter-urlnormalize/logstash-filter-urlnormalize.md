@@ -1,0 +1,27 @@
+# logstash-filter-urlnormalize
+
+**Tag**: library
+
+## 简介
+
+Logstash URL normalization filter
+
+## 官网
+
+- 主页: https://github.com/yoo2001818/logstash-filter-urlnormalize
+- 文档: https://www.rubydoc.info/gems/logstash-filter-urlnormalize/1.0.0
+- RubyGems: https://rubygems.org/gems/logstash-filter-urlnormalize
+
+## 历史版本号
+
+- 1.0.0 (2017-10-26)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/logstash-filter-urlnormalize
+- gem 安装: `gem install logstash-filter-urlnormalize`
+- Bundler: `gem "logstash-filter-urlnormalize"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/logstash-filter-urlnormalize-1.0.0.gem
+- 版本锁定: `gem "logstash-filter-urlnormalize", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

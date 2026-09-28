@@ -1,0 +1,41 @@
+# yyuu-capistrano-chef-solo
+
+**Tag**: web
+
+## 简介
+
+a capistrano recipe to invoke chef-solo.
+
+## 官网
+
+- 主页: https://github.com/yyuu/capistrano-chef-solo
+- RubyGems: https://rubygems.org/gems/yyuu-capistrano-chef-solo
+
+## 历史版本号
+
+- 0.1.6 (2013-04-22)
+- 0.1.5 (2013-04-11)
+- 0.1.4 (2013-04-10)
+- 0.1.3 (2013-04-08)
+- 0.1.2 (2013-04-02)
+- 0.1.1 (2013-03-26)
+- 0.1.0 (2013-03-13)
+- 0.0.9 (2013-03-07)
+- 0.0.8 (2013-02-09)
+- 0.0.7 (2012-12-12)
+- 0.0.6 (2012-12-06)
+- 0.0.5 (2012-12-04)
+- 0.0.4 (2012-10-25)
+- 0.0.3 (2012-10-24)
+- 0.0.2 (2012-09-24)
+- 0.0.1 (2012-09-21)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/yyuu-capistrano-chef-solo
+- gem 安装: `gem install yyuu-capistrano-chef-solo`
+- Bundler: `gem "yyuu-capistrano-chef-solo"`
+- 最新版本: 0.1.6
+- 最新版归档: https://rubygems.org/downloads/yyuu-capistrano-chef-solo-0.1.6.gem
+- 版本锁定: `gem "yyuu-capistrano-chef-solo", "~> 0.1.6"`
+- 中央仓库: https://rubygems.org/

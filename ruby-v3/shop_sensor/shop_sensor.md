@@ -1,0 +1,27 @@
+# shop_sensor
+
+**Tag**: web, cli, networking
+
+## 简介
+
+This is unofficial client library of ShopSense API (http://shopsense.shopstyle.com/shopsense/7234015).
+
+## 官网
+
+- 主页: https://github.com/hiroara/shop_sensor
+- 文档: https://www.rubydoc.info/gems/shop_sensor/0.0.2
+- RubyGems: https://rubygems.org/gems/shop_sensor
+
+## 历史版本号
+
+- 0.0.2 (2014-06-02)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/shop_sensor
+- gem 安装: `gem install shop_sensor`
+- Bundler: `gem "shop_sensor"`
+- 最新版本: 0.0.2
+- 最新版归档: https://rubygems.org/downloads/shop_sensor-0.0.2.gem
+- 版本锁定: `gem "shop_sensor", "~> 0.0.2"`
+- 中央仓库: https://rubygems.org/

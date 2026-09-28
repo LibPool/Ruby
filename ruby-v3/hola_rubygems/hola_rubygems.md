@@ -1,0 +1,27 @@
+# hola_rubygems
+
+**Tag**: library
+
+## 简介
+
+A simple hello world gem
+
+## 官网
+
+- 主页: http://rubygems.org/gems/hola
+- 文档: https://www.rubydoc.info/gems/hola_rubygems/0.0.1
+- RubyGems: https://rubygems.org/gems/hola_rubygems
+
+## 历史版本号
+
+- 0.0.1 (2017-08-07)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/hola_rubygems
+- gem 安装: `gem install hola_rubygems`
+- Bundler: `gem "hola_rubygems"`
+- 最新版本: 0.0.1
+- 最新版归档: https://rubygems.org/downloads/hola_rubygems-0.0.1.gem
+- 版本锁定: `gem "hola_rubygems", "~> 0.0.1"`
+- 中央仓库: https://rubygems.org/

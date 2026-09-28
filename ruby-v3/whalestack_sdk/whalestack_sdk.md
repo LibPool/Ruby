@@ -1,0 +1,27 @@
+# whalestack_sdk
+
+**Tag**: library
+
+## 简介
+
+Whalestack SDK. Programmatically accept and settle payments in digital currencies.
+
+## 官网
+
+- 主页: https://www.whalestack.com
+- 文档: https://www.rubydoc.info/gems/whalestack_sdk/1.0.0
+- RubyGems: https://rubygems.org/gems/whalestack_sdk
+
+## 历史版本号
+
+- 1.0.0 (2023-10-05)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/whalestack_sdk
+- gem 安装: `gem install whalestack_sdk`
+- Bundler: `gem "whalestack_sdk"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/whalestack_sdk-1.0.0.gem
+- 版本锁定: `gem "whalestack_sdk", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

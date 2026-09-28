@@ -1,0 +1,26 @@
+# fiber_pool
+
+**Tag**: library
+
+## 简介
+
+A General purpose fiber pool
+
+## 官网
+
+- RubyGems: https://rubygems.org/gems/fiber_pool
+
+## 历史版本号
+
+- 1.0.0 (2011-04-25)
+- 0.9.0 (2011-04-24)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/fiber_pool
+- gem 安装: `gem install fiber_pool`
+- Bundler: `gem "fiber_pool"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/fiber_pool-1.0.0.gem
+- 版本锁定: `gem "fiber_pool", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

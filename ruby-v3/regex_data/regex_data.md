@@ -1,0 +1,29 @@
+# regex_data
+
+**Tag**: data
+
+## 简介
+
+Filter and check format data
+
+## 官网
+
+- 主页: https://github.com/at-hoangnguyen3/Regex_Data
+- 文档: https://www.rubydoc.info/gems/regex_data/0.1.4
+- RubyGems: https://rubygems.org/gems/regex_data
+
+## 历史版本号
+
+- 0.1.4 (2017-06-21)
+- 0.1.3 (2017-06-20)
+- 0.1.1 (2017-06-20)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/regex_data
+- gem 安装: `gem install regex_data`
+- Bundler: `gem "regex_data"`
+- 最新版本: 0.1.4
+- 最新版归档: https://rubygems.org/downloads/regex_data-0.1.4.gem
+- 版本锁定: `gem "regex_data", "~> 0.1.4"`
+- 中央仓库: https://rubygems.org/
