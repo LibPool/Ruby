@@ -1,0 +1,28 @@
+# rails-tocify
+
+**Tag**: web
+
+## 简介
+
+Rails gem of gfranko/jquery.tocify.js
+
+## 官网
+
+- 主页: https://github.com/peterthecoon/rails-tocify
+- 文档: https://www.rubydoc.info/gems/rails-tocify/1.9.0.2
+- RubyGems: https://rubygems.org/gems/rails-tocify
+
+## 历史版本号
+
+- 1.9.0.2 (2015-09-27)
+- 1.9.0 (2015-02-17)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/rails-tocify
+- gem 安装: `gem install rails-tocify`
+- Bundler: `gem "rails-tocify"`
+- 最新版本: 1.9.0.2
+- 最新版归档: https://rubygems.org/downloads/rails-tocify-1.9.0.2.gem
+- 版本锁定: `gem "rails-tocify", "~> 1.9.0.2"`
+- 中央仓库: https://rubygems.org/

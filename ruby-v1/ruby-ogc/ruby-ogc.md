@@ -1,0 +1,25 @@
+# ruby-ogc
+
+**Tag**: library
+
+## 简介
+
+Ruby lib for OGC manipulations
+
+## 官网
+
+- RubyGems: https://rubygems.org/gems/ruby-ogc
+
+## 历史版本号
+
+- 0.0.1 (2013-01-24)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/ruby-ogc
+- gem 安装: `gem install ruby-ogc`
+- Bundler: `gem "ruby-ogc"`
+- 最新版本: 0.0.1
+- 最新版归档: https://rubygems.org/downloads/ruby-ogc-0.0.1.gem
+- 版本锁定: `gem "ruby-ogc", "~> 0.0.1"`
+- 中央仓库: https://rubygems.org/

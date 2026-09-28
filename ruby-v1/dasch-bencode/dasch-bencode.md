@@ -1,0 +1,27 @@
+# dasch-bencode
+
+**Tag**: serialization, data
+
+## 简介
+
+Ruby bindings for the bencode data serialization format.
+
+## 官网
+
+- 主页: http://github.com/dasch/ruby-bencode-bindings
+- 文档: https://www.rubydoc.info/gems/dasch-bencode/0.5.0
+- RubyGems: https://rubygems.org/gems/dasch-bencode
+
+## 历史版本号
+
+- 0.5.0 (2014-08-11)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/dasch-bencode
+- gem 安装: `gem install dasch-bencode`
+- Bundler: `gem "dasch-bencode"`
+- 最新版本: 0.5.0
+- 最新版归档: https://rubygems.org/downloads/dasch-bencode-0.5.0.gem
+- 版本锁定: `gem "dasch-bencode", "~> 0.5.0"`
+- 中央仓库: https://rubygems.org/

@@ -1,0 +1,29 @@
+# rtftopdf
+
+**Tag**: library
+
+## 简介
+
+RTF to PDF conversion
+
+## 官网
+
+- 主页: http://github.com/calebcauthon/rtftopdf
+- 文档: https://www.rubydoc.info/gems/rtftopdf/1.0.3
+- RubyGems: https://rubygems.org/gems/rtftopdf
+
+## 历史版本号
+
+- 1.0.3 (2013-12-18)
+- 1.0.2 (2013-12-17)
+- 1.0.0 (2013-12-17)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/rtftopdf
+- gem 安装: `gem install rtftopdf`
+- Bundler: `gem "rtftopdf"`
+- 最新版本: 1.0.3
+- 最新版归档: https://rubygems.org/downloads/rtftopdf-1.0.3.gem
+- 版本锁定: `gem "rtftopdf", "~> 1.0.3"`
+- 中央仓库: https://rubygems.org/

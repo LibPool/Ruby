@@ -1,0 +1,26 @@
+# meowdb
+
+**Tag**: web, networking
+
+## 简介
+
+A Ruby implementation of the MeowDB.js library (https://www.npmjs.com/package/meowdb).
+
+## 官网
+
+- 主页: https://rubygems.org/gems/meowdb
+- 源码仓库: https://github.com/Drylotrans/MeowDB.rb
+
+## 历史版本号
+
+- 1.0.0 (2020-05-17)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/meowdb
+- gem 安装: `gem install meowdb`
+- Bundler: `gem "meowdb"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/meowdb-1.0.0.gem
+- 版本锁定: `gem "meowdb", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

@@ -1,0 +1,28 @@
+# lib_raw
+
+**Tag**: filesystem
+
+## 简介
+
+LibRaw is a library for reading RAW files obtained from digital photo cameras
+
+## 官网
+
+- 主页: https://github.com/yoshida-eth0/ruby-lib_raw
+- 文档: https://www.rubydoc.info/gems/lib_raw/1.0.0
+- RubyGems: https://rubygems.org/gems/lib_raw
+
+## 历史版本号
+
+- 1.0.0 (2016-03-12)
+- 0.0.1 (2016-03-11)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/lib_raw
+- gem 安装: `gem install lib_raw`
+- Bundler: `gem "lib_raw"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/lib_raw-1.0.0.gem
+- 版本锁定: `gem "lib_raw", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

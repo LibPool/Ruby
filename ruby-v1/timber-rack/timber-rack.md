@@ -1,0 +1,29 @@
+# timber-rack
+
+**Tag**: web
+
+## 简介
+
+Timber integration for Rack
+
+## 官网
+
+- 主页: https://docs.timber.io/languages/ruby/
+- 源码仓库: https://github.com/timberio/timber-ruby-rack
+- 更新日志: https://github.com/timberio/timber-ruby-rack/blob/master/README.md
+- RubyGems: https://rubygems.org/gems/timber-rack
+
+## 历史版本号
+
+- 1.0.1 (2019-03-27)
+- 1.0.0 (2019-03-08)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/timber-rack
+- gem 安装: `gem install timber-rack`
+- Bundler: `gem "timber-rack"`
+- 最新版本: 1.0.1
+- 最新版归档: https://rubygems.org/downloads/timber-rack-1.0.1.gem
+- 版本锁定: `gem "timber-rack", "~> 1.0.1"`
+- 中央仓库: https://rubygems.org/

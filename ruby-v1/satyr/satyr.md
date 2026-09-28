@@ -1,0 +1,28 @@
+# satyr
+
+**Tag**: library
+
+## 简介
+
+Ruby bindings for satyr, library for working with the uReport problem report format.
+
+## 官网
+
+- 主页: http://github.com/abrt/satyr
+- 文档: https://www.rubydoc.info/gems/satyr/0.2
+- RubyGems: https://rubygems.org/gems/satyr
+
+## 历史版本号
+
+- 0.2 (2014-10-08)
+- 0.1 (2014-03-26)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/satyr
+- gem 安装: `gem install satyr`
+- Bundler: `gem "satyr"`
+- 最新版本: 0.2
+- 最新版归档: https://rubygems.org/downloads/satyr-0.2.gem
+- 版本锁定: `gem "satyr", "~> 0.2"`
+- 中央仓库: https://rubygems.org/

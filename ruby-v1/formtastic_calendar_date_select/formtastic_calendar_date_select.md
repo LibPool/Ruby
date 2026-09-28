@@ -1,0 +1,27 @@
+# formtastic_calendar_date_select
+
+**Tag**: library
+
+## 简介
+
+A plugin for formtastic to integrate calendar_date_select date/time picker
+
+## 官网
+
+- 主页: http://github.com/dyohi/formtastic_calendar_date_select
+- RubyGems: https://rubygems.org/gems/formtastic_calendar_date_select
+
+## 历史版本号
+
+- 0.1.1 (2010-01-13)
+- 0.1.0 (2010-01-13)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/formtastic_calendar_date_select
+- gem 安装: `gem install formtastic_calendar_date_select`
+- Bundler: `gem "formtastic_calendar_date_select"`
+- 最新版本: 0.1.1
+- 最新版归档: https://rubygems.org/downloads/formtastic_calendar_date_select-0.1.1.gem
+- 版本锁定: `gem "formtastic_calendar_date_select", "~> 0.1.1"`
+- 中央仓库: https://rubygems.org/

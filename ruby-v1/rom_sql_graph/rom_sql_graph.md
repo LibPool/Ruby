@@ -1,0 +1,28 @@
+# rom_sql_graph
+
+**Tag**: database
+
+## 简介
+
+Display your DB (sql) association graph
+
+## 官网
+
+- 主页: https://github.com/davydovanton/rom-sql-graph
+- 文档: https://www.rubydoc.info/gems/rom_sql_graph/0.2.0
+- RubyGems: https://rubygems.org/gems/rom_sql_graph
+
+## 历史版本号
+
+- 0.2.0 (2017-03-05)
+- 0.1.0 (2017-03-05)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/rom_sql_graph
+- gem 安装: `gem install rom_sql_graph`
+- Bundler: `gem "rom_sql_graph"`
+- 最新版本: 0.2.0
+- 最新版归档: https://rubygems.org/downloads/rom_sql_graph-0.2.0.gem
+- 版本锁定: `gem "rom_sql_graph", "~> 0.2.0"`
+- 中央仓库: https://rubygems.org/

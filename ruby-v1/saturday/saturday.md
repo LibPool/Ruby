@@ -1,0 +1,33 @@
+# saturday
+
+**Tag**: library
+
+## 简介
+
+A Gem to find Saturdays in a month or a year or in a given month or year
+
+## 官网
+
+- 主页: https://github.com/ankit8898/saturday
+- RubyGems: https://rubygems.org/gems/saturday
+
+## 历史版本号
+
+- 1.1.1 (2012-06-30)
+- 1.1.0 (2012-06-30)
+- 1.0.2 (2012-06-30)
+- 1.0.1 (2012-06-30)
+- 1.0.0 (2012-06-30)
+- 0.0.2 (2012-06-30)
+- 0.0.1 (2012-06-30)
+- 0.0.0 (2012-06-30)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/saturday
+- gem 安装: `gem install saturday`
+- Bundler: `gem "saturday"`
+- 最新版本: 1.1.1
+- 最新版归档: https://rubygems.org/downloads/saturday-1.1.1.gem
+- 版本锁定: `gem "saturday", "~> 1.1.1"`
+- 中央仓库: https://rubygems.org/

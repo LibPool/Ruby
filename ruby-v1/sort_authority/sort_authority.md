@@ -1,0 +1,29 @@
+# sort_authority
+
+**Tag**: security
+
+## 简介
+
+String ordering for humans.
+
+## 官网
+
+- 主页: https://rubygems.org/gems/sort_authority
+- 源码仓库: https://github.com/wegowise/sort_authority
+- 文档: https://www.rubydoc.info/gems/sort_authority/0.0.2
+- 问题追踪: https://github.com/wegowise/sort_authority/issues
+
+## 历史版本号
+
+- 0.0.2 (2013-12-26)
+- 0.0.1 (2013-08-02)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/sort_authority
+- gem 安装: `gem install sort_authority`
+- Bundler: `gem "sort_authority"`
+- 最新版本: 0.0.2
+- 最新版归档: https://rubygems.org/downloads/sort_authority-0.0.2.gem
+- 版本锁定: `gem "sort_authority", "~> 0.0.2"`
+- 中央仓库: https://rubygems.org/

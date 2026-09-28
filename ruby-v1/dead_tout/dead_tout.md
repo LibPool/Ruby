@@ -1,0 +1,27 @@
+# dead_tout
+
+**Tag**: filesystem
+
+## 简介
+
+List outdated gems in Gemfile.
+
+## 官网
+
+- 主页: https://github.com/JunichiIto/dead_tout
+- 文档: https://www.rubydoc.info/gems/dead_tout/0.1.0
+- RubyGems: https://rubygems.org/gems/dead_tout
+
+## 历史版本号
+
+- 0.1.0 (2017-04-28)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/dead_tout
+- gem 安装: `gem install dead_tout`
+- Bundler: `gem "dead_tout"`
+- 最新版本: 0.1.0
+- 最新版归档: https://rubygems.org/downloads/dead_tout-0.1.0.gem
+- 版本锁定: `gem "dead_tout", "~> 0.1.0"`
+- 中央仓库: https://rubygems.org/

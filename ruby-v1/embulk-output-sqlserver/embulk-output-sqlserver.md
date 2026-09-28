@@ -1,0 +1,64 @@
+# embulk-output-sqlserver
+
+**Tag**: web, database
+
+## 简介
+
+Inserts or updates records to a table.
+
+## 官网
+
+- 主页: https://github.com/embulk/embulk-output-jdbc
+- 文档: https://www.rubydoc.info/gems/embulk-output-sqlserver/0.8.7
+- RubyGems: https://rubygems.org/gems/embulk-output-sqlserver
+
+## 历史版本号
+
+- 0.10.6-java (2024-04-10)
+- 0.10.5-java (2024-02-22)
+- 0.10.4-java (2024-01-15)
+- 0.10.3-java (2023-10-10)
+- 0.10.2-java (2021-09-30)
+- 0.10.1-java (2021-06-16)
+- 0.10.0-java (2021-06-16)
+- 0.9.0-java (2020-09-04)
+- 0.8.7 (2019-12-23)
+- 0.8.6 (2019-08-22)
+- 0.8.5 (2019-05-10)
+- 0.8.4 (2019-05-08)
+- 0.8.3 (2019-05-07)
+- 0.8.2 (2019-01-30)
+- 0.8.1 (2018-11-16)
+- 0.8.0 (2017-12-26)
+- 0.7.13 (2017-12-08)
+- 0.7.12 (2017-11-24)
+- 0.7.11 (2017-08-16)
+- 0.7.10 (2017-07-14)
+- 0.7.9 (2017-06-23)
+- 0.7.8 (2017-05-10)
+- 0.7.7 (2017-04-13)
+- 0.7.6 (2017-03-23)
+- 0.7.5 (2017-03-10)
+- 0.7.4 (2017-02-24)
+- 0.7.3 (2017-01-06)
+- 0.7.2 (2016-12-19)
+- 0.7.1 (2016-11-25)
+- 0.7.0 (2016-10-26)
+- 0.6.5 (2016-10-11)
+- 0.6.4 (2016-09-30)
+- 0.6.3 (2016-08-18)
+- 0.6.2 (2016-08-10)
+- 0.6.1 (2016-06-23)
+- 0.6.0 (2016-04-26)
+- 0.5.1 (2016-03-29)
+- 0.5.0 (2016-01-15)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/embulk-output-sqlserver
+- gem 安装: `gem install embulk-output-sqlserver`
+- Bundler: `gem "embulk-output-sqlserver"`
+- 最新版本: 0.8.7
+- 最新版归档: https://rubygems.org/downloads/embulk-output-sqlserver-0.8.7.gem
+- 版本锁定: `gem "embulk-output-sqlserver", "~> 0.8.7"`
+- 中央仓库: https://rubygems.org/

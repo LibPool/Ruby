@@ -1,0 +1,29 @@
+# mv-test
+
+**Tag**: database, testing, data
+
+## 简介
+
+Contains macros / matchers for database behavious testing
+
+## 官网
+
+- 主页: http://github.com/vprokopchuk256/mv-test
+- 文档: https://www.rubydoc.info/gems/mv-test/1.0.0
+- RubyGems: https://rubygems.org/gems/mv-test
+
+## 历史版本号
+
+- 1.0.0 (2014-10-08)
+- 0.1.1 (2011-03-22)
+- 0.1.0 (2011-03-22)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/mv-test
+- gem 安装: `gem install mv-test`
+- Bundler: `gem "mv-test"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/mv-test-1.0.0.gem
+- 版本锁定: `gem "mv-test", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

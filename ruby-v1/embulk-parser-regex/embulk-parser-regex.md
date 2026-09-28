@@ -1,0 +1,29 @@
+# embulk-parser-regex
+
+**Tag**: tooling, filesystem
+
+## 简介
+
+Parses lines using regular-expression in files read by other file input plugins.
+
+## 官网
+
+- 主页: https://github.com/mokemokechicken/embulk-parser-regex
+- 文档: https://www.rubydoc.info/gems/embulk-parser-regex/0.2.1
+- RubyGems: https://rubygems.org/gems/embulk-parser-regex
+
+## 历史版本号
+
+- 0.2.1 (2016-05-10)
+- 0.2.0 (2015-08-31)
+- 0.1.0 (2015-08-31)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/embulk-parser-regex
+- gem 安装: `gem install embulk-parser-regex`
+- Bundler: `gem "embulk-parser-regex"`
+- 最新版本: 0.2.1
+- 最新版归档: https://rubygems.org/downloads/embulk-parser-regex-0.2.1.gem
+- 版本锁定: `gem "embulk-parser-regex", "~> 0.2.1"`
+- 中央仓库: https://rubygems.org/

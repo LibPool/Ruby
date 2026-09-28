@@ -1,0 +1,29 @@
+# fish.rb
+
+**Tag**: library
+
+## 简介
+
+Ruby fish interpreter for the newer multi-stack version of fish
+
+## 官网
+
+- 主页: https://github.com/zerocool/fish.rb
+- 文档: https://www.rubydoc.info/gems/fish.rb/1.0.3
+- RubyGems: https://rubygems.org/gems/fish.rb
+
+## 历史版本号
+
+- 1.0.3 (2014-07-10)
+- 1.0.2 (2014-07-10)
+- 1.0.0 (2014-07-09)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/fish.rb
+- gem 安装: `gem install fish.rb`
+- Bundler: `gem "fish.rb"`
+- 最新版本: 1.0.3
+- 最新版归档: https://rubygems.org/downloads/fish.rb-1.0.3.gem
+- 版本锁定: `gem "fish.rb", "~> 1.0.3"`
+- 中央仓库: https://rubygems.org/

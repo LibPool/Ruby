@@ -1,0 +1,26 @@
+# fmalamitsas-aws-s3
+
+**Tag**: web, cli, devops
+
+## 简介
+
+Client library for Amazon's Simple Storage Service's REST API.
+
+## 官网
+
+- 主页: http://amazon.rubyforge.org
+- RubyGems: https://rubygems.org/gems/fmalamitsas-aws-s3
+
+## 历史版本号
+
+- 0.6.2.1254423625 (2010-09-24)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/fmalamitsas-aws-s3
+- gem 安装: `gem install fmalamitsas-aws-s3`
+- Bundler: `gem "fmalamitsas-aws-s3"`
+- 最新版本: 0.6.2.1254423625
+- 最新版归档: https://rubygems.org/downloads/fmalamitsas-aws-s3-0.6.2.1254423625.gem
+- 版本锁定: `gem "fmalamitsas-aws-s3", "~> 0.6.2.1254423625"`
+- 中央仓库: https://rubygems.org/

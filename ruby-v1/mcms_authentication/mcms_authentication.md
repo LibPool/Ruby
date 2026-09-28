@@ -1,0 +1,28 @@
+# mcms_authentication
+
+**Tag**: security
+
+## 简介
+
+It's a combination of devise and CanCan gem and flexible to identify your modules
+
+## 官网
+
+- 主页: https://github.com/mindfire-solutions/mcms_authentication
+- RubyGems: https://rubygems.org/gems/mcms_authentication
+
+## 历史版本号
+
+- 1.0.0 (2012-09-04)
+- 0.0.3 (2012-08-03)
+- 0.0.2 (2012-07-11)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/mcms_authentication
+- gem 安装: `gem install mcms_authentication`
+- Bundler: `gem "mcms_authentication"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/mcms_authentication-1.0.0.gem
+- 版本锁定: `gem "mcms_authentication", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

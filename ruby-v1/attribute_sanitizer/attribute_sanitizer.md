@@ -1,0 +1,28 @@
+# attribute_sanitizer
+
+**Tag**: library
+
+## 简介
+
+DSL for sanitizing inputs.
+
+## 官网
+
+- 文档: https://www.rubydoc.info/gems/attribute_sanitizer/0.0.3
+- RubyGems: https://rubygems.org/gems/attribute_sanitizer
+
+## 历史版本号
+
+- 0.0.3 (2011-07-21)
+- 0.0.2 (2011-07-20)
+- 0.0.1 (2011-07-20)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/attribute_sanitizer
+- gem 安装: `gem install attribute_sanitizer`
+- Bundler: `gem "attribute_sanitizer"`
+- 最新版本: 0.0.3
+- 最新版归档: https://rubygems.org/downloads/attribute_sanitizer-0.0.3.gem
+- 版本锁定: `gem "attribute_sanitizer", "~> 0.0.3"`
+- 中央仓库: https://rubygems.org/

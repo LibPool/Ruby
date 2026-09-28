@@ -1,0 +1,26 @@
+# starburstpisa
+
+**Tag**: library
+
+## 简介
+
+Simple gem to help with dates
+
+## 官网
+
+- 文档: https://www.rubydoc.info/gems/starburstpisa/0.0.1
+- RubyGems: https://rubygems.org/gems/starburstpisa
+
+## 历史版本号
+
+- 0.0.1 (2013-06-25)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/starburstpisa
+- gem 安装: `gem install starburstpisa`
+- Bundler: `gem "starburstpisa"`
+- 最新版本: 0.0.1
+- 最新版归档: https://rubygems.org/downloads/starburstpisa-0.0.1.gem
+- 版本锁定: `gem "starburstpisa", "~> 0.0.1"`
+- 中央仓库: https://rubygems.org/

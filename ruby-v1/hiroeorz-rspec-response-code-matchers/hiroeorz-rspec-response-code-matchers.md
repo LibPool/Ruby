@@ -1,0 +1,27 @@
+# hiroeorz-rspec-response-code-matchers
+
+**Tag**: testing
+
+## 简介
+
+TODO
+
+## 官网
+
+- 主页: http://github.com/hiroeorz/rspec-response-code-matchers
+- 文档: https://www.rubydoc.info/gems/hiroeorz-rspec-response-code-matchers/0.9.1
+- RubyGems: https://rubygems.org/gems/hiroeorz-rspec-response-code-matchers
+
+## 历史版本号
+
+- 0.9.1 (2014-08-11)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/hiroeorz-rspec-response-code-matchers
+- gem 安装: `gem install hiroeorz-rspec-response-code-matchers`
+- Bundler: `gem "hiroeorz-rspec-response-code-matchers"`
+- 最新版本: 0.9.1
+- 最新版归档: https://rubygems.org/downloads/hiroeorz-rspec-response-code-matchers-0.9.1.gem
+- 版本锁定: `gem "hiroeorz-rspec-response-code-matchers", "~> 0.9.1"`
+- 中央仓库: https://rubygems.org/

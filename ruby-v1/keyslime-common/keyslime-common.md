@@ -1,0 +1,27 @@
+# keyslime-common
+
+**Tag**: library
+
+## 简介
+
+Keyslime Support Package
+
+## 官网
+
+- 主页: https://github.com/metermd/keyslime
+- 文档: https://www.rubydoc.info/gems/keyslime-common/0.1.0
+- RubyGems: https://rubygems.org/gems/keyslime-common
+
+## 历史版本号
+
+- 0.1.0.pre (2016-07-23)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/keyslime-common
+- gem 安装: `gem install keyslime-common`
+- Bundler: `gem "keyslime-common"`
+- 最新版本: 0.1.0
+- 最新版归档: https://rubygems.org/downloads/keyslime-common-0.1.0.gem
+- 版本锁定: `gem "keyslime-common", "~> 0.1.0"`
+- 中央仓库: https://rubygems.org/

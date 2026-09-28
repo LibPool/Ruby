@@ -1,0 +1,26 @@
+# eac-resourcify
+
+**Tag**: library
+
+## 简介
+
+Basic enhancements for making Merb controllers more resourceful. Provides reduced code duplication, nested resource support, and aims for RFC2616 compliant responses.
+
+## 官网
+
+- 文档: https://www.rubydoc.info/gems/eac-resourcify/0.1.0
+- RubyGems: https://rubygems.org/gems/eac-resourcify
+
+## 历史版本号
+
+- 0.1.0 (2014-08-11)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/eac-resourcify
+- gem 安装: `gem install eac-resourcify`
+- Bundler: `gem "eac-resourcify"`
+- 最新版本: 0.1.0
+- 最新版归档: https://rubygems.org/downloads/eac-resourcify-0.1.0.gem
+- 版本锁定: `gem "eac-resourcify", "~> 0.1.0"`
+- 中央仓库: https://rubygems.org/

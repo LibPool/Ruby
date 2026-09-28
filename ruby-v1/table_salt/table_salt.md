@@ -1,0 +1,26 @@
+# table_salt
+
+**Tag**: database, data
+
+## 简介
+
+Provides ActiveRecord like functionality without a backing database table.
+
+## 官网
+
+- 文档: https://www.rubydoc.info/gems/table_salt/1.0.0
+- RubyGems: https://rubygems.org/gems/table_salt
+
+## 历史版本号
+
+- 1.0.0 (2013-08-21)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/table_salt
+- gem 安装: `gem install table_salt`
+- Bundler: `gem "table_salt"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/table_salt-1.0.0.gem
+- 版本锁定: `gem "table_salt", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/

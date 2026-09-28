@@ -1,0 +1,27 @@
+# alerter
+
+**Tag**: library
+
+## 简介
+
+Alerter is a simple way to show pop up alerts
+
+## 官网
+
+- 主页: https://github.com/jerryjohnjacob/ios_alerter
+- 文档: https://www.rubydoc.info/gems/alerter/1.0
+- RubyGems: https://rubygems.org/gems/alerter
+
+## 历史版本号
+
+- 1.0 (2014-02-27)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/alerter
+- gem 安装: `gem install alerter`
+- Bundler: `gem "alerter"`
+- 最新版本: 1.0
+- 最新版归档: https://rubygems.org/downloads/alerter-1.0.gem
+- 版本锁定: `gem "alerter", "~> 1.0"`
+- 中央仓库: https://rubygems.org/

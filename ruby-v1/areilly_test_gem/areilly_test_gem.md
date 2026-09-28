@@ -1,0 +1,28 @@
+# areilly_test_gem
+
+**Tag**: testing
+
+## 简介
+
+A gem to explain how to make gems
+
+## 官网
+
+- 主页: http://rubygems.org/gems/test_gem
+- RubyGems: https://rubygems.org/gems/areilly_test_gem
+
+## 历史版本号
+
+- 0.1.8 (2013-02-21)
+- 0.1.7 (2013-02-20)
+- 0.0.8 (2013-02-17)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/areilly_test_gem
+- gem 安装: `gem install areilly_test_gem`
+- Bundler: `gem "areilly_test_gem"`
+- 最新版本: 0.1.8
+- 最新版归档: https://rubygems.org/downloads/areilly_test_gem-0.1.8.gem
+- 版本锁定: `gem "areilly_test_gem", "~> 0.1.8"`
+- 中央仓库: https://rubygems.org/

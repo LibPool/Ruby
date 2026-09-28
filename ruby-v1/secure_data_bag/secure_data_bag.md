@@ -1,0 +1,256 @@
+# secure_data_bag
+
+**Tag**: web, cli, testing, security, serialization, template, tooling, filesystem, data
+
+## 简介
+
+# SecureDataBag / Knife Secure Bag
+
+Knife Secure Bag provides a consistent interface to DataBagItem, EncryptedDataBagItem as well as the custom created SecureDataBagItem while also providing a few extra handy features to help in your DataBag workflows. 
+
+SecureDataBagItem, can not only manage your existing DataBagItems and EncryptedDataBagItems, but it also provides you with a DataBag type which enables you to selectively encrypt only some of the fields in your DataBag thus allowing you to be able to search for the remaining fields. 
+
+## Installation
+
+To build and install the plugin add it your Gemfile or run: 
+
+```shell
+gem install secure_data_bag
+```
+
+## Configuration
+
+#### Knife Secure Bag
+
+Defaults for the Knife command may be provided in your _knife.rb_ file.
+
+```ruby
+knife[:secure_data_bag][:encrypted_keys] = %w(
+  password
+  ssh_keys
+  ssh_ids
+  public_keys
+  private_keys
+  keys
+  secret
+)
+knife[:secure_data_bag][:secret_file] = "#{local_dir}/secret.pem"
+knife[:secure_data_bag][:export_root] = "#{kitchen_dir}/data_bags"
+knife[:secure_data_bag][:export_on_upload] = true
+knife[:secure_data_bag][:defaults][:secrets][:export_format] = 'plain'
+```
+
+To break this up:
+
+`knife[:secure_data_bag][:encrypted_keys] = []`
+
+When Knife Secure Bag encrypts a hash with an _encryption format_ of *nested*, it will recursively walk through the hash from the bottom up and encrypt any key found within this array.
+
+`knife[:secure_data_bag][:secret_file]`
+
+When encryption is required, the shared secret found at this location will be loaded. 
+
+`knife[:secure_data_bag][:export_root]`
+
+When exporting a data\_bag\_item, files will be created in below this root directory. Typically this would be the data\_bag folder located within your kitchen.
+
+`knife[:secure_data_bag][:export_on_upload]`
+
+When a data\_bag\_item is edited using `knife secure bag edit`, it may be automatically exported to the _export\_root_.
+
+`knife[:secure_data_bag][:defaults][:secrets][:export_format]`
+
+The configuration file additionally supports the _defaults_ hash which provides default values for all _command line arguments_ that one might use. Of all of them only the _export\_format_ key is likely to be of much use.
+
+## Examples
+
+#### Chef cookbook recipe
+
+```ruby
+metadata = {}
+
+# Define the keys we wish to encrypt
+metadata[:encrypted_keys] = %w(encoded)
+
+# Optionally load a specific shared secret. Otherwise, the global 
+# encrypted\_data\_bag\_secret will be automatically used.
+secret_key = SecureDataBagItem.load_key("/path/to/secret")
+
+# Create a hash of data to use as an exampe
+raw_data = {
+	id: "item", 
+  data_bag: "data_bag",
+	encoded: "my string", 
+	unencoded: "other string"
+}
+
+# Instantiate a SecureDataBagItem from a hash
+item = SecureDataBagItem.from_hash(data, metadata)
+
+# Or more explicitely
+item = SecureDataBagItem.from_hash(data, encrypted_keys: %w(encoded))
+
+# Or load from server
+item = SecureDataBagItem.load("data_bag", "item")
+
+# Print the un-encrypted raw data
+pp item.raw_data
+
+# Print the un-encrypted `encoded` key
+pp item['encoded']
+
+# Print the encrypted hash as a data_bag_item hash
+pp item.to_hash
+
+=begin
+{ 
+  id:         "item", 
+  data_bag:   "data_bag",
+  encoded:    {
+    encrypted_data: "encoded",
+    cipher: aes-256-cbc,
+    iv: 13453453dkgfefg==
+    version: 1
+  }
+  unencoded:  "other string",
+}
+=end
+```
+
+## Usage
+
+#### Knife commands
+
+Print an DataBagItem, EncryptedDataBagItem or SecureDataBagItem, auto-detecting the encryption method used as plain text.
+
+```shell
+knife secure bag show -F js secrets secret_item
+```
+
+Print an DataBagItem, EncryptedDataBagItem or SecureDataBagItem, auto-detecting the encryption method used as a SecureDataBagItem in encrypted format.
+
+```shell
+knife secure bag show -F js secrets secret_item --enc-format nested
+```
+
+Edit an EncryptedDataBagItem, preserve it's encryption type, and export a copy to the _data\_bag_ folder in your kitchen.
+
+```shell
+knife secure bag edit secrets secret_item --export
+```
+
+## Knife SubCommands
+
+Most of the SubCommands support the following command-line options:
+
+`--enc-format [plain,encrypted,nested]`
+
+Ensure that, when displaying or uploading the data\_bag\_item, we forcibly encrypt the data\_bag\_item using the specified format instead of preserving the existing format. 
+
+In this case: 
+- plain: refers to a DataBagItem
+- encrypted: refers to an EnrytpedDataBagItem
+- nested: refers to a SecureDataBagItem
+
+`--dec-format [plain,encrypted,nested]`
+
+Attempt to decrypt the data\_bag\_item using the given format rather than the auto-detected one. The only real reason to use this is when you wish to specifically select _plain_ as the format so as to not decrypt the item.
+
+`--enc-keys key1,key2,key3`
+
+Provide a comma delimited list of hash keys which should be encrypted when encrypting the data\_bag\_item. This list will be concatenated with any key names listed in the configuration file or which were previously encrypted. 
+
+`--export`
+
+Export the data\_bag\_item to json file in either of _export-format_ or _enc-format_.
+
+`--export-format`
+
+Overrides the encryption format only for the _export_ feature.
+
+`--export-root`
+
+Root directly under which a folder should exist for each _data_bag_ into which to export _data_bag_items_ as json files.
+
+When displaying the content of the _data\_bag\_item_, an additional key of *_secure_metadata* will be added to the output which contains gem specific metadata such as the encryption formats and any encrypted keys found. This key will _not_ be saved with the item, however it may be manipulated to alter the behavior of the _edit_ or _export_ commands.
+
+#### knife secure bag show DATA_BAG ITEM
+
+This command functions just like `knife data bag show` and is used to print out the content of either a DataBagItem, EncryptedDataBagItem or SecureDataBagItem.
+
+By default, it will auto-detect the Item type, and print it's unencrypted version to the terminal. This behavior, however, may be altered using the previously mentioned command line options.
+
+#### knife secure bag open PATH
+
+This commands functions much like `knife secure bag show`, however it is designed to load a _data\_bag\_item_ from disk as opposed to loading it from Chef server. This may be of use when view the content of an exported encrypted file.
+
+#### knife secure bag edit DATA_BAG DATA_BAG_ITEM
+
+This command functions just like `knife data bag edit` and is used to edit either a DataBagItem, EncryptedDataBagItem or a SecureDataBagItem. It supports all of the same options as `knife secure bag show`. 
+
+#### knife secure bag from file DATA_BAG PATH
+
+This command functions just like `knife data bag from file` and is used to upload either a DataBagItem, EncryptedDataBagItem or a SecureDataBagItem. It supports all of the same options as `knife secure bag show`. 
+
+## Recipe DSL
+
+The gem additionally provides a few Recipe DSL methods which may be useful.
+
+```ruby
+load_secure_item = secure_data_bag_item(
+  data_bag_name, 
+  data_bag_item, 
+  cache: false
+)
+
+load_plain_item = data_bag_item(data_bag_name, data_bag_item)
+convert_plain_to_secure = secure_data_bag_item!(load_plain_item)
+```
+
+## 官网
+
+- 主页: https://github.com/JonathanSerafini/chef-secure_data_bag
+- 文档: https://www.rubydoc.info/gems/secure_data_bag/3.0.5
+- RubyGems: https://rubygems.org/gems/secure_data_bag
+
+## 历史版本号
+
+- 3.0.5 (2016-10-05)
+- 3.0.4 (2016-08-19)
+- 3.0.3 (2016-08-19)
+- 3.0.2 (2016-08-15)
+- 3.0.1 (2016-08-11)
+- 3.0.0 (2016-08-11)
+- 2.2.0 (2016-03-26)
+- 2.1.2 (2015-06-01)
+- 2.1.1 (2015-06-01)
+- 2.1.0 (2015-05-29)
+- 2.0.9 (2015-05-29)
+- 2.0.8 (2015-05-29)
+- 2.0.7 (2015-05-29)
+- 2.0.6 (2015-05-29)
+- 2.0.5 (2015-05-29)
+- 2.0.4 (2014-10-24)
+- 2.0.3 (2014-09-30)
+- 2.0.2 (2014-09-29)
+- 2.0.1 (2014-09-29)
+- 2.0.0 (2014-09-29)
+- 1.1.4 (2014-08-18)
+- 1.1.3 (2014-08-17)
+- 1.1.2 (2014-08-17)
+- 1.1.1 (2014-08-15)
+- 1.0.5 (2014-08-14)
+- 1.0.4 (2014-08-14)
+- 1.0.3 (2014-08-14)
+- 1.0.2 (2014-08-13)
+- 1.0.1 (2014-08-13)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/secure_data_bag
+- gem 安装: `gem install secure_data_bag`
+- Bundler: `gem "secure_data_bag"`
+- 最新版本: 3.0.5
+- 最新版归档: https://rubygems.org/downloads/secure_data_bag-3.0.5.gem
+- 版本锁定: `gem "secure_data_bag", "~> 3.0.5"`
+- 中央仓库: https://rubygems.org/

@@ -1,0 +1,35 @@
+# jquery-screenfull-rails
+
+**Tag**: web
+
+## 简介
+
+A jquery wrapper around the screenfull.js library, with Rails integration
+
+## 官网
+
+- 文档: https://www.rubydoc.info/gems/jquery-screenfull-rails/3.0.0
+- RubyGems: https://rubygems.org/gems/jquery-screenfull-rails
+
+## 历史版本号
+
+- 3.0.0 (2016-01-17)
+- 2.0.0 (2014-12-22)
+- 0.0.8 (2014-11-17)
+- 0.0.7 (2014-10-31)
+- 0.0.6 (2014-09-15)
+- 0.0.5 (2014-08-03)
+- 0.0.4 (2014-08-01)
+- 0.0.3 (2014-08-01)
+- 0.0.2 (2014-02-19)
+- 0.0.1 (2014-01-10)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/jquery-screenfull-rails
+- gem 安装: `gem install jquery-screenfull-rails`
+- Bundler: `gem "jquery-screenfull-rails"`
+- 最新版本: 3.0.0
+- 最新版归档: https://rubygems.org/downloads/jquery-screenfull-rails-3.0.0.gem
+- 版本锁定: `gem "jquery-screenfull-rails", "~> 3.0.0"`
+- 中央仓库: https://rubygems.org/

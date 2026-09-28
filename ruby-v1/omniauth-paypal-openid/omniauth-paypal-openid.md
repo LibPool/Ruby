@@ -1,0 +1,27 @@
+# omniauth-paypal-openid
+
+**Tag**: security
+
+## 简介
+
+PayPal Identity strategy for OmniAuth
+
+## 官网
+
+- 主页: https://github.com/kbravi/omniauth-paypal-openid
+- 文档: https://www.rubydoc.info/gems/omniauth-paypal-openid/1.0.0
+- RubyGems: https://rubygems.org/gems/omniauth-paypal-openid
+
+## 历史版本号
+
+- 1.0.0 (2017-07-11)
+
+## 获取地址
+
+- RubyGems: https://rubygems.org/gems/omniauth-paypal-openid
+- gem 安装: `gem install omniauth-paypal-openid`
+- Bundler: `gem "omniauth-paypal-openid"`
+- 最新版本: 1.0.0
+- 最新版归档: https://rubygems.org/downloads/omniauth-paypal-openid-1.0.0.gem
+- 版本锁定: `gem "omniauth-paypal-openid", "~> 1.0.0"`
+- 中央仓库: https://rubygems.org/
