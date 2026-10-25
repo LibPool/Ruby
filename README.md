@@ -5,7 +5,7 @@
 - 大版本目录：`ruby-v1`、`ruby-v2`、`ruby-v3`、`ruby-v4`
 - gem 路径：`<gem>/<gem>.md`
 - gem 会根据所有历史版本声明的 `required_ruby_version` 约束，同时出现在兼容的大版本目录中
-- 当前共枚举 197939 个 RubyGems gem
+- 当前共枚举 197941 个 RubyGems gem
 
 ## 收录的中央仓库
 
@@ -20,8 +20,8 @@
 
 - `ruby-v1`：162521 个 gem
 - `ruby-v2`：185057 个 gem
-- `ruby-v3`：196621 个 gem
-- `ruby-v4`：196629 个 gem
+- `ruby-v3`：196622 个 gem
+- `ruby-v4`：196631 个 gem
 
 ## 生成方式
 
